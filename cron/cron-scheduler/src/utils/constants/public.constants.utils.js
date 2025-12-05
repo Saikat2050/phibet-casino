@@ -1,0 +1,249 @@
+// Currency constants start
+export const CURRENCY_TYPES = {
+  FIAT: 'fiat',
+  POINTS: 'point',
+  CRYPTO: 'crypto'
+}
+// Currency constants
+export const CURRENCY_CODE = {
+  GC: 'GC',
+  BSC: 'BSC',
+  PSC: 'PSC',
+  RSC: 'RSC'
+}
+// Ledger constants start
+export const LEDGER_TYPES = {
+  DEBIT: 'debit',
+  CREDIT: 'credit'
+}
+
+export const LEDGER_PURPOSE = {
+  WINNINGS: 'Winnings',
+  COMMISSION: 'Commission',
+  CASINO_BET: 'CasinoBet',
+  CASINO_WIN: 'CasinoWin',
+  CASINO_REFUND: 'CasinoRefund',
+  BONUS_CASHED: 'BonusCashed',
+  BONUS_ZEROEDOUT: 'BONUS_ZEROEDOUT',
+  CASINO_BONUS_BET: 'CasinoBonusBet',
+  CASINO_BONUS_WIN: 'CasinoBonusWin',
+  CASINO_BONUS_REFUND: 'CasinoBonusRefund',
+  VIP_TIER_WEEKLY_BONUS: 'VipTierWeeklyBonus',
+  VIP_TIER_MONTHLY_BONUS: 'VipTierMonthlyBonus',
+  VIP_TIER_TIER_UP_BONUS: 'VipTierTierUpBonus',
+  VIP_TIER_RAKEBACK_BONUS: 'VipTierRakebackBonus',
+  PURCHASE: 'Purchase',
+  REDEEM: 'Redeem',
+  PURCHASE_GC_COIN: 'PurchaseGcCoin',
+  PURCHASE_SC_COIN: 'PurchaseScCoin',
+  PURCHASE_GC_BONUS: 'PurchaseGcBonus',
+  PURCHASE_SC_BONUS: 'PurchaseScBonus',
+  DAILY_BONUS: 'DAILY_BONUS',
+  JOINING_BONUS: 'JOINING_BONUS',
+  SPIN_WHEEL_SC: 'spinWheelSc',
+  SPIN_WHEEL_GC: 'spinWheelGc',
+  REFERRAL_DEPOSIT: 'ReferralDeposit',
+  BONUS_DEPOSIT: 'BonusDeposit',
+  ADD_COIN: 'AddCoin',
+  REDEEM_FAILED: 'RedeemFailed',
+  REDEEM_REJECTED: 'RedeemRejected',
+  REFUND: 'Refund',
+  CASINO_BET_ROLLBACK: 'CasinoBetRollback',
+  CASINO_WIN_ROLLBACK: 'CasinoWinRollback',
+  JACKPOT_ENRTY: 'JackpotEntry',
+  JACKPOT_WIN: 'JackpotWin'
+}
+
+export const LEDGER_TRANSACTION_TYPE = {
+  CASINO: 'casino',
+  STANDARD: 'standard',
+  WITHDRAWAL: 'withdrawal',
+  PURCHASE: 'purchase',
+  REDEEM: 'redeem'
+}
+
+export const LEDGER_RULES = {
+  [LEDGER_PURPOSE.SPIN_WHEEL_GC]: LEDGER_TYPES.CREDIT,
+  [LEDGER_PURPOSE.SPIN_WHEEL_SC]: LEDGER_TYPES.CREDIT,
+  [LEDGER_PURPOSE.PURCHASE]: LEDGER_TYPES.CREDIT,
+  [LEDGER_PURPOSE.PURCHASE_GC_BONUS]: LEDGER_TYPES.CREDIT,
+  [LEDGER_PURPOSE.PURCHASE_GC_COIN]: LEDGER_TYPES.CREDIT,
+  [LEDGER_PURPOSE.PURCHASE_SC_BONUS]: LEDGER_TYPES.CREDIT,
+  [LEDGER_PURPOSE.PURCHASE_SC_COIN]: LEDGER_TYPES.CREDIT,
+  [LEDGER_PURPOSE.REDEEM]: LEDGER_TYPES.DEBIT,
+  [LEDGER_PURPOSE.REDEEM_FAILED]: LEDGER_TYPES.CREDIT,
+  [LEDGER_PURPOSE.CASINO_BET]: LEDGER_TYPES.DEBIT,
+  [LEDGER_PURPOSE.PURCHASE]: LEDGER_TYPES.CREDIT,
+  [LEDGER_PURPOSE.REFUND]: LEDGER_TYPES.CREDIT,
+  [LEDGER_PURPOSE.REDEEM]: LEDGER_TYPES.DEBIT,
+  [LEDGER_PURPOSE.CASINO_WIN_ROLLBACK]: LEDGER_TYPES.DEBIT,
+  [LEDGER_PURPOSE.CASINO_BET_ROLLBACK]: LEDGER_TYPES.CREDIT,
+  [LEDGER_PURPOSE.CASINO_WIN]: LEDGER_TYPES.CREDIT,
+  [LEDGER_PURPOSE.CASINO_REFUND]: LEDGER_TYPES.CREDIT,
+  [LEDGER_PURPOSE.BONUS_CASHED]: LEDGER_TYPES.CREDIT,
+  [LEDGER_PURPOSE.REFERRAL_DEPOSIT]: LEDGER_TYPES.CREDIT,
+  [LEDGER_PURPOSE.ADD_COIN]: LEDGER_TYPES.CREDIT,
+  [LEDGER_PURPOSE.VIP_TIER_WEEKLY_BONUS]: LEDGER_TYPES.CREDIT,
+  [LEDGER_PURPOSE.VIP_TIER_MONTHLY_BONUS]: LEDGER_TYPES.CREDIT,
+  [LEDGER_PURPOSE.VIP_TIER_RAKEBACK_BONUS]: LEDGER_TYPES.CREDIT,
+  [LEDGER_PURPOSE.VIP_TIER_TIER_UP_BONUS]: LEDGER_TYPES.CREDIT,
+  [LEDGER_PURPOSE.DAILY_BONUS]: LEDGER_TYPES.CREDIT,
+  [LEDGER_PURPOSE.JOINING_BONUS]: LEDGER_TYPES.CREDIT,
+  [LEDGER_PURPOSE.JACKPOT_ENRTY]: LEDGER_TYPES.DEBIT,
+  [LEDGER_PURPOSE.JACKPOT_WIN]: LEDGER_TYPES.CREDIT
+}
+// Ledger constants end
+
+// Transaction constants start
+export const TRANSACTION_STATUS = {
+  PENDING: 'pending',
+  COMPLETED: 'completed',
+  IN_PROGRESS: 'in_progress',
+  FAILED: 'failed',
+  REJECTED: 'rejected'
+}
+// Transaction constants end
+
+// Setting constants start
+export const SETTING_DATA_TYPES = {
+  STRING: 'string',
+  NUMBER: 'number',
+  BOOLEAN: 'boolean',
+  PERCENTAGE: 'percentage',
+  JSON: 'json'
+}
+// Setting constants end
+
+// User constants start
+export const USER_RESPONSIBLE_GAMBLING_LIMIT_TYPES = {
+  SELF_EXCLUSION: 'self_exclusion',
+  DAILY_BET_LIMIT: 'daily_bet_limit',
+  WEEKLY_BET_LIMIT: 'weekly_bet_limit',
+  MONTHLY_BET_LIMIT: 'monthly_bet_limit',
+  DAILY_LOSS_LIMIT: 'daily_loss_limit',
+  WEEKLY_LOSS_LIMIT: 'weekly_loss_limit',
+  MONTHLY_LOSS_LIMIT: 'monthly_loss_limit',
+  DAILY_DEPOSIT_LIMIT: 'daily_deposit_limit',
+  WEEKLY_DEPOSIT_LIMIT: 'weekly_deposit_limit',
+  MONTHLY_DEPOSIT_LIMIT: 'monthly_deposit_limit'
+}
+
+export const SELF_EXCLUSION_TYPES = {
+  PERMANENT: 'permanent',
+  TEMPORARY: 'temporary'
+}
+
+export const USER_RESPONSIBLE_GAMBLING_LIMIT_DATA_TYPES = {
+  ENUM: 'enum',
+  STRING: 'string',
+  NUMBER: 'number',
+  BOOLEAN: 'boolean',
+  INTEGER: 'integer',
+  PERCENTAGE: 'percentage'
+}
+
+export const RESPONSIBLE_GAMBLING_DATA_TYPE_MAPPING = {
+  [USER_RESPONSIBLE_GAMBLING_LIMIT_TYPES.SELF_EXCLUSION]: USER_RESPONSIBLE_GAMBLING_LIMIT_DATA_TYPES.ENUM,
+  [USER_RESPONSIBLE_GAMBLING_LIMIT_TYPES.DAILY_BET_LIMIT]: USER_RESPONSIBLE_GAMBLING_LIMIT_DATA_TYPES.INTEGER,
+  [USER_RESPONSIBLE_GAMBLING_LIMIT_TYPES.WEEKLY_BET_LIMIT]: USER_RESPONSIBLE_GAMBLING_LIMIT_DATA_TYPES.INTEGER,
+  [USER_RESPONSIBLE_GAMBLING_LIMIT_TYPES.MONTHLY_BET_LIMIT]: USER_RESPONSIBLE_GAMBLING_LIMIT_DATA_TYPES.INTEGER,
+  [USER_RESPONSIBLE_GAMBLING_LIMIT_TYPES.DAILY_DEPOSIT_LIMIT]: USER_RESPONSIBLE_GAMBLING_LIMIT_DATA_TYPES.NUMBER,
+  [USER_RESPONSIBLE_GAMBLING_LIMIT_TYPES.WEEKLY_DEPOSIT_LIMIT]: USER_RESPONSIBLE_GAMBLING_LIMIT_DATA_TYPES.NUMBER,
+  [USER_RESPONSIBLE_GAMBLING_LIMIT_TYPES.MONTHLY_DEPOSIT_LIMIT]: USER_RESPONSIBLE_GAMBLING_LIMIT_DATA_TYPES.NUMBER,
+  [USER_RESPONSIBLE_GAMBLING_LIMIT_TYPES.DAILY_LOSS_LIMIT]: USER_RESPONSIBLE_GAMBLING_LIMIT_DATA_TYPES.NUMBER,
+  [USER_RESPONSIBLE_GAMBLING_LIMIT_TYPES.MONTHLY_LOSS_LIMIT]: USER_RESPONSIBLE_GAMBLING_LIMIT_DATA_TYPES.NUMBER,
+  [USER_RESPONSIBLE_GAMBLING_LIMIT_TYPES.WEEKLY_LOSS_LIMIT]: USER_RESPONSIBLE_GAMBLING_LIMIT_DATA_TYPES.NUMBER
+}
+
+export const USER_GENDER = {
+  MALE: 'male',
+  FEMALE: 'female'
+}
+// User constants end
+
+// Withdrawal constants start
+export const WITHDRAWAL_STATUS = {
+  PENDING: 'pending',
+  APPROVED: 'approved',
+  REJECTED: 'rejected',
+  CONFIRMED: 'confirmed',
+  SUCCESS: 'success',
+  FAILED: 'failed',
+  IN_PROGRESS: 'in_progress'
+}
+
+export const WITHDRAWAL_TYPES = {
+  BANK: 'bank',
+  CRTPTO: 'crypto'
+}
+// Withdrawal constants end
+
+// Email template constants start
+export const EMAIL_TEMPLATE_EVENT_TYPES = {
+  WELCOME: 'welcome',
+  ACTIVE_USER: 'active_user',
+  INACTIVE_USER: 'inactive_user',
+  FORGOT_PASSWORD: 'forgot_password',
+  RESET_PASSWORD: 'reset_password',
+  EMAIL_VERIFICATION: 'email_verification',
+  DOCUMENT_REJECTED: 'document_rejected',
+  DOCUMENT_REMINDER: 'document_reminder',
+  DOCUMENT_RECEIVED: 'document_received',
+  DOCUMENT_VERIFIED: 'document_verified',
+  DOCUMENT_REQUESTED: 'document_requested',
+  KYC_ACTIVATED: 'kyc_activated',
+  KYC_DEACTIVATED: 'kyc_deactivated',
+  WITHDRAW_PROCESSED: 'withdraw_processed',
+  WITHDRAW_REQUEST_RECEIVED: 'withdraw_request_received',
+  WITHDRAW_REQUEST_APPROVED: 'withdraw_request_approved',
+  DEPOSIT_FAILED: 'deposit_failed',
+  DEPOSIT_SUCCESS: 'deposit_success',
+  GAMBLING_REGISTRATION: 'gambling_registration',
+  JOINING_BONUS: 'joining_bonus',
+  PASSWORD_UPDATED: 'password_updated'
+}
+// Email template constants end
+
+// Banner constants start
+export const BANNER_TYPES = {
+  HOME: 'home',
+  CASINO: 'casino',
+  LOYALITY: 'loyality',
+  PROMOTIONS: 'promotions',
+  SPORTSBOOK: 'sportsbook'
+}
+// Banner constants end
+
+export const CURRENCY = {
+  GC: 1,
+  BSC: 2,
+  PSC: 3,
+  RSC: 4
+}
+
+export const IDCOMPLY_USER_STATUS = {
+  CREATED: 'created',
+  ACTIVATED: 'activated',
+  PROCESSING: 'processing',
+  COMPLETE: 'complete',
+  FAILED: 'failed',
+  ARCHIVED: 'archived'
+}
+
+export const KYC_STATUS = {
+  PENDING: 'PENDING',
+  COMPLETED: 'COMPLETE',
+  FAILED: 'FAILED'
+}
+
+export const SIGN_IN_METHOD = {
+  EMAIL: 'email',
+  GOOGLE: 'google',
+  FACEBOOK: 'facebook'
+}
+
+export const JACKPOT_STATUS = {
+  UPCOMING: 0,
+  RUNNING: 1,
+  COMPLETED: 2
+}

@@ -1,0 +1,9 @@
+.env
+.gitlab-ci.yml
+node_modules
+test_scripts
+**http_ca.crt
+dist
+logs/*
+package-lock.json
+.vscode

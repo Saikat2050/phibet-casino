@@ -1,0 +1,11 @@
+.env
+**http_ca.crt
+node_modules/
+dist/*
+docs/
+logs/
+tmp/
+dist/*
+logs/*
+package-lock.json
+.gitlab-ci.yml

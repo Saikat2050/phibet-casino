@@ -1,0 +1,14 @@
+# public/robots.txt
+User-agent: *
+Allow: /demoGame/chinatownslot
+Allow: /demoGame/egyptslot
+Allow: /demoGame/goldrushslot
+Allow: /demoGame/christmasslot
+Allow: /VCPP1.0.pdf
+Allow: /VCTOS1.0.pdf
+Allow: /cookie-notice
+Allow: /VCRP1.0.pdf
+Allow: /facebook-data-deletion-instruction-url
+Allow: /user/forgotPassword
+Allow: /.well-known/apple-developer-merchantid-domain-association.txt
+Allow: /

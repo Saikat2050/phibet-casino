@@ -1,0 +1,38 @@
+.counter-number {
+	font-size: 32px;
+	font-weight: $font-weight-semibold;
+	text-align: center;
+	display: flex;
+	span {
+		font-size: 16px;
+		font-weight: $font-weight-normal;
+		display: block;
+		padding-top: 5px;
+	}
+}
+
+.coming-box {
+	width: 25%;
+}
+
+.overflow-scroll-hide {
+	overflow: scroll;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.overflow-scroll-hide::-webkit-scrollbar {
+	display: none;
+}
+
+.mt-100 {
+	margin-top: 100px;
+}
+
+.title-margin {
+	margin-bottom: 2.22rem !important;
+}
+
+[data-bs-theme='dark'] a.disabled.btn-outline-primary {
+	border: 1px solid #485ec4;
+}

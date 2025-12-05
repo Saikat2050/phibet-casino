@@ -1,0 +1,6 @@
+export * from './win.gsoft.casino.service'
+export * from './bet.gsoft.casino.service'
+export * from './rollback.gsoft.casino.service'
+export * from './betAndWin.gsoft.casino.service'
+export * from './getAccount.gsoft.casino.service'
+export * from './getBalance.gsoft.casino.service'

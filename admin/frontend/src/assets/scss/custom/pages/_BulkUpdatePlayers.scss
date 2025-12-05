@@ -1,0 +1,49 @@
+.accordion-header-custom {
+	background-color: var(--#{$prefix}secondary-bg);
+	font-weight: bold;
+	padding: 10px 15px;
+	border-bottom: 1px solid transparent;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	&.accordion-header .accordion-button {
+		font-weight: 800;
+	}
+	&:hover,
+	&:focus {
+		background-color: var(--#{$prefix}tertiary-bg);
+	}
+}
+
+.accordion-body-custom {
+	padding: 5px;
+	background-color: var(--#{$prefix}secondary-bg);
+	border: 1px solid transparent;
+	border-top: none;
+	transition: background-color 0.3s ease;
+
+	&:hover,
+	&:focus {
+		background-color: var(--#{$prefix}tertiary-bg);
+	}
+}
+
+.update-status-container,
+.email-verified-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 10px 0;
+}
+
+.update-status-container button,
+.email-verified-container button {
+	transition:
+		background-color 0.3s ease,
+		color 0.3s ease;
+
+	&:hover,
+	&:focus {
+		background-color: var(--#{$prefix}primary-bg);
+		color: var(--#{$prefix}light-color);
+	}
+}

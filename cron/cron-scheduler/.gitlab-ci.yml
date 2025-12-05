@@ -1,0 +1,64 @@
+workflow:
+  rules:
+    - if: $CI_COMMIT_BRANCH == "staging" || $CI_COMMIT_BRANCH == "production" ||
+         ($CI_PIPELINE_SOURCE == 'merge_request_event' &&
+          ($CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "staging" || $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "production"))
+variables:
+  DOCKER_HOST: "unix:///var/run/docker.sock"
+  ENVIRONMENT: $CI_COMMIT_BRANCH
+stages:
+  - build
+  - push
+
+build-job:
+  stage: build
+  tags:
+    - instance-runner
+  image: docker:24
+  environment: "$ENVIRONMENT"
+  script:
+    - ls -la
+    - Commit_SHA=$(git rev-parse HEAD)
+    - docker system prune -f
+    # - echo "Commit SHA: $Commit_SHA"
+    - docker build -t "$ECR_BASE_URI:$Commit_SHA" .
+    - docker save "$ECR_BASE_URI:$Commit_SHA" > image.tar
+  artifacts:
+    paths:
+      - image.tar
+
+push-to-ecr:
+  stage: push
+  tags:
+    - instance-runner
+  image: registry.gitlab.com/gitlab-org/cloud-deploy/aws-base:latest
+  environment: "$ENVIRONMENT"
+  id_tokens:
+    GITLAB_OIDC_TOKEN:
+      aud: https://gitlab.com
+  before_script:
+   # - apt-get update && apt-get install -y git jq
+    - echo "Fetching GitLab OIDC Token..."
+    - echo "Assuming IAM Role..."
+    - export AWS_CREDENTIALS=$(aws sts assume-role-with-web-identity
+        --role-arn ${AWS_ROLE_ARN}
+        --role-session-name "gitlab-runner"
+        --web-identity-token ${GITLAB_OIDC_TOKEN}
+        --duration-seconds 3600)
+    - export AWS_ACCESS_KEY_ID=$(echo ${AWS_CREDENTIALS} | jq -r '.Credentials.AccessKeyId')
+    - export AWS_SECRET_ACCESS_KEY=$(echo ${AWS_CREDENTIALS} | jq -r '.Credentials.SecretAccessKey')
+    - export AWS_SESSION_TOKEN=$(echo ${AWS_CREDENTIALS} | jq -r '.Credentials.SessionToken')
+    - aws configure set aws_access_key_id "$AWS_ACCESS_KEY_ID"
+    - aws configure set aws_secret_access_key "$AWS_SECRET_ACCESS_KEY"
+    - aws configure set aws_session_token "$AWS_SESSION_TOKEN"
+    - aws configure set region "$AWS_DEFAULT_REGION"
+  script:
+    - Commit_SHA=$CI_COMMIT_SHA
+    - echo "Logging into Amazon ECR..."
+    - aws ecr get-login-password --region "$AWS_DEFAULT_REGION" | docker login --username AWS --password-stdin "$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com"
+    - docker load < image.tar
+    - docker tag "$ECR_BASE_URI:$Commit_SHA" "$ECR_BASE_URI:latest"
+    - docker push "$ECR_BASE_URI:latest"
+    - docker push "$ECR_BASE_URI:$Commit_SHA"
+    - docker builder prune -f
+    - docker image rm -f "$ECR_BASE_URI:$Commit_SHA" "$ECR_BASE_URI:latest"

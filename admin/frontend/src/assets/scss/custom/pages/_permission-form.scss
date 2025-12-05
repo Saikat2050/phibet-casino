@@ -1,0 +1,56 @@
+body[data-bs-theme='light'] {
+	.card-bg {
+		background-color: $topbar-search-bg;
+	}
+}
+
+.card-bg {
+	background-color: $body-bg-dark;
+	// height: 100%;
+	padding: 10px;
+}
+
+.icon-bg {
+	background-color: $primary;
+	color: $sidebar-bg;
+	border-radius: 10px 0;
+}
+
+.card-header {
+	border-radius: 10px 5px 0 !important;
+}
+
+.accordion-border-radius {
+	border-radius: 50px !important;
+}
+
+.left-accordion-arrow .accordion-header .accordion-border-radius:after {
+	content: '';
+	border: 1px solid var(--bs-border-color) !important;
+	background-position: center !important;
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+}
+
+.min-height {
+	min-height: 60px;
+}
+
+.margin-left {
+	margin-left: 60px;
+}
+
+.accordion-body-padding {
+	padding: 0 8px;
+}
+
+.nav-link {
+	font-size: 14px !important;
+}
+
+.text-capitalized {
+	text-transform: capitalize;
+}

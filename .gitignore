@@ -1,0 +1,155 @@
+# Environment Variables
+# Admin backend
+admin/backend/.env
+admin/backend/.env.local
+admin/backend/.env.*.local
+admin/backend/.env.production
+admin/backend/.env.development
+
+# Admin frontend
+admin/frontend/.env
+admin/frontend/.env.local
+admin/frontend/.env.*.local
+admin/frontend/.env.production
+admin/frontend/.env.development
+
+# Player backend
+player/backend/.env
+player/backend/.env.local
+player/backend/.env.*.local
+player/backend/.env.production
+player/backend/.env.development
+
+# Player backend-vg
+player/backend-vg/.env
+player/backend-vg/.env.local
+player/backend-vg/.env.*.local
+player/backend-vg/.env.production
+player/backend-vg/.env.development
+
+# Player frontend
+player/frontend/.env
+player/frontend/.env.local
+player/frontend/.env.*.local
+player/frontend/.env.production
+player/frontend/.env.development
+
+# Player frontend-gm
+player/frontend-gm/.env
+player/frontend-gm/.env.local
+player/frontend-gm/.env.*.local
+player/frontend-gm/.env.production
+player/frontend-gm/.env.development
+
+# Cron scheduler
+cron/cron-scheduler/.env
+cron/cron-scheduler/.env.local
+cron/cron-scheduler/.env.*.local
+cron/cron-scheduler/.env.production
+cron/cron-scheduler/.env.development
+
+# Server entrypoint
+server/entrypoint/.env
+server/entrypoint/.env.local
+server/entrypoint/.env.*.local
+server/entrypoint/.env.production
+server/entrypoint/.env.development
+
+# Dependencies
+node_modules/
+npm-debug.log*
+npm-debug.log
+yarn-error.log*
+yarn-debug.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build and Distribution
+dist/
+build/
+.next/
+out/
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+lerna-debug.log*
+
+# IDE and Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.sublime-project
+.vscode-st-config.json
+.vscode-test
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Testing
+coverage/
+.nyc_output/
+.jest-cache/
+.mocha_cache/
+
+# Debugging
+debug/
+debug.log
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# OS
+Thumbs.db
+.AppleDouble
+.LSOverride
+.DS_Store
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.backup
+
+# Local development
+.cache/
+.parcel-cache/
+.turbo/
+
+# Vite cache
+.vite/
+
+# Production build output
+dist-prod/
+
+# Node modules lockfiles (if using pnpm)
+.pnpmfile.cjs
+
+# System files
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# VSCode extensions
+extensions/
+
+# Misc
+*.pem
+.env*.local

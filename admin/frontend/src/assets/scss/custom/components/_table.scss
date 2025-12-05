@@ -1,0 +1,106 @@
+//
+// _table.scss
+//
+
+.table {
+	th {
+		font-weight: $font-weight-bold;
+	}
+}
+
+.table-dark > :not(:last-child) > :last-child > * {
+	border-bottom-color: $table-dark-border-color;
+}
+
+.table-bordered {
+	border: $table-border-width solid $table-border-color;
+}
+
+.table-nowrap {
+	th,
+	td {
+		white-space: nowrap;
+	}
+}
+
+.table > :not(:first-child) {
+	border-top: 0;
+}
+
+.table-responsive .list-unstyled li a {
+	font-size: 1.1rem;
+}
+
+.table-responsive .list-unstyled li button {
+	font-size: 1.1rem;
+}
+
+.sidebar-padding {
+	padding-bottom: 8rem;
+}
+
+.table-responsive {
+	&.scrollable {
+		max-height: 75vh;
+		overflow-y: auto;
+	}
+}
+
+.filter-icons {
+	font-size: 1.5rem;
+}
+
+.align-symbol-end {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+
+[data-bs-theme='light'] .table-info-deposit {
+	background: linear-gradient(45deg, rgb(85, 110, 230, 0.5), $white);
+}
+
+[data-bs-theme='dark'] .table-info-deposit {
+	background: linear-gradient(45deg, rgb(85, 110, 230, 0.5), $header-dark-bg);
+}
+
+.custom-btn-group > *:first-child .btn {
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+
+.custom-btn-group > *:last-child .btn {
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+.custom-btn-group .btn {
+	border-radius: 0; /* Reset border-radius for all buttons */
+	border-right-width: 0; /* Remove the right border from all buttons except the last one */
+}
+
+.custom-btn-group > *:not(:last-child) .btn {
+	border-right-width: 0; /* No border on the right side of buttons except the last one */
+}
+
+.custom-btn-group > *:last-child .btn {
+	border-right-width: 1px; /* Restore the right border for the last button */
+}
+
+.search-input-width {
+	width: 75%;
+	max-width: 35rem;
+}
+
+.table-actions {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 700px) {
+	.table-actions {
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+}

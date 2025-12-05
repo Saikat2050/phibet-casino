@@ -1,0 +1,11 @@
+/** Create bonus */
+export const CREATE_BONUS_SUCCESS = 'CREATE_BONUS_SUCCESS';
+export const CREATE_BONUS_FAIL = 'CREATE_BONUS_FAIL';
+export const CREATE_BONUS = 'CREATE_BONUS';
+export const RESET_CREATE_BONUS = 'RESET_CREATE_BONUS';
+
+/** Update bonus */
+export const UPDATE_BONUS_SUCCESS = 'UPDATE_BONUS_SUCCESS';
+export const UPDATE_BONUS_FAIL = 'UPDATE_BONUS_FAIL';
+export const UPDATE_BONUS = 'UPDATE_BONUS';
+export const RESET_UPDATE_BONUS = 'RESET_UPDATE_BONUS';

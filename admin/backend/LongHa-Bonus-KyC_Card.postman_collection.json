@@ -1,0 +1,1993 @@
+{
+	"info": {
+		"_postman_id": "22b4b554-e37f-4f78-8ab5-5521d3885e2b",
+		"name": "Phibet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45190480",
+		"_collection_link": "https://manishyadav-172162.postman.co/workspace/Manish-Yadav's-Workspace~0e4f7d03-b544-4c80-85b4-eb3ce4b497fd/collection/45190480-22b4b554-e37f-4f78-8ab5-5521d3885e2b?action=share&source=collection_link&creator=45190480"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Kyc",
+					"item": [
+						{
+							"name": "getDocs",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJJZCI6IjEiLCJhZG1pblVzZXJOYW1lIjoiYWRtaW5Mb25nSGEiLCJhZG1pbkVtYWlsIjoiYWRtaW4tZGV2QGxvbmdoYS5jb20iLCJ0eXBlIjoibG9naW4iLCJwZXJtaXNzaW9ucyI6eyJreWMiOlsiUiIsIkMiLCJVIiwiRCIsIlZLIl0sInZpcCI6WyJSIiwiVSIsIkMiXSwiYW1vZSI6WyJSIiwiVSJdLCJwYWdlIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJhZG1pbiI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwiYm9udXMiOlsiUiIsIlUiLCJUUyJdLCJzdGF0ZSI6WyJUUyIsIlIiXSwiYmFubmVyIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJwbGF5ZXIiOlsiUiIsIkMiLCJVIiwiRCIsIlZFIiwiVlAiLCJUUyIsIk1NIiwiVksiXSwicmVkZWVtIjpbIlIiLCJVIl0sImNvbW1lbnQiOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sImdhbGxlcnkiOlsiUiIsIkMiLCJVIiwiRCJdLCJwYWNrYWdlIjpbIlIiLCJVIiwiRCIsIkMiXSwic2VvUGFnZSI6WyJSIiwiQyIsIlUiLCJEIl0sInJlZmVycmFsIjpbIlIiLCJVIl0sImdhbWVSZXBvcnQiOlsiUiJdLCJib251c1JlcG9ydCI6WyJSIl0sInRlc3RpbW9uaWFsIjpbIlIiLCJDIiwiVSIsIkQiXSwicmVwb3J0TGVkZ2VyIjpbIlIiXSwic2VnbWVudGF0aW9uIjpbIlIiLCJVIiwiRCIsIkMiLCJJIl0sImVtYWlsVGVtcGxhdGUiOlsiUiIsIkMiLCJVIiwiRCJdLCJjYXNpbm9NYW5hZ2VtZW50IjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJwYXltZW50TWFuYWdlbWVudCI6WyJSIiwiQyIsIlUiXSwicmVwb3J0VHJhbnNhY3Rpb24iOlsiUiJdLCJhcHBsaWNhdGlvblNldHRpbmciOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sInNwaW5XaGVlbENvbmZpZ3VyYXRpb24iOlsiUiIsIkMiLCJVIiwiVFMiXSwicmVwb3J0Q2FzaW5vVHJhbnNhY3Rpb24iOlsiUiJdLCJyZXBvcnRQbGF5ZXJQZXJmb3JtYW5jZSI6WyJSIl19LCJpYXQiOjE3NTQ2Mzg1OTgsImV4cCI6MTc1NDgxMTM5OH0.zeUZIxPexwdQS2uUWCtHptOS78MRBCSPJJNJ_6lGTEQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8002/api/v1/kyc/documents?userId=1000",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8002",
+									"path": [
+										"api",
+										"v1",
+										"kyc",
+										"documents"
+									],
+									"query": [
+										{
+											"key": "userId",
+											"value": "1000"
+										},
+										{
+											"key": "docStatus",
+											"value": "PENDING",
+											"disabled": true
+										},
+										{
+											"key": "documentLabelId",
+											"value": "5",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getDocsLabel",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJJZCI6IjEiLCJhZG1pblVzZXJOYW1lIjoiYWRtaW5Mb25nSGEiLCJhZG1pbkVtYWlsIjoiYWRtaW4tZGV2QGxvbmdoYS5jb20iLCJ0eXBlIjoibG9naW4iLCJwZXJtaXNzaW9ucyI6eyJreWMiOlsiUiIsIkMiLCJVIiwiRCIsIlZLIl0sInZpcCI6WyJSIiwiVSIsIkMiXSwiYW1vZSI6WyJSIiwiVSJdLCJwYWdlIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJhZG1pbiI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwiYm9udXMiOlsiUiIsIlUiLCJUUyJdLCJzdGF0ZSI6WyJUUyIsIlIiXSwiYmFubmVyIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJwbGF5ZXIiOlsiUiIsIkMiLCJVIiwiRCIsIlZFIiwiVlAiLCJUUyIsIk1NIiwiVksiXSwicmVkZWVtIjpbIlIiLCJVIl0sImNvbW1lbnQiOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sImdhbGxlcnkiOlsiUiIsIkMiLCJVIiwiRCJdLCJwYWNrYWdlIjpbIlIiLCJVIiwiRCIsIkMiXSwic2VvUGFnZSI6WyJSIiwiQyIsIlUiLCJEIl0sInJlZmVycmFsIjpbIlIiLCJVIl0sImdhbWVSZXBvcnQiOlsiUiJdLCJib251c1JlcG9ydCI6WyJSIl0sInRlc3RpbW9uaWFsIjpbIlIiLCJDIiwiVSIsIkQiXSwicmVwb3J0TGVkZ2VyIjpbIlIiXSwic2VnbWVudGF0aW9uIjpbIlIiLCJVIiwiRCIsIkMiLCJJIl0sImVtYWlsVGVtcGxhdGUiOlsiUiIsIkMiLCJVIiwiRCJdLCJjYXNpbm9NYW5hZ2VtZW50IjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJwYXltZW50TWFuYWdlbWVudCI6WyJSIiwiQyIsIlUiXSwicmVwb3J0VHJhbnNhY3Rpb24iOlsiUiJdLCJhcHBsaWNhdGlvblNldHRpbmciOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sInNwaW5XaGVlbENvbmZpZ3VyYXRpb24iOlsiUiIsIkMiLCJVIiwiVFMiXSwicmVwb3J0Q2FzaW5vVHJhbnNhY3Rpb24iOlsiUiJdLCJyZXBvcnRQbGF5ZXJQZXJmb3JtYW5jZSI6WyJSIl19LCJpYXQiOjE3NTQ2Mzg1OTgsImV4cCI6MTc1NDgxMTM5OH0.zeUZIxPexwdQS2uUWCtHptOS78MRBCSPJJNJ_6lGTEQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8002/api/v1/kyc/documents_labels?isRequired=true&isActive=false&pageNo=1&limit=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8002",
+									"path": [
+										"api",
+										"v1",
+										"kyc",
+										"documents_labels"
+									],
+									"query": [
+										{
+											"key": "isRequired",
+											"value": "true"
+										},
+										{
+											"key": "isActive",
+											"value": "false"
+										},
+										{
+											"key": "pageNo",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getRequestedKycs",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJJZCI6IjEiLCJhZG1pblVzZXJOYW1lIjoiYWRtaW5Mb25nSGEiLCJhZG1pbkVtYWlsIjoiYWRtaW4tZGV2QGxvbmdoYS5jb20iLCJ0eXBlIjoibG9naW4iLCJwZXJtaXNzaW9ucyI6eyJreWMiOlsiUiIsIkMiLCJVIiwiRCIsIlZLIl0sInZpcCI6WyJSIiwiVSIsIkMiXSwiYW1vZSI6WyJSIiwiVSJdLCJwYWdlIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJhZG1pbiI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwiYm9udXMiOlsiUiIsIlUiLCJUUyJdLCJzdGF0ZSI6WyJUUyIsIlIiXSwiYmFubmVyIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJwbGF5ZXIiOlsiUiIsIkMiLCJVIiwiRCIsIlZFIiwiVlAiLCJUUyIsIk1NIiwiVksiXSwicmVkZWVtIjpbIlIiLCJVIl0sImNvbW1lbnQiOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sImdhbGxlcnkiOlsiUiIsIkMiLCJVIiwiRCJdLCJwYWNrYWdlIjpbIlIiLCJVIiwiRCIsIkMiXSwic2VvUGFnZSI6WyJSIiwiQyIsIlUiLCJEIl0sInJlZmVycmFsIjpbIlIiLCJVIl0sImdhbWVSZXBvcnQiOlsiUiJdLCJib251c1JlcG9ydCI6WyJSIl0sInRlc3RpbW9uaWFsIjpbIlIiLCJDIiwiVSIsIkQiXSwicmVwb3J0TGVkZ2VyIjpbIlIiXSwic2VnbWVudGF0aW9uIjpbIlIiLCJVIiwiRCIsIkMiLCJJIl0sImVtYWlsVGVtcGxhdGUiOlsiUiIsIkMiLCJVIiwiRCJdLCJjYXNpbm9NYW5hZ2VtZW50IjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJwYXltZW50TWFuYWdlbWVudCI6WyJSIiwiQyIsIlUiXSwicmVwb3J0VHJhbnNhY3Rpb24iOlsiUiJdLCJhcHBsaWNhdGlvblNldHRpbmciOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sInNwaW5XaGVlbENvbmZpZ3VyYXRpb24iOlsiUiIsIkMiLCJVIiwiVFMiXSwicmVwb3J0Q2FzaW5vVHJhbnNhY3Rpb24iOlsiUiJdLCJyZXBvcnRQbGF5ZXJQZXJmb3JtYW5jZSI6WyJSIl19LCJpYXQiOjE3NTQ2Mzg1OTgsImV4cCI6MTc1NDgxMTM5OH0.zeUZIxPexwdQS2uUWCtHptOS78MRBCSPJJNJ_6lGTEQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8002/api/v1/kyc/requested-kyc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8002",
+									"path": [
+										"api",
+										"v1",
+										"kyc",
+										"requested-kyc"
+									],
+									"query": [
+										{
+											"key": "documentLabelId",
+											"value": "5",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getLogs",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJJZCI6IjEiLCJhZG1pblVzZXJOYW1lIjoiYWRtaW5Mb25nSGEiLCJhZG1pbkVtYWlsIjoiYWRtaW4tZGV2QGxvbmdoYS5jb20iLCJ0eXBlIjoibG9naW4iLCJwZXJtaXNzaW9ucyI6eyJreWMiOlsiUiIsIkMiLCJVIiwiRCIsIlZLIl0sInZpcCI6WyJSIiwiVSIsIkMiXSwiYW1vZSI6WyJSIiwiVSJdLCJwYWdlIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJhZG1pbiI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwiYm9udXMiOlsiUiIsIlUiLCJUUyJdLCJzdGF0ZSI6WyJUUyIsIlIiXSwiYmFubmVyIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJwbGF5ZXIiOlsiUiIsIkMiLCJVIiwiRCIsIlZFIiwiVlAiLCJUUyIsIk1NIiwiVksiXSwicmVkZWVtIjpbIlIiLCJVIl0sImNvbW1lbnQiOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sImdhbGxlcnkiOlsiUiIsIkMiLCJVIiwiRCJdLCJwYWNrYWdlIjpbIlIiLCJVIiwiRCIsIkMiXSwic2VvUGFnZSI6WyJSIiwiQyIsIlUiLCJEIl0sInJlZmVycmFsIjpbIlIiLCJVIl0sImdhbWVSZXBvcnQiOlsiUiJdLCJib251c1JlcG9ydCI6WyJSIl0sInRlc3RpbW9uaWFsIjpbIlIiLCJDIiwiVSIsIkQiXSwicmVwb3J0TGVkZ2VyIjpbIlIiXSwic2VnbWVudGF0aW9uIjpbIlIiLCJVIiwiRCIsIkMiLCJJIl0sImVtYWlsVGVtcGxhdGUiOlsiUiIsIkMiLCJVIiwiRCJdLCJjYXNpbm9NYW5hZ2VtZW50IjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJwYXltZW50TWFuYWdlbWVudCI6WyJSIiwiQyIsIlUiXSwicmVwb3J0VHJhbnNhY3Rpb24iOlsiUiJdLCJhcHBsaWNhdGlvblNldHRpbmciOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sInNwaW5XaGVlbENvbmZpZ3VyYXRpb24iOlsiUiIsIkMiLCJVIiwiVFMiXSwicmVwb3J0Q2FzaW5vVHJhbnNhY3Rpb24iOlsiUiJdLCJyZXBvcnRQbGF5ZXJQZXJmb3JtYW5jZSI6WyJSIl19LCJpYXQiOjE3NTQ2Mzg1OTgsImV4cCI6MTc1NDgxMTM5OH0.zeUZIxPexwdQS2uUWCtHptOS78MRBCSPJJNJ_6lGTEQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8002/api/v1/kyc/logs",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8002",
+									"path": [
+										"api",
+										"v1",
+										"kyc",
+										"logs"
+									],
+									"query": [
+										{
+											"key": "documentLabelId",
+											"value": "5",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DocApprove",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJJZCI6IjEiLCJhZG1pblVzZXJOYW1lIjoiYWRtaW5Mb25nSGEiLCJhZG1pbkVtYWlsIjoiYWRtaW4tZGV2QGxvbmdoYS5jb20iLCJ0eXBlIjoibG9naW4iLCJwZXJtaXNzaW9ucyI6eyJ2aXAiOlsiUiIsIlUiLCJDIl0sImFtb2UiOlsiUiIsIlUiXSwicGFnZSI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwiYWRtaW4iOlsiUiIsIkMiLCJVIiwiVFMiLCJEIl0sImJvbnVzIjpbIlIiLCJVIiwiVFMiXSwic3RhdGUiOlsiVFMiLCJSIl0sImJhbm5lciI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwicGxheWVyIjpbIlIiLCJDIiwiVSIsIkQiLCJWRSIsIlZQIiwiVFMiLCJNTSIsIlZLIl0sInJlZGVlbSI6WyJSIiwiVSJdLCJjb21tZW50IjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJnYWxsZXJ5IjpbIlIiLCJDIiwiVSIsIkQiXSwicGFja2FnZSI6WyJSIiwiVSIsIkQiLCJDIl0sInNlb1BhZ2UiOlsiUiIsIkMiLCJVIiwiRCJdLCJyZWZlcnJhbCI6WyJSIiwiVSJdLCJnYW1lUmVwb3J0IjpbIlIiXSwiYm9udXNSZXBvcnQiOlsiUiJdLCJ0ZXN0aW1vbmlhbCI6WyJSIiwiQyIsIlUiLCJEIl0sInJlcG9ydExlZGdlciI6WyJSIl0sInNlZ21lbnRhdGlvbiI6WyJSIiwiVSIsIkQiLCJDIiwiSSJdLCJlbWFpbFRlbXBsYXRlIjpbIlIiLCJDIiwiVSIsIkQiXSwiY2FzaW5vTWFuYWdlbWVudCI6WyJSIiwiQyIsIlUiLCJEIiwiVFMiXSwicGF5bWVudE1hbmFnZW1lbnQiOlsiUiIsIkMiLCJVIl0sInJlcG9ydFRyYW5zYWN0aW9uIjpbIlIiXSwiYXBwbGljYXRpb25TZXR0aW5nIjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJzcGluV2hlZWxDb25maWd1cmF0aW9uIjpbIlIiLCJDIiwiVSIsIlRTIl0sInJlcG9ydENhc2lub1RyYW5zYWN0aW9uIjpbIlIiXSwicmVwb3J0UGxheWVyUGVyZm9ybWFuY2UiOlsiUiJdfSwiaWF0IjoxNzU0NDg1MjYxLCJleHAiOjE3NTQ2NTgwNjF9.QzcJJGlyyZxI4dkmm60j7ygMJTYxgJRcKb7bkSO592c",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJJZCI6IjEiLCJhZG1pblVzZXJOYW1lIjoiYWRtaW5Mb25nSGEiLCJhZG1pbkVtYWlsIjoiYWRtaW4tZGV2QGxvbmdoYS5jb20iLCJ0eXBlIjoibG9naW4iLCJwZXJtaXNzaW9ucyI6eyJ2aXAiOlsiUiIsIlUiLCJDIl0sImFtb2UiOlsiUiIsIlUiXSwicGFnZSI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwiYWRtaW4iOlsiUiIsIkMiLCJVIiwiVFMiLCJEIl0sImJvbnVzIjpbIlIiLCJVIiwiVFMiXSwic3RhdGUiOlsiVFMiLCJSIl0sImJhbm5lciI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwicGxheWVyIjpbIlIiLCJDIiwiVSIsIkQiLCJWRSIsIlZQIiwiVFMiLCJNTSIsIlZLIl0sInJlZGVlbSI6WyJSIiwiVSJdLCJjb21tZW50IjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJnYWxsZXJ5IjpbIlIiLCJDIiwiVSIsIkQiXSwicGFja2FnZSI6WyJSIiwiVSIsIkQiLCJDIl0sInNlb1BhZ2UiOlsiUiIsIkMiLCJVIiwiRCJdLCJyZWZlcnJhbCI6WyJSIiwiVSJdLCJnYW1lUmVwb3J0IjpbIlIiXSwiYm9udXNSZXBvcnQiOlsiUiJdLCJ0ZXN0aW1vbmlhbCI6WyJSIiwiQyIsIlUiLCJEIl0sInJlcG9ydExlZGdlciI6WyJSIl0sInNlZ21lbnRhdGlvbiI6WyJSIiwiVSIsIkQiLCJDIiwiSSJdLCJlbWFpbFRlbXBsYXRlIjpbIlIiLCJDIiwiVSIsIkQiXSwiY2FzaW5vTWFuYWdlbWVudCI6WyJSIiwiQyIsIlUiLCJEIiwiVFMiXSwicGF5bWVudE1hbmFnZW1lbnQiOlsiUiIsIkMiLCJVIl0sInJlcG9ydFRyYW5zYWN0aW9uIjpbIlIiXSwiYXBwbGljYXRpb25TZXR0aW5nIjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJzcGluV2hlZWxDb25maWd1cmF0aW9uIjpbIlIiLCJDIiwiVSIsIlRTIl0sInJlcG9ydENhc2lub1RyYW5zYWN0aW9uIjpbIlIiXSwicmVwb3J0UGxheWVyUGVyZm9ybWFuY2UiOlsiUiJdfSwiaWF0IjoxNzU0MjkzNTcyLCJleHAiOjE3NTQ0NjYzNzJ9.gqIPoqRR4lqvp1rfs14v7YxIfKLDuFqu0m8fLOgOKjg"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"documentId\":7\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8002/api/v1/kyc/documents/approve",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8002",
+									"path": [
+										"api",
+										"v1",
+										"kyc",
+										"documents",
+										"approve"
+									],
+									"query": [
+										{
+											"key": "documentId",
+											"value": "5",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DocReject",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJJZCI6IjEiLCJhZG1pblVzZXJOYW1lIjoiYWRtaW5Mb25nSGEiLCJhZG1pbkVtYWlsIjoiYWRtaW4tZGV2QGxvbmdoYS5jb20iLCJ0eXBlIjoibG9naW4iLCJwZXJtaXNzaW9ucyI6eyJreWMiOlsiUiIsIkMiLCJVIiwiRCIsIlZLIl0sInZpcCI6WyJSIiwiVSIsIkMiXSwiYW1vZSI6WyJSIiwiVSJdLCJwYWdlIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJhZG1pbiI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwiYm9udXMiOlsiUiIsIlUiLCJUUyJdLCJzdGF0ZSI6WyJUUyIsIlIiXSwiYmFubmVyIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJwbGF5ZXIiOlsiUiIsIkMiLCJVIiwiRCIsIlZFIiwiVlAiLCJUUyIsIk1NIiwiVksiXSwicmVkZWVtIjpbIlIiLCJVIl0sImNvbW1lbnQiOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sImdhbGxlcnkiOlsiUiIsIkMiLCJVIiwiRCJdLCJwYWNrYWdlIjpbIlIiLCJVIiwiRCIsIkMiXSwic2VvUGFnZSI6WyJSIiwiQyIsIlUiLCJEIl0sInJlZmVycmFsIjpbIlIiLCJVIl0sImdhbWVSZXBvcnQiOlsiUiJdLCJib251c1JlcG9ydCI6WyJSIl0sInRlc3RpbW9uaWFsIjpbIlIiLCJDIiwiVSIsIkQiXSwicmVwb3J0TGVkZ2VyIjpbIlIiXSwic2VnbWVudGF0aW9uIjpbIlIiLCJVIiwiRCIsIkMiLCJJIl0sImVtYWlsVGVtcGxhdGUiOlsiUiIsIkMiLCJVIiwiRCJdLCJjYXNpbm9NYW5hZ2VtZW50IjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJwYXltZW50TWFuYWdlbWVudCI6WyJSIiwiQyIsIlUiXSwicmVwb3J0VHJhbnNhY3Rpb24iOlsiUiJdLCJhcHBsaWNhdGlvblNldHRpbmciOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sInNwaW5XaGVlbENvbmZpZ3VyYXRpb24iOlsiUiIsIkMiLCJVIiwiVFMiXSwicmVwb3J0Q2FzaW5vVHJhbnNhY3Rpb24iOlsiUiJdLCJyZXBvcnRQbGF5ZXJQZXJmb3JtYW5jZSI6WyJSIl19LCJpYXQiOjE3NTQ2Mzg1OTgsImV4cCI6MTc1NDgxMTM5OH0.zeUZIxPexwdQS2uUWCtHptOS78MRBCSPJJNJ_6lGTEQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJJZCI6IjEiLCJhZG1pblVzZXJOYW1lIjoiYWRtaW5Mb25nSGEiLCJhZG1pbkVtYWlsIjoiYWRtaW4tZGV2QGxvbmdoYS5jb20iLCJ0eXBlIjoibG9naW4iLCJwZXJtaXNzaW9ucyI6eyJreWMiOlsiUiIsIkMiLCJVIiwiRCIsIlZLIl0sInZpcCI6WyJSIiwiVSIsIkMiXSwiYW1vZSI6WyJSIiwiVSJdLCJwYWdlIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJhZG1pbiI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwiYm9udXMiOlsiUiIsIlUiLCJUUyJdLCJzdGF0ZSI6WyJUUyIsIlIiXSwiYmFubmVyIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJwbGF5ZXIiOlsiUiIsIkMiLCJVIiwiRCIsIlZFIiwiVlAiLCJUUyIsIk1NIiwiVksiXSwicmVkZWVtIjpbIlIiLCJVIl0sImNvbW1lbnQiOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sImdhbGxlcnkiOlsiUiIsIkMiLCJVIiwiRCJdLCJwYWNrYWdlIjpbIlIiLCJVIiwiRCIsIkMiXSwic2VvUGFnZSI6WyJSIiwiQyIsIlUiLCJEIl0sInJlZmVycmFsIjpbIlIiLCJVIl0sImdhbWVSZXBvcnQiOlsiUiJdLCJib251c1JlcG9ydCI6WyJSIl0sInRlc3RpbW9uaWFsIjpbIlIiLCJDIiwiVSIsIkQiXSwicmVwb3J0TGVkZ2VyIjpbIlIiXSwic2VnbWVudGF0aW9uIjpbIlIiLCJVIiwiRCIsIkMiLCJJIl0sImVtYWlsVGVtcGxhdGUiOlsiUiIsIkMiLCJVIiwiRCJdLCJjYXNpbm9NYW5hZ2VtZW50IjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJwYXltZW50TWFuYWdlbWVudCI6WyJSIiwiQyIsIlUiXSwicmVwb3J0VHJhbnNhY3Rpb24iOlsiUiJdLCJhcHBsaWNhdGlvblNldHRpbmciOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sInNwaW5XaGVlbENvbmZpZ3VyYXRpb24iOlsiUiIsIkMiLCJVIiwiVFMiXSwicmVwb3J0Q2FzaW5vVHJhbnNhY3Rpb24iOlsiUiJdLCJyZXBvcnRQbGF5ZXJQZXJmb3JtYW5jZSI6WyJSIl19LCJpYXQiOjE3NTQ2Mzg1OTgsImV4cCI6MTc1NDgxMTM5OH0.zeUZIxPexwdQS2uUWCtHptOS78MRBCSPJJNJ_6lGTEQ"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"documentId\":7,\n    \"reason\": \"test\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8002/api/v1/kyc/documents/reject",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8002",
+									"path": [
+										"api",
+										"v1",
+										"kyc",
+										"documents",
+										"reject"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "StatusUpdate",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJJZCI6IjEiLCJhZG1pblVzZXJOYW1lIjoiYWRtaW5Mb25nSGEiLCJhZG1pbkVtYWlsIjoiYWRtaW4tZGV2QGxvbmdoYS5jb20iLCJ0eXBlIjoibG9naW4iLCJwZXJtaXNzaW9ucyI6eyJreWMiOlsiUiIsIkMiLCJVIiwiRCIsIlZLIl0sInZpcCI6WyJSIiwiVSIsIkMiXSwiYW1vZSI6WyJSIiwiVSJdLCJwYWdlIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJhZG1pbiI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwiYm9udXMiOlsiUiIsIlUiLCJUUyJdLCJzdGF0ZSI6WyJUUyIsIlIiXSwiYmFubmVyIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJwbGF5ZXIiOlsiUiIsIkMiLCJVIiwiRCIsIlZFIiwiVlAiLCJUUyIsIk1NIiwiVksiXSwicmVkZWVtIjpbIlIiLCJVIl0sImNvbW1lbnQiOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sImdhbGxlcnkiOlsiUiIsIkMiLCJVIiwiRCJdLCJwYWNrYWdlIjpbIlIiLCJVIiwiRCIsIkMiXSwic2VvUGFnZSI6WyJSIiwiQyIsIlUiLCJEIl0sInJlZmVycmFsIjpbIlIiLCJVIl0sImdhbWVSZXBvcnQiOlsiUiJdLCJib251c1JlcG9ydCI6WyJSIl0sInRlc3RpbW9uaWFsIjpbIlIiLCJDIiwiVSIsIkQiXSwicmVwb3J0TGVkZ2VyIjpbIlIiXSwic2VnbWVudGF0aW9uIjpbIlIiLCJVIiwiRCIsIkMiLCJJIl0sImVtYWlsVGVtcGxhdGUiOlsiUiIsIkMiLCJVIiwiRCJdLCJjYXNpbm9NYW5hZ2VtZW50IjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJwYXltZW50TWFuYWdlbWVudCI6WyJSIiwiQyIsIlUiXSwicmVwb3J0VHJhbnNhY3Rpb24iOlsiUiJdLCJhcHBsaWNhdGlvblNldHRpbmciOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sInNwaW5XaGVlbENvbmZpZ3VyYXRpb24iOlsiUiIsIkMiLCJVIiwiVFMiXSwicmVwb3J0Q2FzaW5vVHJhbnNhY3Rpb24iOlsiUiJdLCJyZXBvcnRQbGF5ZXJQZXJmb3JtYW5jZSI6WyJSIl19LCJpYXQiOjE3NTQ2Mzg1OTgsImV4cCI6MTc1NDgxMTM5OH0.zeUZIxPexwdQS2uUWCtHptOS78MRBCSPJJNJ_6lGTEQ"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userId\":1000,\n    \"kycStatus\": \"FAILED\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8002/api/v1/kyc/status/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8002",
+									"path": [
+										"api",
+										"v1",
+										"kyc",
+										"status",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AddDocLabels",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJJZCI6IjEiLCJhZG1pblVzZXJOYW1lIjoiYWRtaW5Mb25nSGEiLCJhZG1pbkVtYWlsIjoiYWRtaW4tZGV2QGxvbmdoYS5jb20iLCJ0eXBlIjoibG9naW4iLCJwZXJtaXNzaW9ucyI6eyJreWMiOlsiUiIsIkMiLCJVIiwiRCIsIlZLIl0sInZpcCI6WyJSIiwiVSIsIkMiXSwiYW1vZSI6WyJSIiwiVSJdLCJwYWdlIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJhZG1pbiI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwiYm9udXMiOlsiUiIsIlUiLCJUUyJdLCJzdGF0ZSI6WyJUUyIsIlIiXSwiYmFubmVyIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJwbGF5ZXIiOlsiUiIsIkMiLCJVIiwiRCIsIlZFIiwiVlAiLCJUUyIsIk1NIiwiVksiXSwicmVkZWVtIjpbIlIiLCJVIl0sImNvbW1lbnQiOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sImdhbGxlcnkiOlsiUiIsIkMiLCJVIiwiRCJdLCJwYWNrYWdlIjpbIlIiLCJVIiwiRCIsIkMiXSwic2VvUGFnZSI6WyJSIiwiQyIsIlUiLCJEIl0sInJlZmVycmFsIjpbIlIiLCJVIl0sImdhbWVSZXBvcnQiOlsiUiJdLCJib251c1JlcG9ydCI6WyJSIl0sInRlc3RpbW9uaWFsIjpbIlIiLCJDIiwiVSIsIkQiXSwicmVwb3J0TGVkZ2VyIjpbIlIiXSwic2VnbWVudGF0aW9uIjpbIlIiLCJVIiwiRCIsIkMiLCJJIl0sImVtYWlsVGVtcGxhdGUiOlsiUiIsIkMiLCJVIiwiRCJdLCJjYXNpbm9NYW5hZ2VtZW50IjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJwYXltZW50TWFuYWdlbWVudCI6WyJSIiwiQyIsIlUiXSwicmVwb3J0VHJhbnNhY3Rpb24iOlsiUiJdLCJhcHBsaWNhdGlvblNldHRpbmciOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sInNwaW5XaGVlbENvbmZpZ3VyYXRpb24iOlsiUiIsIkMiLCJVIiwiVFMiXSwicmVwb3J0Q2FzaW5vVHJhbnNhY3Rpb24iOlsiUiJdLCJyZXBvcnRQbGF5ZXJQZXJmb3JtYW5jZSI6WyJSIl19LCJpYXQiOjE3NTQ2Mzg1OTgsImV4cCI6MTc1NDgxMTM5OH0.zeUZIxPexwdQS2uUWCtHptOS78MRBCSPJJNJ_6lGTEQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    // \"name\":\"TestLabel111\",\n    //     \"description\":\"description\",\n    // \"isRequired\":true,\n    \"isActive\":false,\n    \"labelId\":2\n\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8002/api/v1/kyc/document_labels",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8002",
+									"path": [
+										"api",
+										"v1",
+										"kyc",
+										"document_labels"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Banner",
+					"item": [
+						{
+							"name": "Upload",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJJZCI6IjEiLCJhZG1pblVzZXJOYW1lIjoiYWRtaW5Mb25nSGEiLCJhZG1pbkVtYWlsIjoiYWRtaW4tZGV2QGxvbmdoYS5jb20iLCJ0eXBlIjoibG9naW4iLCJwZXJtaXNzaW9ucyI6eyJ2aXAiOlsiUiIsIlUiLCJDIl0sImFtb2UiOlsiUiIsIlUiXSwicGFnZSI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwiYWRtaW4iOlsiUiIsIkMiLCJVIiwiVFMiLCJEIl0sImJvbnVzIjpbIlIiLCJVIiwiVFMiXSwic3RhdGUiOlsiVFMiLCJSIl0sImJhbm5lciI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwicGxheWVyIjpbIlIiLCJDIiwiVSIsIkQiLCJWRSIsIlZQIiwiVFMiLCJNTSIsIlZLIl0sInJlZGVlbSI6WyJSIiwiVSJdLCJjb21tZW50IjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJnYWxsZXJ5IjpbIlIiLCJDIiwiVSIsIkQiXSwicGFja2FnZSI6WyJSIiwiVSIsIkQiLCJDIl0sInNlb1BhZ2UiOlsiUiIsIkMiLCJVIiwiRCJdLCJyZWZlcnJhbCI6WyJSIiwiVSJdLCJnYW1lUmVwb3J0IjpbIlIiXSwiYm9udXNSZXBvcnQiOlsiUiJdLCJ0ZXN0aW1vbmlhbCI6WyJSIiwiQyIsIlUiLCJEIl0sInJlcG9ydExlZGdlciI6WyJSIl0sInNlZ21lbnRhdGlvbiI6WyJSIiwiVSIsIkQiLCJDIiwiSSJdLCJlbWFpbFRlbXBsYXRlIjpbIlIiLCJDIiwiVSIsIkQiXSwiY2FzaW5vTWFuYWdlbWVudCI6WyJSIiwiQyIsIlUiLCJEIiwiVFMiXSwicGF5bWVudE1hbmFnZW1lbnQiOlsiUiIsIkMiLCJVIl0sInJlcG9ydFRyYW5zYWN0aW9uIjpbIlIiXSwiYXBwbGljYXRpb25TZXR0aW5nIjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJzcGluV2hlZWxDb25maWd1cmF0aW9uIjpbIlIiLCJDIiwiVSIsIlRTIl0sInJlcG9ydENhc2lub1RyYW5zYWN0aW9uIjpbIlIiXSwicmVwb3J0UGxheWVyUGVyZm9ybWFuY2UiOlsiUiJdfSwiaWF0IjoxNzU0MjkzNTcyLCJleHAiOjE3NTQ0NjYzNzJ9.gqIPoqRR4lqvp1rfs14v7YxIfKLDuFqu0m8fLOgOKjg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJJZCI6IjEiLCJhZG1pblVzZXJOYW1lIjoiYWRtaW5Mb25nSGEiLCJhZG1pbkVtYWlsIjoiYWRtaW4tZGV2QGxvbmdoYS5jb20iLCJ0eXBlIjoibG9naW4iLCJwZXJtaXNzaW9ucyI6eyJ2aXAiOlsiUiIsIlUiLCJDIl0sImFtb2UiOlsiUiIsIlUiXSwicGFnZSI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwiYWRtaW4iOlsiUiIsIkMiLCJVIiwiVFMiLCJEIl0sImJvbnVzIjpbIlIiLCJVIiwiVFMiXSwic3RhdGUiOlsiVFMiLCJSIl0sImJhbm5lciI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwicGxheWVyIjpbIlIiLCJDIiwiVSIsIkQiLCJWRSIsIlZQIiwiVFMiLCJNTSIsIlZLIl0sInJlZGVlbSI6WyJSIiwiVSJdLCJjb21tZW50IjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJnYWxsZXJ5IjpbIlIiLCJDIiwiVSIsIkQiXSwicGFja2FnZSI6WyJSIiwiVSIsIkQiLCJDIl0sInNlb1BhZ2UiOlsiUiIsIkMiLCJVIiwiRCJdLCJyZWZlcnJhbCI6WyJSIiwiVSJdLCJnYW1lUmVwb3J0IjpbIlIiXSwiYm9udXNSZXBvcnQiOlsiUiJdLCJ0ZXN0aW1vbmlhbCI6WyJSIiwiQyIsIlUiLCJEIl0sInJlcG9ydExlZGdlciI6WyJSIl0sInNlZ21lbnRhdGlvbiI6WyJSIiwiVSIsIkQiLCJDIiwiSSJdLCJlbWFpbFRlbXBsYXRlIjpbIlIiLCJDIiwiVSIsIkQiXSwiY2FzaW5vTWFuYWdlbWVudCI6WyJSIiwiQyIsIlUiLCJEIiwiVFMiXSwicGF5bWVudE1hbmFnZW1lbnQiOlsiUiIsIkMiLCJVIl0sInJlcG9ydFRyYW5zYWN0aW9uIjpbIlIiXSwiYXBwbGljYXRpb25TZXR0aW5nIjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJzcGluV2hlZWxDb25maWd1cmF0aW9uIjpbIlIiLCJDIiwiVSIsIlRTIl0sInJlcG9ydENhc2lub1RyYW5zYWN0aW9uIjpbIlIiXSwicmVwb3J0UGxheWVyUGVyZm9ybWFuY2UiOlsiUiJdfSwiaWF0IjoxNzU0MjkzNTcyLCJleHAiOjE3NTQ0NjYzNzJ9.gqIPoqRR4lqvp1rfs14v7YxIfKLDuFqu0m8fLOgOKjg"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "bannerId",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "items[0][imageUrl]",
+											"type": "file",
+											"src": []
+										},
+										{
+											"key": "items[0][mobileImageUrl]",
+											"type": "file",
+											"src": []
+										},
+										{
+											"key": "items[0][title]",
+											"value": "title1",
+											"type": "text"
+										},
+										{
+											"key": "items[0][description]",
+											"value": "description4",
+											"type": "text"
+										},
+										{
+											"key": "items[0][buttonText]",
+											"value": "buttontext4",
+											"type": "text"
+										},
+										{
+											"key": "items[0][buttonLink]",
+											"value": "buttonlink4",
+											"type": "text"
+										},
+										{
+											"key": "items[1][imageUrl]",
+											"type": "file",
+											"src": []
+										},
+										{
+											"key": "items[1][mobileImageUrl]",
+											"type": "file",
+											"src": []
+										},
+										{
+											"key": "items[1][title]",
+											"value": "title3",
+											"type": "text"
+										},
+										{
+											"key": "items[1][description]",
+											"value": "description3",
+											"type": "text"
+										},
+										{
+											"key": "items[1][buttonText]",
+											"value": "butttontext3",
+											"type": "text"
+										},
+										{
+											"key": "items[1][buttonLink]",
+											"value": "buttonlink3",
+											"type": "text"
+										},
+										{
+											"key": "items[0][id]",
+											"value": "5",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "items[1][isActive]",
+											"value": "true",
+											"type": "text"
+										},
+										{
+											"key": "items[1][id]",
+											"value": "6",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "items[0][isActive]",
+											"value": "false",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8002/api/v1/content-management/banner/upload",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8002",
+									"path": [
+										"api",
+										"v1",
+										"content-management",
+										"banner",
+										"upload"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Bonus",
+					"item": [
+						{
+							"name": "AllBonuses",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJJZCI6IjEiLCJhZG1pblVzZXJOYW1lIjoiYWRtaW5Mb25nSGEiLCJhZG1pbkVtYWlsIjoiYWRtaW4tZGV2QGxvbmdoYS5jb20iLCJ0eXBlIjoibG9naW4iLCJwZXJtaXNzaW9ucyI6eyJreWMiOlsiUiIsIkMiLCJVIiwiRCIsIlZLIl0sInZpcCI6WyJSIiwiVSIsIkMiXSwiYW1vZSI6WyJSIiwiVSJdLCJwYWdlIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJhZG1pbiI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwiYm9udXMiOlsiUiIsIlUiLCJUUyJdLCJzdGF0ZSI6WyJUUyIsIlIiXSwiYmFubmVyIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJwbGF5ZXIiOlsiUiIsIkMiLCJVIiwiRCIsIlZFIiwiVlAiLCJUUyIsIk1NIiwiVksiXSwicmVkZWVtIjpbIlIiLCJVIl0sImNvbW1lbnQiOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sImdhbGxlcnkiOlsiUiIsIkMiLCJVIiwiRCJdLCJwYWNrYWdlIjpbIlIiLCJVIiwiRCIsIkMiXSwic2VvUGFnZSI6WyJSIiwiQyIsIlUiLCJEIl0sInJlZmVycmFsIjpbIlIiLCJVIl0sImdhbWVSZXBvcnQiOlsiUiJdLCJib251c1JlcG9ydCI6WyJSIl0sInRlc3RpbW9uaWFsIjpbIlIiLCJDIiwiVSIsIkQiXSwicmVwb3J0TGVkZ2VyIjpbIlIiXSwic2VnbWVudGF0aW9uIjpbIlIiLCJVIiwiRCIsIkMiLCJJIl0sImVtYWlsVGVtcGxhdGUiOlsiUiIsIkMiLCJVIiwiRCJdLCJjYXNpbm9NYW5hZ2VtZW50IjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJwYXltZW50TWFuYWdlbWVudCI6WyJSIiwiQyIsIlUiXSwicmVwb3J0VHJhbnNhY3Rpb24iOlsiUiJdLCJhcHBsaWNhdGlvblNldHRpbmciOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sInNwaW5XaGVlbENvbmZpZ3VyYXRpb24iOlsiUiIsIkMiLCJVIiwiVFMiXSwicmVwb3J0Q2FzaW5vVHJhbnNhY3Rpb24iOlsiUiJdLCJyZXBvcnRQbGF5ZXJQZXJmb3JtYW5jZSI6WyJSIl19LCJpYXQiOjE3NTU1MTA2ODgsImV4cCI6MTc1NTY4MzQ4OH0.raKbniN2Ate5LLTsB_nW0h4_iw7E99Ezp3PsB0UHcDA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8002/api/v1/bonus-management/bonuses",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8002",
+									"path": [
+										"api",
+										"v1",
+										"bonus-management",
+										"bonuses"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetBonus",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJJZCI6IjEiLCJhZG1pblVzZXJOYW1lIjoiYWRtaW5Mb25nSGEiLCJhZG1pbkVtYWlsIjoiYWRtaW4tZGV2QGxvbmdoYS5jb20iLCJ0eXBlIjoibG9naW4iLCJwZXJtaXNzaW9ucyI6eyJreWMiOlsiUiIsIkMiLCJVIiwiRCIsIlZLIl0sInZpcCI6WyJSIiwiVSIsIkMiXSwiYW1vZSI6WyJSIiwiVSJdLCJwYWdlIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJhZG1pbiI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwiYm9udXMiOlsiUiIsIlUiLCJUUyJdLCJzdGF0ZSI6WyJUUyIsIlIiXSwiYmFubmVyIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJwbGF5ZXIiOlsiUiIsIkMiLCJVIiwiRCIsIlZFIiwiVlAiLCJUUyIsIk1NIiwiVksiXSwicmVkZWVtIjpbIlIiLCJVIl0sImNvbW1lbnQiOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sImdhbGxlcnkiOlsiUiIsIkMiLCJVIiwiRCJdLCJwYWNrYWdlIjpbIlIiLCJVIiwiRCIsIkMiXSwic2VvUGFnZSI6WyJSIiwiQyIsIlUiLCJEIl0sInJlZmVycmFsIjpbIlIiLCJVIl0sImdhbWVSZXBvcnQiOlsiUiJdLCJib251c1JlcG9ydCI6WyJSIl0sInRlc3RpbW9uaWFsIjpbIlIiLCJDIiwiVSIsIkQiXSwicmVwb3J0TGVkZ2VyIjpbIlIiXSwic2VnbWVudGF0aW9uIjpbIlIiLCJVIiwiRCIsIkMiLCJJIl0sImVtYWlsVGVtcGxhdGUiOlsiUiIsIkMiLCJVIiwiRCJdLCJjYXNpbm9NYW5hZ2VtZW50IjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJwYXltZW50TWFuYWdlbWVudCI6WyJSIiwiQyIsIlUiXSwicmVwb3J0VHJhbnNhY3Rpb24iOlsiUiJdLCJhcHBsaWNhdGlvblNldHRpbmciOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sInNwaW5XaGVlbENvbmZpZ3VyYXRpb24iOlsiUiIsIkMiLCJVIiwiVFMiXSwicmVwb3J0Q2FzaW5vVHJhbnNhY3Rpb24iOlsiUiJdLCJyZXBvcnRQbGF5ZXJQZXJmb3JtYW5jZSI6WyJSIl19LCJpYXQiOjE3NTQ5NzYzMDMsImV4cCI6MTc1NTE0OTEwM30.4JmB2txAyn5YZTERP73Lxqcy-fUG3NJETxq3Em2k0M4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8002/api/v1/bonus-management/bonus?bonusId=5&bonusType=deposit_bonus",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8002",
+									"path": [
+										"api",
+										"v1",
+										"bonus-management",
+										"bonus"
+									],
+									"query": [
+										{
+											"key": "bonusId",
+											"value": "5"
+										},
+										{
+											"key": "bonusType",
+											"value": "deposit_bonus"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJJZCI6IjEiLCJhZG1pblVzZXJOYW1lIjoiYWRtaW5Mb25nSGEiLCJhZG1pbkVtYWlsIjoiYWRtaW4tZGV2QGxvbmdoYS5jb20iLCJ0eXBlIjoibG9naW4iLCJwZXJtaXNzaW9ucyI6eyJreWMiOlsiUiIsIkMiLCJVIiwiRCIsIlZLIl0sInZpcCI6WyJSIiwiVSIsIkMiXSwiYW1vZSI6WyJSIiwiVSJdLCJwYWdlIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJhZG1pbiI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwiYm9udXMiOlsiUiIsIlUiLCJUUyJdLCJzdGF0ZSI6WyJUUyIsIlIiXSwiYmFubmVyIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJwbGF5ZXIiOlsiUiIsIkMiLCJVIiwiRCIsIlZFIiwiVlAiLCJUUyIsIk1NIiwiVksiXSwicmVkZWVtIjpbIlIiLCJVIl0sImNvbW1lbnQiOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sImdhbGxlcnkiOlsiUiIsIkMiLCJVIiwiRCJdLCJwYWNrYWdlIjpbIlIiLCJVIiwiRCIsIkMiXSwic2VvUGFnZSI6WyJSIiwiQyIsIlUiLCJEIl0sInJlZmVycmFsIjpbIlIiLCJVIl0sImdhbWVSZXBvcnQiOlsiUiJdLCJib251c1JlcG9ydCI6WyJSIl0sInRlc3RpbW9uaWFsIjpbIlIiLCJDIiwiVSIsIkQiXSwicmVwb3J0TGVkZ2VyIjpbIlIiXSwic2VnbWVudGF0aW9uIjpbIlIiLCJVIiwiRCIsIkMiLCJJIl0sImVtYWlsVGVtcGxhdGUiOlsiUiIsIkMiLCJVIiwiRCJdLCJjYXNpbm9NYW5hZ2VtZW50IjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJwYXltZW50TWFuYWdlbWVudCI6WyJSIiwiQyIsIlUiXSwicmVwb3J0VHJhbnNhY3Rpb24iOlsiUiJdLCJhcHBsaWNhdGlvblNldHRpbmciOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sInNwaW5XaGVlbENvbmZpZ3VyYXRpb24iOlsiUiIsIkMiLCJVIiwiVFMiXSwicmVwb3J0Q2FzaW5vVHJhbnNhY3Rpb24iOlsiUiJdLCJyZXBvcnRQbGF5ZXJQZXJmb3JtYW5jZSI6WyJSIl19LCJpYXQiOjE3NTQ2Mzg1OTgsImV4cCI6MTc1NDgxMTM5OH0.zeUZIxPexwdQS2uUWCtHptOS78MRBCSPJJNJ_6lGTEQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{  \"isActive\": true,\n  \"validFrom\": \"2025-08-09T00:00:00Z\",\n  \"validTo\": \"2025-09-09T23:59:59Z\",\n  \"quantity\": 100,\n  \"currencyDetails\": [\n    {\n      \"currencyId\": 1,\n      \"zeroOutThreshold\": 1,\n      \"amount\": 100,\n      \"maxBonusClaimed\": 500,\n      \"minBetAmount\": 1,\n      \"minDepositAmount\": 10\n    },\n    {\n      \"currencyId\": 2,\n      \"zeroOutThreshold\": 1,\n      \"amount\": 100,\n      \"maxBonusClaimed\": 450,\n      \"minBetAmount\": 1,\n      \"minDepositAmount\": 10\n    }\n  ],\n  \"validOnDays\": 127,\n  \"description\": {\n    \"EN\": \"Get 100% match on your first deposit up to $500!\",\n    \"ES\": \"¡Obtén un 100% de bonificación en tu primer depósito hasta 500$!\"\n  },\n  \"daysToClear\": \"7\",\n  \"termAndCondition\": {\n    \"EN\": \"Bonus must be wagered 35x before withdrawal.\"\n  },\n  \"promotionTitle\": {\n    \"EN\": \"bet Bonus\",\n    \"ES\": \"Bono de Bienvenida\"\n  },\n  \"bonusType\": \"bet\",\n  \"visibleInPromotions\": true,\n  \"purchaseRequired\": false\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8002/api/v1/bonus-management/bonus/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8002",
+									"path": [
+										"api",
+										"v1",
+										"bonus-management",
+										"bonus",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update-Welcome_Birthday",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJJZCI6IjEiLCJhZG1pblVzZXJOYW1lIjoiYWRtaW5Mb25nSGEiLCJhZG1pbkVtYWlsIjoiYWRtaW4tZGV2QGxvbmdoYS5jb20iLCJ0eXBlIjoibG9naW4iLCJwZXJtaXNzaW9ucyI6eyJreWMiOlsiUiIsIkMiLCJVIiwiRCIsIlZLIl0sInZpcCI6WyJSIiwiVSIsIkMiXSwiYW1vZSI6WyJSIiwiVSJdLCJwYWdlIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJhZG1pbiI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwiYm9udXMiOlsiUiIsIlUiLCJUUyJdLCJzdGF0ZSI6WyJUUyIsIlIiXSwiYmFubmVyIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJwbGF5ZXIiOlsiUiIsIkMiLCJVIiwiRCIsIlZFIiwiVlAiLCJUUyIsIk1NIiwiVksiXSwicmVkZWVtIjpbIlIiLCJVIl0sImNvbW1lbnQiOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sImdhbGxlcnkiOlsiUiIsIkMiLCJVIiwiRCJdLCJwYWNrYWdlIjpbIlIiLCJVIiwiRCIsIkMiXSwic2VvUGFnZSI6WyJSIiwiQyIsIlUiLCJEIl0sInJlZmVycmFsIjpbIlIiLCJVIl0sImdhbWVSZXBvcnQiOlsiUiJdLCJib251c1JlcG9ydCI6WyJSIl0sInRlc3RpbW9uaWFsIjpbIlIiLCJDIiwiVSIsIkQiXSwicmVwb3J0TGVkZ2VyIjpbIlIiXSwic2VnbWVudGF0aW9uIjpbIlIiLCJVIiwiRCIsIkMiLCJJIl0sImVtYWlsVGVtcGxhdGUiOlsiUiIsIkMiLCJVIiwiRCJdLCJjYXNpbm9NYW5hZ2VtZW50IjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJwYXltZW50TWFuYWdlbWVudCI6WyJSIiwiQyIsIlUiXSwicmVwb3J0VHJhbnNhY3Rpb24iOlsiUiJdLCJhcHBsaWNhdGlvblNldHRpbmciOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sInNwaW5XaGVlbENvbmZpZ3VyYXRpb24iOlsiUiIsIkMiLCJVIiwiVFMiXSwicmVwb3J0Q2FzaW5vVHJhbnNhY3Rpb24iOlsiUiJdLCJyZXBvcnRQbGF5ZXJQZXJmb3JtYW5jZSI6WyJSIl19LCJpYXQiOjE3NTQ5NzYzMDMsImV4cCI6MTc1NTE0OTEwM30.4JmB2txAyn5YZTERP73Lxqcy-fUG3NJETxq3Em2k0M4"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "// {\n//     \"bonusId\": 12,\n//     \"isActive\": true,\n//     \"validFrom\": \"2025-08-09T00:00:00Z\",\n//     \"validTo\": \"2025-10-09T23:59:59Z\",\n//     \"daysToClear\": 123,\n//     \"validOnDays\": 234,\n//     \"description\": {\n//         \"EN\": \"Birthday Bonus\"\n//     },\n//     \"termAndCondition\": {\n//         \"EN\": \"Birthday Bonus T&C\"\n//     },\n//     \"promotionTitle\": {\n//         \"EN\": \"Birthday promotionTitle\"\n//     },\n//     \"visibleInPromotions\": true,\n//     \"purchaseRequired\": false,\n//     \"moreDetails\": {\n//         \"EN\": \"Birthday Moredetails\"\n//     }\n// }\n\n\n\n{\n    \"bonusId\": 6,\n    \"isActive\": true,\n    \"validFrom\": \"2025-08-09T00:00:00Z\",\n    \"validTo\": \"2025-10-09T23:59:59Z\",\n    \"daysToClear\": 123,\n    \"validOnDays\": 234,\n    \"description\": {\n        \"EN\": \"Welcomne Bonus\"\n    },\n    \"termAndCondition\": {\n        \"EN\": \"Welcomne Bonus T&C\"\n    },\n    \"promotionTitle\": {\n        \"EN\": \"Welcomne promotionTitle\"\n    },\n    \"visibleInPromotions\": true,\n    \"purchaseRequired\": false,\n    \"moreDetails\": {\n        \"EN\": \"Welcomne Moredetails\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8002/api/v1/bonus-management/bonus/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8002",
+									"path": [
+										"api",
+										"v1",
+										"bonus-management",
+										"bonus",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UpdateDepositBonus",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJJZCI6IjEiLCJhZG1pblVzZXJOYW1lIjoiYWRtaW5Mb25nSGEiLCJhZG1pbkVtYWlsIjoiYWRtaW4tZGV2QGxvbmdoYS5jb20iLCJ0eXBlIjoibG9naW4iLCJwZXJtaXNzaW9ucyI6eyJreWMiOlsiUiIsIkMiLCJVIiwiRCIsIlZLIl0sInZpcCI6WyJSIiwiVSIsIkMiXSwiYW1vZSI6WyJSIiwiVSJdLCJwYWdlIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJhZG1pbiI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwiYm9udXMiOlsiUiIsIlUiLCJUUyJdLCJzdGF0ZSI6WyJUUyIsIlIiXSwiYmFubmVyIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJwbGF5ZXIiOlsiUiIsIkMiLCJVIiwiRCIsIlZFIiwiVlAiLCJUUyIsIk1NIiwiVksiXSwicmVkZWVtIjpbIlIiLCJVIl0sImNvbW1lbnQiOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sImdhbGxlcnkiOlsiUiIsIkMiLCJVIiwiRCJdLCJwYWNrYWdlIjpbIlIiLCJVIiwiRCIsIkMiXSwic2VvUGFnZSI6WyJSIiwiQyIsIlUiLCJEIl0sInJlZmVycmFsIjpbIlIiLCJVIl0sImdhbWVSZXBvcnQiOlsiUiJdLCJib251c1JlcG9ydCI6WyJSIl0sInRlc3RpbW9uaWFsIjpbIlIiLCJDIiwiVSIsIkQiXSwicmVwb3J0TGVkZ2VyIjpbIlIiXSwic2VnbWVudGF0aW9uIjpbIlIiLCJVIiwiRCIsIkMiLCJJIl0sImVtYWlsVGVtcGxhdGUiOlsiUiIsIkMiLCJVIiwiRCJdLCJjYXNpbm9NYW5hZ2VtZW50IjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJwYXltZW50TWFuYWdlbWVudCI6WyJSIiwiQyIsIlUiXSwicmVwb3J0VHJhbnNhY3Rpb24iOlsiUiJdLCJhcHBsaWNhdGlvblNldHRpbmciOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sInNwaW5XaGVlbENvbmZpZ3VyYXRpb24iOlsiUiIsIkMiLCJVIiwiVFMiXSwicmVwb3J0Q2FzaW5vVHJhbnNhY3Rpb24iOlsiUiJdLCJyZXBvcnRQbGF5ZXJQZXJmb3JtYW5jZSI6WyJSIl19LCJpYXQiOjE3NTQ5NzYzMDMsImV4cCI6MTc1NTE0OTEwM30.4JmB2txAyn5YZTERP73Lxqcy-fUG3NJETxq3Em2k0M4"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"bonusId\": \"5\",\n  \"isActive\": false,\n  \"validFrom\": \"2025-08-09T00:00:00Z\",\n  \"validTo\": \"2025-09-09T23:59:59Z\",\n  \"moreDetails\": {\n    \"maxDeposits\": 4,\n    \"deposits\": [\n      {\n        \"name\": \"First Deposit\",\n        \"isPercentage\": true,\n        \"amount\": 100,\n        \"minimumDeposit\": null\n      },\n      {\n        \"name\": \"Second Deposit\",\n        \"isPercentage\": false,\n        \"amount\": 100,\n        \"minimumDeposit\": 20\n      },\n      {\n        \"name\": \"Third Deposit\",\n        \"isPercentage\": false,\n        \"amount\": 100,\n        \"minimumDeposit\": 10\n      },\n      {\n        \"name\": \"Fourth Deposit\",\n        \"isPercentage\": false,\n        \"amount\": 100,\n        \"minimumDeposit\": 50\n      }\n    ]\n  },\n\"currencyDetails\": [\n    {\n      \"currencyId\": 1,\n      \"zeroOutThreshold\": 1,\n      \"amount\": 100,\n      \"maxBonusClaimed\": 50000,\n      \"minBetAmount\": 1,\n      \"minDepositAmount\": 10\n    },\n    {\n      \"currencyId\": 2,\n      \"zeroOutThreshold\": 1,\n      \"amount\": 100,\n      \"maxBonusClaimed\": 4500,\n      \"minBetAmount\": 1,\n      \"minDepositAmount\": 10\n    }\n  ]\n}\n\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8002/api/v1/bonus-management/bonus/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8002",
+									"path": [
+										"api",
+										"v1",
+										"bonus-management",
+										"bonus",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ToggleBonus",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJJZCI6IjEiLCJhZG1pblVzZXJOYW1lIjoiYWRtaW5Mb25nSGEiLCJhZG1pbkVtYWlsIjoiYWRtaW4tZGV2QGxvbmdoYS5jb20iLCJ0eXBlIjoibG9naW4iLCJwZXJtaXNzaW9ucyI6eyJreWMiOlsiUiIsIkMiLCJVIiwiRCIsIlZLIl0sInZpcCI6WyJSIiwiVSIsIkMiXSwiYW1vZSI6WyJSIiwiVSJdLCJwYWdlIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJhZG1pbiI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwiYm9udXMiOlsiUiIsIlUiLCJUUyJdLCJzdGF0ZSI6WyJUUyIsIlIiXSwiYmFubmVyIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJwbGF5ZXIiOlsiUiIsIkMiLCJVIiwiRCIsIlZFIiwiVlAiLCJUUyIsIk1NIiwiVksiXSwicmVkZWVtIjpbIlIiLCJVIl0sImNvbW1lbnQiOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sImdhbGxlcnkiOlsiUiIsIkMiLCJVIiwiRCJdLCJwYWNrYWdlIjpbIlIiLCJVIiwiRCIsIkMiXSwic2VvUGFnZSI6WyJSIiwiQyIsIlUiLCJEIl0sInJlZmVycmFsIjpbIlIiLCJVIl0sImdhbWVSZXBvcnQiOlsiUiJdLCJib251c1JlcG9ydCI6WyJSIl0sInRlc3RpbW9uaWFsIjpbIlIiLCJDIiwiVSIsIkQiXSwicmVwb3J0TGVkZ2VyIjpbIlIiXSwic2VnbWVudGF0aW9uIjpbIlIiLCJVIiwiRCIsIkMiLCJJIl0sImVtYWlsVGVtcGxhdGUiOlsiUiIsIkMiLCJVIiwiRCJdLCJjYXNpbm9NYW5hZ2VtZW50IjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJwYXltZW50TWFuYWdlbWVudCI6WyJSIiwiQyIsIlUiXSwicmVwb3J0VHJhbnNhY3Rpb24iOlsiUiJdLCJhcHBsaWNhdGlvblNldHRpbmciOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sInNwaW5XaGVlbENvbmZpZ3VyYXRpb24iOlsiUiIsIkMiLCJVIiwiVFMiXSwicmVwb3J0Q2FzaW5vVHJhbnNhY3Rpb24iOlsiUiJdLCJyZXBvcnRQbGF5ZXJQZXJmb3JtYW5jZSI6WyJSIl19LCJpYXQiOjE3NTQ2Mzg1OTgsImV4cCI6MTc1NDgxMTM5OH0.zeUZIxPexwdQS2uUWCtHptOS78MRBCSPJJNJ_6lGTEQ"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{  \n    \"bonusId\":12\n    \n  \n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8002/api/v1/bonus-management/bonus/toggle",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8002",
+									"path": [
+										"api",
+										"v1",
+										"bonus-management",
+										"bonus",
+										"toggle"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "IssueBonus",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJJZCI6IjEiLCJhZG1pblVzZXJOYW1lIjoiYWRtaW5Mb25nSGEiLCJhZG1pbkVtYWlsIjoiYWRtaW4tZGV2QGxvbmdoYS5jb20iLCJ0eXBlIjoibG9naW4iLCJwZXJtaXNzaW9ucyI6eyJreWMiOlsiUiIsIkMiLCJVIiwiRCIsIlZLIl0sInZpcCI6WyJSIiwiVSIsIkMiXSwiYW1vZSI6WyJSIiwiVSJdLCJwYWdlIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJhZG1pbiI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwiYm9udXMiOlsiUiIsIlUiLCJUUyJdLCJzdGF0ZSI6WyJUUyIsIlIiXSwiYmFubmVyIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJwbGF5ZXIiOlsiUiIsIkMiLCJVIiwiRCIsIlZFIiwiVlAiLCJUUyIsIk1NIiwiVksiXSwicmVkZWVtIjpbIlIiLCJVIl0sImNvbW1lbnQiOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sImdhbGxlcnkiOlsiUiIsIkMiLCJVIiwiRCJdLCJwYWNrYWdlIjpbIlIiLCJVIiwiRCIsIkMiXSwic2VvUGFnZSI6WyJSIiwiQyIsIlUiLCJEIl0sInJlZmVycmFsIjpbIlIiLCJVIl0sImdhbWVSZXBvcnQiOlsiUiJdLCJib251c1JlcG9ydCI6WyJSIl0sInRlc3RpbW9uaWFsIjpbIlIiLCJDIiwiVSIsIkQiXSwicmVwb3J0TGVkZ2VyIjpbIlIiXSwic2VnbWVudGF0aW9uIjpbIlIiLCJVIiwiRCIsIkMiLCJJIl0sImVtYWlsVGVtcGxhdGUiOlsiUiIsIkMiLCJVIiwiRCJdLCJjYXNpbm9NYW5hZ2VtZW50IjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJwYXltZW50TWFuYWdlbWVudCI6WyJSIiwiQyIsIlUiXSwicmVwb3J0VHJhbnNhY3Rpb24iOlsiUiJdLCJhcHBsaWNhdGlvblNldHRpbmciOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sInNwaW5XaGVlbENvbmZpZ3VyYXRpb24iOlsiUiIsIkMiLCJVIiwiVFMiXSwicmVwb3J0Q2FzaW5vVHJhbnNhY3Rpb24iOlsiUiJdLCJyZXBvcnRQbGF5ZXJQZXJmb3JtYW5jZSI6WyJSIl19LCJpYXQiOjE3NTQ2Mzg1OTgsImV4cCI6MTc1NDgxMTM5OH0.zeUZIxPexwdQS2uUWCtHptOS78MRBCSPJJNJ_6lGTEQ"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"userId\": \"1000\",\n  \"bonusId\": \"6\",\n  \"currencyId\": \"1\"\n}\n\n// Not for welcome bonus",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8002/api/v1/bonus-management/bonus/issue",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8002",
+									"path": [
+										"api",
+										"v1",
+										"bonus-management",
+										"bonus",
+										"issue"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeletBonus",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJJZCI6IjEiLCJhZG1pblVzZXJOYW1lIjoiYWRtaW5Mb25nSGEiLCJhZG1pbkVtYWlsIjoiYWRtaW4tZGV2QGxvbmdoYS5jb20iLCJ0eXBlIjoibG9naW4iLCJwZXJtaXNzaW9ucyI6eyJreWMiOlsiUiIsIkMiLCJVIiwiRCIsIlZLIl0sInZpcCI6WyJSIiwiVSIsIkMiXSwiYW1vZSI6WyJSIiwiVSJdLCJwYWdlIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJhZG1pbiI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwiYm9udXMiOlsiUiIsIlUiLCJUUyJdLCJzdGF0ZSI6WyJUUyIsIlIiXSwiYmFubmVyIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJwbGF5ZXIiOlsiUiIsIkMiLCJVIiwiRCIsIlZFIiwiVlAiLCJUUyIsIk1NIiwiVksiXSwicmVkZWVtIjpbIlIiLCJVIl0sImNvbW1lbnQiOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sImdhbGxlcnkiOlsiUiIsIkMiLCJVIiwiRCJdLCJwYWNrYWdlIjpbIlIiLCJVIiwiRCIsIkMiXSwic2VvUGFnZSI6WyJSIiwiQyIsIlUiLCJEIl0sInJlZmVycmFsIjpbIlIiLCJVIl0sImdhbWVSZXBvcnQiOlsiUiJdLCJib251c1JlcG9ydCI6WyJSIl0sInRlc3RpbW9uaWFsIjpbIlIiLCJDIiwiVSIsIkQiXSwicmVwb3J0TGVkZ2VyIjpbIlIiXSwic2VnbWVudGF0aW9uIjpbIlIiLCJVIiwiRCIsIkMiLCJJIl0sImVtYWlsVGVtcGxhdGUiOlsiUiIsIkMiLCJVIiwiRCJdLCJjYXNpbm9NYW5hZ2VtZW50IjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJwYXltZW50TWFuYWdlbWVudCI6WyJSIiwiQyIsIlUiXSwicmVwb3J0VHJhbnNhY3Rpb24iOlsiUiJdLCJhcHBsaWNhdGlvblNldHRpbmciOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sInNwaW5XaGVlbENvbmZpZ3VyYXRpb24iOlsiUiIsIkMiLCJVIiwiVFMiXSwicmVwb3J0Q2FzaW5vVHJhbnNhY3Rpb24iOlsiUiJdLCJyZXBvcnRQbGF5ZXJQZXJmb3JtYW5jZSI6WyJSIl19LCJpYXQiOjE3NTQ2Mzg1OTgsImV4cCI6MTc1NDgxMTM5OH0.zeUZIxPexwdQS2uUWCtHptOS78MRBCSPJJNJ_6lGTEQ"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"bonusId\": \"16\"\n}\n\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8002/api/v1/bonus-management/bonus/delete",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8002",
+									"path": [
+										"api",
+										"v1",
+										"bonus-management",
+										"bonus",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreateFreespin",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJJZCI6IjEiLCJhZG1pblVzZXJOYW1lIjoiYWRtaW5Mb25nSGEiLCJhZG1pbkVtYWlsIjoiYWRtaW4tZGV2QGxvbmdoYS5jb20iLCJ0eXBlIjoibG9naW4iLCJwZXJtaXNzaW9ucyI6eyJreWMiOlsiUiIsIkMiLCJVIiwiRCIsIlZLIl0sInZpcCI6WyJSIiwiVSIsIkMiXSwiYW1vZSI6WyJSIiwiVSJdLCJwYWdlIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJhZG1pbiI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwiYm9udXMiOlsiUiIsIlUiLCJUUyJdLCJzdGF0ZSI6WyJUUyIsIlIiXSwiYmFubmVyIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJwbGF5ZXIiOlsiUiIsIkMiLCJVIiwiRCIsIlZFIiwiVlAiLCJUUyIsIk1NIiwiVksiXSwicmVkZWVtIjpbIlIiLCJVIl0sImNvbW1lbnQiOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sImdhbGxlcnkiOlsiUiIsIkMiLCJVIiwiRCJdLCJwYWNrYWdlIjpbIlIiLCJVIiwiRCIsIkMiXSwic2VvUGFnZSI6WyJSIiwiQyIsIlUiLCJEIl0sInJlZmVycmFsIjpbIlIiLCJVIl0sImdhbWVSZXBvcnQiOlsiUiJdLCJib251c1JlcG9ydCI6WyJSIl0sInRlc3RpbW9uaWFsIjpbIlIiLCJDIiwiVSIsIkQiXSwicmVwb3J0TGVkZ2VyIjpbIlIiXSwic2VnbWVudGF0aW9uIjpbIlIiLCJVIiwiRCIsIkMiLCJJIl0sImVtYWlsVGVtcGxhdGUiOlsiUiIsIkMiLCJVIiwiRCJdLCJjYXNpbm9NYW5hZ2VtZW50IjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJwYXltZW50TWFuYWdlbWVudCI6WyJSIiwiQyIsIlUiXSwicmVwb3J0VHJhbnNhY3Rpb24iOlsiUiJdLCJhcHBsaWNhdGlvblNldHRpbmciOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sInNwaW5XaGVlbENvbmZpZ3VyYXRpb24iOlsiUiIsIkMiLCJVIiwiVFMiXSwicmVwb3J0Q2FzaW5vVHJhbnNhY3Rpb24iOlsiUiJdLCJyZXBvcnRQbGF5ZXJQZXJmb3JtYW5jZSI6WyJSIl19LCJpYXQiOjE3NTQ4OTU4NzQsImV4cCI6MTc1NTA2ODY3NH0.apLkdHoTvzSLjZVtz0uFPIlSF8XtKBuTOth11njmm1k",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{  \"isActive\": true,\n  \"validFrom\": \"2025-08-09T00:00:00Z\",\n  \"validTo\": \"2025-09-09T23:59:59Z\",\n  \"quantity\": 100,\n  \"currencyDetails\": [\n    {\n      \"currencyId\": 1,\n      \"zeroOutThreshold\": 1,\n      \"amount\": 100,\n      \"maxBonusClaimed\": 500,\n      \"minBetAmount\": 1,\n      \"minDepositAmount\": 10\n    },\n    {\n      \"currencyId\": 2,\n      \"zeroOutThreshold\": 1,\n      \"amount\": 100,\n      \"maxBonusClaimed\": 450,\n      \"minBetAmount\": 1,\n      \"minDepositAmount\": 10\n    }\n  ],\n  \"validOnDays\": 127,\n  \"description\": {\n    \"EN\": \"Get 100% match on your first deposit up to $500!\",\n    \"ES\": \"¡Obtén un 100% de bonificación en tu primer depósito hasta 500$!\"\n  },\n  \"daysToClear\": \"7\",\n  \"termAndCondition\": {\n    \"EN\": \"Bonus must be wagered 35x before withdrawal.\"\n  },\n  \"promotionTitle\": {\n    \"EN\": \"bet Bonus\",\n    \"ES\": \"Bono de Bienvenida\"\n  },\n  \"bonusType\": \"bet\",\n  \"visibleInPromotions\": true,\n  \"purchaseRequired\": false\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8002/api/v1/bonus-management/bonus/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8002",
+									"path": [
+										"api",
+										"v1",
+										"bonus-management",
+										"bonus",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GiveFreespin",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "AccessToken=iJgVQacWTbJBtthcElVMKzXt8Ig7D34U:244"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"gameId\": \"344\",\n    \"noOfRounds\": 10,\n    \"betAmount\": 40,\n    \"validity\": \"2025-09-04 08:19:48.967+00\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://dev-api.sweetsweeps.com/api/v1/casimba/casimba_freespins",
+									"protocol": "https",
+									"host": [
+										"dev-api",
+										"sweetsweeps",
+										"com"
+									],
+									"path": [
+										"api",
+										"v1",
+										"casimba",
+										"casimba_freespins"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Promocode",
+					"item": [
+						{
+							"name": "Get",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJJZCI6IjEiLCJhZG1pblVzZXJOYW1lIjoiYWRtaW5Mb25nSGEiLCJhZG1pbkVtYWlsIjoiYWRtaW4tZGV2QGxvbmdoYS5jb20iLCJ0eXBlIjoibG9naW4iLCJwZXJtaXNzaW9ucyI6eyJreWMiOlsiUiIsIkMiLCJVIiwiRCIsIlZLIl0sInZpcCI6WyJSIiwiVSIsIkMiXSwiYW1vZSI6WyJSIiwiVSJdLCJwYWdlIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJhZG1pbiI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwiYm9udXMiOlsiUiIsIlUiLCJUUyJdLCJzdGF0ZSI6WyJUUyIsIlIiXSwiYmFubmVyIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJwbGF5ZXIiOlsiUiIsIkMiLCJVIiwiRCIsIlZFIiwiVlAiLCJUUyIsIk1NIiwiVksiXSwicmVkZWVtIjpbIlIiLCJVIl0sImNvbW1lbnQiOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sImdhbGxlcnkiOlsiUiIsIkMiLCJVIiwiRCJdLCJwYWNrYWdlIjpbIlIiLCJVIiwiRCIsIkMiXSwic2VvUGFnZSI6WyJSIiwiQyIsIlUiLCJEIl0sInJlZmVycmFsIjpbIlIiLCJVIl0sImdhbWVSZXBvcnQiOlsiUiJdLCJib251c1JlcG9ydCI6WyJSIl0sInRlc3RpbW9uaWFsIjpbIlIiLCJDIiwiVSIsIkQiXSwicmVwb3J0TGVkZ2VyIjpbIlIiXSwic2VnbWVudGF0aW9uIjpbIlIiLCJVIiwiRCIsIkMiLCJJIl0sImVtYWlsVGVtcGxhdGUiOlsiUiIsIkMiLCJVIiwiRCJdLCJjYXNpbm9NYW5hZ2VtZW50IjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJwYXltZW50TWFuYWdlbWVudCI6WyJSIiwiQyIsIlUiXSwicmVwb3J0VHJhbnNhY3Rpb24iOlsiUiJdLCJhcHBsaWNhdGlvblNldHRpbmciOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sInNwaW5XaGVlbENvbmZpZ3VyYXRpb24iOlsiUiIsIkMiLCJVIiwiVFMiXSwicmVwb3J0Q2FzaW5vVHJhbnNhY3Rpb24iOlsiUiJdLCJyZXBvcnRQbGF5ZXJQZXJmb3JtYW5jZSI6WyJSIl19LCJpYXQiOjE3NTQ3NDMwNjcsImV4cCI6MTc1NDkxNTg2N30.2doSJC2GsAmjBzWlXkb9bTumsJA7l8w6LMBUQdzKVIY",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJJZCI6IjEiLCJhZG1pblVzZXJOYW1lIjoiYWRtaW5JbmltaXRhYmxlU29sdXRpb25zIiwiYWRtaW5FbWFpbCI6ImFkbWluLWRldkBpbmltaXRhYmxlc29sdXRpb25zLmNvbSIsInR5cGUiOiJsb2dpbiIsInBlcm1pc3Npb25zIjp7InZpcCI6WyJSIiwiVSIsIkMiXSwiYW1vZSI6WyJSIiwiVSJdLCJwYWdlIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJhZG1pbiI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwiYm9udXMiOlsiUiIsIkMiLCJVIiwiVFMiXSwic3RhdGUiOlsiVFMiLCJSIl0sImJhbm5lciI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwicGxheWVyIjpbIlIiLCJDIiwiVSIsIkQiLCJWRSIsIlZQIiwiVFMiLCJNTSIsIlZLIl0sInJlZGVlbSI6WyJSIiwiVSJdLCJjb21tZW50IjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJnYWxsZXJ5IjpbIlIiLCJDIiwiVSIsIkQiXSwicGFja2FnZSI6WyJSIiwiVSIsIkQiLCJDIl0sInNlb1BhZ2UiOlsiUiIsIkMiLCJVIiwiRCJdLCJyZWZlcnJhbCI6WyJSIiwiVSJdLCJnYW1lUmVwb3J0IjpbIlIiXSwicmVwb3J0TGVkZ2VyIjpbIlIiXSwic2VnbWVudGF0aW9uIjpbIlIiLCJVIiwiRCIsIkMiLCJJIl0sImNhc2lub01hbmFnZW1lbnQiOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sInBheW1lbnRNYW5hZ2VtZW50IjpbIlIiLCJDIiwiVSJdLCJyZXBvcnRUcmFuc2FjdGlvbiI6WyJSIl0sImFwcGxpY2F0aW9uU2V0dGluZyI6WyJSIiwiQyIsIlUiLCJEIiwiVFMiXSwic3BpbldoZWVsQ29uZmlndXJhdGlvbiI6WyJSIiwiQyIsIlUiLCJUUyJdLCJyZXBvcnRDYXNpbm9UcmFuc2FjdGlvbiI6WyJSIl0sInJlcG9ydFBsYXllclBlcmZvcm1hbmNlIjpbIlIiXX0sImlhdCI6MTc0OTYzODczOSwiZXhwIjoxNzQ5ODExNTM5fQ.YU2XZcp8VmfxlO1iIX4uKBiU4r2bVzRNPdY1PrkOnNI"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8002/api/v1/promo-code/get-promocode",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8002",
+									"path": [
+										"api",
+										"v1",
+										"promo-code",
+										"get-promocode"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJJZCI6IjEiLCJhZG1pblVzZXJOYW1lIjoiYWRtaW5Mb25nSGEiLCJhZG1pbkVtYWlsIjoiYWRtaW4tZGV2QGxvbmdoYS5jb20iLCJ0eXBlIjoibG9naW4iLCJwZXJtaXNzaW9ucyI6eyJreWMiOlsiUiIsIkMiLCJVIiwiRCIsIlZLIl0sInZpcCI6WyJSIiwiVSIsIkMiXSwiYW1vZSI6WyJSIiwiVSJdLCJwYWdlIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJhZG1pbiI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwiYm9udXMiOlsiUiIsIlUiLCJUUyJdLCJzdGF0ZSI6WyJUUyIsIlIiXSwiYmFubmVyIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJwbGF5ZXIiOlsiUiIsIkMiLCJVIiwiRCIsIlZFIiwiVlAiLCJUUyIsIk1NIiwiVksiXSwicmVkZWVtIjpbIlIiLCJVIl0sImNvbW1lbnQiOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sImdhbGxlcnkiOlsiUiIsIkMiLCJVIiwiRCJdLCJwYWNrYWdlIjpbIlIiLCJVIiwiRCIsIkMiXSwic2VvUGFnZSI6WyJSIiwiQyIsIlUiLCJEIl0sInJlZmVycmFsIjpbIlIiLCJVIl0sImdhbWVSZXBvcnQiOlsiUiJdLCJib251c1JlcG9ydCI6WyJSIl0sInRlc3RpbW9uaWFsIjpbIlIiLCJDIiwiVSIsIkQiXSwicmVwb3J0TGVkZ2VyIjpbIlIiXSwic2VnbWVudGF0aW9uIjpbIlIiLCJVIiwiRCIsIkMiLCJJIl0sImVtYWlsVGVtcGxhdGUiOlsiUiIsIkMiLCJVIiwiRCJdLCJjYXNpbm9NYW5hZ2VtZW50IjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJwYXltZW50TWFuYWdlbWVudCI6WyJSIiwiQyIsIlUiXSwicmVwb3J0VHJhbnNhY3Rpb24iOlsiUiJdLCJhcHBsaWNhdGlvblNldHRpbmciOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sInNwaW5XaGVlbENvbmZpZ3VyYXRpb24iOlsiUiIsIkMiLCJVIiwiVFMiXSwicmVwb3J0Q2FzaW5vVHJhbnNhY3Rpb24iOlsiUiJdLCJyZXBvcnRQbGF5ZXJQZXJmb3JtYW5jZSI6WyJSIl19LCJpYXQiOjE3NTQ4OTU4NzQsImV4cCI6MTc1NTA2ODY3NH0.apLkdHoTvzSLjZVtz0uFPIlSF8XtKBuTOth11njmm1k",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJJZCI6IjEiLCJhZG1pblVzZXJOYW1lIjoiYWRtaW5JbmltaXRhYmxlU29sdXRpb25zIiwiYWRtaW5FbWFpbCI6ImFkbWluLWRldkBpbmltaXRhYmxlc29sdXRpb25zLmNvbSIsInR5cGUiOiJsb2dpbiIsInBlcm1pc3Npb25zIjp7InZpcCI6WyJSIiwiVSIsIkMiXSwiYW1vZSI6WyJSIiwiVSJdLCJwYWdlIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJhZG1pbiI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwiYm9udXMiOlsiUiIsIkMiLCJVIiwiVFMiXSwic3RhdGUiOlsiVFMiLCJSIl0sImJhbm5lciI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwicGxheWVyIjpbIlIiLCJDIiwiVSIsIkQiLCJWRSIsIlZQIiwiVFMiLCJNTSIsIlZLIl0sInJlZGVlbSI6WyJSIiwiVSJdLCJjb21tZW50IjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJnYWxsZXJ5IjpbIlIiLCJDIiwiVSIsIkQiXSwicGFja2FnZSI6WyJSIiwiVSIsIkQiLCJDIl0sInNlb1BhZ2UiOlsiUiIsIkMiLCJVIiwiRCJdLCJyZWZlcnJhbCI6WyJSIiwiVSJdLCJnYW1lUmVwb3J0IjpbIlIiXSwicmVwb3J0TGVkZ2VyIjpbIlIiXSwic2VnbWVudGF0aW9uIjpbIlIiLCJVIiwiRCIsIkMiLCJJIl0sImNhc2lub01hbmFnZW1lbnQiOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sInBheW1lbnRNYW5hZ2VtZW50IjpbIlIiLCJDIiwiVSJdLCJyZXBvcnRUcmFuc2FjdGlvbiI6WyJSIl0sImFwcGxpY2F0aW9uU2V0dGluZyI6WyJSIiwiQyIsIlUiLCJEIiwiVFMiXSwic3BpbldoZWVsQ29uZmlndXJhdGlvbiI6WyJSIiwiQyIsIlUiLCJUUyJdLCJyZXBvcnRDYXNpbm9UcmFuc2FjdGlvbiI6WyJSIl0sInJlcG9ydFBsYXllclBlcmZvcm1hbmNlIjpbIlIiXX0sImlhdCI6MTc0OTYyNTQwMiwiZXhwIjoxNzQ5Nzk4MjAyfQ.CLOS_L5jCqudYUMWWXj1tq5HDRPJhvDbr-UWtO9bVh0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"promocode\": \"Test\",\n  \"isActive\": true,\n  \"discountPercentage\": 100,\n  \"perUserLimit\": 5,\n  \"validTill\": \"2025-12-31T23:59:59Z\",\n  \"maxUsersAvailed\": 1001,\n  \"isDiscountOnAmount\": false,\n  \"packages\": [1]\n\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8002/api/v1/promo-code/create-promocode",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8002",
+									"path": [
+										"api",
+										"v1",
+										"promo-code",
+										"create-promocode"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJJZCI6IjEiLCJhZG1pblVzZXJOYW1lIjoiYWRtaW5Mb25nSGEiLCJhZG1pbkVtYWlsIjoiYWRtaW4tZGV2QGxvbmdoYS5jb20iLCJ0eXBlIjoibG9naW4iLCJwZXJtaXNzaW9ucyI6eyJreWMiOlsiUiIsIkMiLCJVIiwiRCIsIlZLIl0sInZpcCI6WyJSIiwiVSIsIkMiXSwiYW1vZSI6WyJSIiwiVSJdLCJwYWdlIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJhZG1pbiI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwiYm9udXMiOlsiUiIsIlUiLCJUUyJdLCJzdGF0ZSI6WyJUUyIsIlIiXSwiYmFubmVyIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJwbGF5ZXIiOlsiUiIsIkMiLCJVIiwiRCIsIlZFIiwiVlAiLCJUUyIsIk1NIiwiVksiXSwicmVkZWVtIjpbIlIiLCJVIl0sImNvbW1lbnQiOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sImdhbGxlcnkiOlsiUiIsIkMiLCJVIiwiRCJdLCJwYWNrYWdlIjpbIlIiLCJVIiwiRCIsIkMiXSwic2VvUGFnZSI6WyJSIiwiQyIsIlUiLCJEIl0sInJlZmVycmFsIjpbIlIiLCJVIl0sImdhbWVSZXBvcnQiOlsiUiJdLCJib251c1JlcG9ydCI6WyJSIl0sInRlc3RpbW9uaWFsIjpbIlIiLCJDIiwiVSIsIkQiXSwicmVwb3J0TGVkZ2VyIjpbIlIiXSwic2VnbWVudGF0aW9uIjpbIlIiLCJVIiwiRCIsIkMiLCJJIl0sImVtYWlsVGVtcGxhdGUiOlsiUiIsIkMiLCJVIiwiRCJdLCJjYXNpbm9NYW5hZ2VtZW50IjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJwYXltZW50TWFuYWdlbWVudCI6WyJSIiwiQyIsIlUiXSwicmVwb3J0VHJhbnNhY3Rpb24iOlsiUiJdLCJhcHBsaWNhdGlvblNldHRpbmciOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sInNwaW5XaGVlbENvbmZpZ3VyYXRpb24iOlsiUiIsIkMiLCJVIiwiVFMiXSwicmVwb3J0Q2FzaW5vVHJhbnNhY3Rpb24iOlsiUiJdLCJyZXBvcnRQbGF5ZXJQZXJmb3JtYW5jZSI6WyJSIl19LCJpYXQiOjE3NTQ4OTU4NzQsImV4cCI6MTc1NTA2ODY3NH0.apLkdHoTvzSLjZVtz0uFPIlSF8XtKBuTOth11njmm1k",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJJZCI6IjEiLCJhZG1pblVzZXJOYW1lIjoiYWRtaW5JbmltaXRhYmxlU29sdXRpb25zIiwiYWRtaW5FbWFpbCI6ImFkbWluLWRldkBpbmltaXRhYmxlc29sdXRpb25zLmNvbSIsInR5cGUiOiJsb2dpbiIsInBlcm1pc3Npb25zIjp7InZpcCI6WyJSIiwiVSIsIkMiXSwiYW1vZSI6WyJSIiwiVSJdLCJwYWdlIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJhZG1pbiI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwiYm9udXMiOlsiUiIsIkMiLCJVIiwiVFMiXSwic3RhdGUiOlsiVFMiLCJSIl0sImJhbm5lciI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwicGxheWVyIjpbIlIiLCJDIiwiVSIsIkQiLCJWRSIsIlZQIiwiVFMiLCJNTSIsIlZLIl0sInJlZGVlbSI6WyJSIiwiVSJdLCJjb21tZW50IjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJnYWxsZXJ5IjpbIlIiLCJDIiwiVSIsIkQiXSwicGFja2FnZSI6WyJSIiwiVSIsIkQiLCJDIl0sInNlb1BhZ2UiOlsiUiIsIkMiLCJVIiwiRCJdLCJyZWZlcnJhbCI6WyJSIiwiVSJdLCJnYW1lUmVwb3J0IjpbIlIiXSwicmVwb3J0TGVkZ2VyIjpbIlIiXSwic2VnbWVudGF0aW9uIjpbIlIiLCJVIiwiRCIsIkMiLCJJIl0sImNhc2lub01hbmFnZW1lbnQiOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sInBheW1lbnRNYW5hZ2VtZW50IjpbIlIiLCJDIiwiVSJdLCJyZXBvcnRUcmFuc2FjdGlvbiI6WyJSIl0sImFwcGxpY2F0aW9uU2V0dGluZyI6WyJSIiwiQyIsIlUiLCJEIiwiVFMiXSwic3BpbldoZWVsQ29uZmlndXJhdGlvbiI6WyJSIiwiQyIsIlUiLCJUUyJdLCJyZXBvcnRDYXNpbm9UcmFuc2FjdGlvbiI6WyJSIl0sInJlcG9ydFBsYXllclBlcmZvcm1hbmNlIjpbIlIiXX0sImlhdCI6MTc0ODg2ODYwOSwiZXhwIjoxNzQ5MDQxNDA5fQ.ELJavrW0FXJ8_WCnGagrzdLjEeGWRYJ-l3es05dQvkk"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\":1,                             \n  \"promocode\": \"SUMM50\",           \n  \"isActive\": true,                    \n  \"discountPercentage\": 50,            \n  \"perUserLimit\": 3,                   \n  \"validTill\": \"2035-12-31T23:59:59Z\", \n  \"maxUsersAvailed\": 1000,             \n  \"isDiscountOnAmount\": true,         \n  \"packages\": [1]  ,\n  \"isArchived\"   : false           \n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8002/api/v1/promo-code/update-promocode",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8002",
+									"path": [
+										"api",
+										"v1",
+										"promo-code",
+										"update-promocode"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJJZCI6IjEiLCJhZG1pblVzZXJOYW1lIjoiYWRtaW5Mb25nSGEiLCJhZG1pbkVtYWlsIjoiYWRtaW4tZGV2QGxvbmdoYS5jb20iLCJ0eXBlIjoibG9naW4iLCJwZXJtaXNzaW9ucyI6eyJreWMiOlsiUiIsIkMiLCJVIiwiRCIsIlZLIl0sInZpcCI6WyJSIiwiVSIsIkMiXSwiYW1vZSI6WyJSIiwiVSJdLCJwYWdlIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJhZG1pbiI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwiYm9udXMiOlsiUiIsIlUiLCJUUyJdLCJzdGF0ZSI6WyJUUyIsIlIiXSwiYmFubmVyIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJwbGF5ZXIiOlsiUiIsIkMiLCJVIiwiRCIsIlZFIiwiVlAiLCJUUyIsIk1NIiwiVksiXSwicmVkZWVtIjpbIlIiLCJVIl0sImNvbW1lbnQiOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sImdhbGxlcnkiOlsiUiIsIkMiLCJVIiwiRCJdLCJwYWNrYWdlIjpbIlIiLCJVIiwiRCIsIkMiXSwic2VvUGFnZSI6WyJSIiwiQyIsIlUiLCJEIl0sInJlZmVycmFsIjpbIlIiLCJVIl0sImdhbWVSZXBvcnQiOlsiUiJdLCJib251c1JlcG9ydCI6WyJSIl0sInRlc3RpbW9uaWFsIjpbIlIiLCJDIiwiVSIsIkQiXSwicmVwb3J0TGVkZ2VyIjpbIlIiXSwic2VnbWVudGF0aW9uIjpbIlIiLCJVIiwiRCIsIkMiLCJJIl0sImVtYWlsVGVtcGxhdGUiOlsiUiIsIkMiLCJVIiwiRCJdLCJjYXNpbm9NYW5hZ2VtZW50IjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJwYXltZW50TWFuYWdlbWVudCI6WyJSIiwiQyIsIlUiXSwicmVwb3J0VHJhbnNhY3Rpb24iOlsiUiJdLCJhcHBsaWNhdGlvblNldHRpbmciOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sInNwaW5XaGVlbENvbmZpZ3VyYXRpb24iOlsiUiIsIkMiLCJVIiwiVFMiXSwicmVwb3J0Q2FzaW5vVHJhbnNhY3Rpb24iOlsiUiJdLCJyZXBvcnRQbGF5ZXJQZXJmb3JtYW5jZSI6WyJSIl19LCJpYXQiOjE3NTQ4OTU4NzQsImV4cCI6MTc1NTA2ODY3NH0.apLkdHoTvzSLjZVtz0uFPIlSF8XtKBuTOth11njmm1k"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\n    \"promocode\": \"Test\"\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8002/api/v1/promo-code/delete-promocode",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8002",
+									"path": [
+										"api",
+										"v1",
+										"promo-code",
+										"delete-promocode"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PaymentCards",
+					"item": [
+						{
+							"name": "GetPaymentCards",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJJZCI6IjEiLCJhZG1pblVzZXJOYW1lIjoiYWRtaW5Mb25nSGEiLCJhZG1pbkVtYWlsIjoiYWRtaW4tZGV2QGxvbmdoYS5jb20iLCJ0eXBlIjoibG9naW4iLCJwZXJtaXNzaW9ucyI6eyJreWMiOlsiUiIsIkMiLCJVIiwiRCIsIlZLIl0sInZpcCI6WyJSIiwiVSIsIkMiXSwiYW1vZSI6WyJSIiwiVSJdLCJwYWdlIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJhZG1pbiI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwiYm9udXMiOlsiUiIsIlUiLCJUUyJdLCJzdGF0ZSI6WyJUUyIsIlIiXSwiYmFubmVyIjpbIlIiLCJDIiwiVSIsIlRTIiwiRCJdLCJwbGF5ZXIiOlsiUiIsIkMiLCJVIiwiRCIsIlZFIiwiVlAiLCJUUyIsIk1NIiwiVksiXSwicmVkZWVtIjpbIlIiLCJVIl0sImNvbW1lbnQiOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sImdhbGxlcnkiOlsiUiIsIkMiLCJVIiwiRCJdLCJwYWNrYWdlIjpbIlIiLCJVIiwiRCIsIkMiXSwic2VvUGFnZSI6WyJSIiwiQyIsIlUiLCJEIl0sInJlZmVycmFsIjpbIlIiLCJVIl0sImdhbWVSZXBvcnQiOlsiUiJdLCJib251c1JlcG9ydCI6WyJSIl0sInRlc3RpbW9uaWFsIjpbIlIiLCJDIiwiVSIsIkQiXSwicmVwb3J0TGVkZ2VyIjpbIlIiXSwic2VnbWVudGF0aW9uIjpbIlIiLCJVIiwiRCIsIkMiLCJJIl0sImVtYWlsVGVtcGxhdGUiOlsiUiIsIkMiLCJVIiwiRCJdLCJjYXNpbm9NYW5hZ2VtZW50IjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJwYXltZW50TWFuYWdlbWVudCI6WyJSIiwiQyIsIlUiXSwicmVwb3J0VHJhbnNhY3Rpb24iOlsiUiJdLCJhcHBsaWNhdGlvblNldHRpbmciOlsiUiIsIkMiLCJVIiwiRCIsIlRTIl0sInNwaW5XaGVlbENvbmZpZ3VyYXRpb24iOlsiUiIsIkMiLCJVIiwiVFMiXSwicmVwb3J0Q2FzaW5vVHJhbnNhY3Rpb24iOlsiUiJdLCJyZXBvcnRQbGF5ZXJQZXJmb3JtYW5jZSI6WyJSIl19LCJpYXQiOjE3NTU3NTYzMDgsImV4cCI6MTc1NTkyOTEwOH0.zwFwBmYoKJ5PHCaP33bkCZsgo_iYUelDE8_Fs0OwKcQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8002/api/v1/payment/user-payment-cards?userId=1000&isCreditCard=false&pageNo=1&limit=10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8002",
+									"path": [
+										"api",
+										"v1",
+										"payment",
+										"user-payment-cards"
+									],
+									"query": [
+										{
+											"key": "toDate",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "fromDate",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "userId",
+											"value": "1000"
+										},
+										{
+											"key": "isCreditCard",
+											"value": "false"
+										},
+										{
+											"key": "pageNo",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "10"
+										},
+										{
+											"key": "cardType",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "isActive",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "isDefault",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"emailOrUsername\":\"adminPhibet\",\n    \"password\" : \"RGV2TG9uZ0hhQDIwMjU=\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8002/api/v1/admin/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Getadmin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJJZCI6IjEiLCJhZG1pblVzZXJOYW1lIjoiYWRtaW5Mb25nSGEiLCJhZG1pbkVtYWlsIjoiYWRtaW4tZGV2QGxvbmdoYS5jb20iLCJ0eXBlIjoibG9naW4iLCJwZXJtaXNzaW9ucyI6eyJ2aXAiOlsiUiIsIlUiLCJDIl0sImFtb2UiOlsiUiIsIlUiXSwicGFnZSI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwiYWRtaW4iOlsiUiIsIkMiLCJVIiwiVFMiLCJEIl0sImJvbnVzIjpbIlIiLCJVIiwiVFMiXSwic3RhdGUiOlsiVFMiLCJSIl0sImJhbm5lciI6WyJSIiwiQyIsIlUiLCJUUyIsIkQiXSwicGxheWVyIjpbIlIiLCJDIiwiVSIsIkQiLCJWRSIsIlZQIiwiVFMiLCJNTSIsIlZLIl0sInJlZGVlbSI6WyJSIiwiVSJdLCJjb21tZW50IjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJnYWxsZXJ5IjpbIlIiLCJDIiwiVSIsIkQiXSwicGFja2FnZSI6WyJSIiwiVSIsIkQiLCJDIl0sInNlb1BhZ2UiOlsiUiIsIkMiLCJVIiwiRCJdLCJyZWZlcnJhbCI6WyJSIiwiVSJdLCJnYW1lUmVwb3J0IjpbIlIiXSwiYm9udXNSZXBvcnQiOlsiUiJdLCJ0ZXN0aW1vbmlhbCI6WyJSIiwiQyIsIlUiLCJEIl0sInJlcG9ydExlZGdlciI6WyJSIl0sInNlZ21lbnRhdGlvbiI6WyJSIiwiVSIsIkQiLCJDIiwiSSJdLCJlbWFpbFRlbXBsYXRlIjpbIlIiLCJDIiwiVSIsIkQiXSwiY2FzaW5vTWFuYWdlbWVudCI6WyJSIiwiQyIsIlUiLCJEIiwiVFMiXSwicGF5bWVudE1hbmFnZW1lbnQiOlsiUiIsIkMiLCJVIl0sInJlcG9ydFRyYW5zYWN0aW9uIjpbIlIiXSwiYXBwbGljYXRpb25TZXR0aW5nIjpbIlIiLCJDIiwiVSIsIkQiLCJUUyJdLCJzcGluV2hlZWxDb25maWd1cmF0aW9uIjpbIlIiLCJDIiwiVSIsIlRTIl0sInJlcG9ydENhc2lub1RyYW5zYWN0aW9uIjpbIlIiXSwicmVwb3J0UGxheWVyUGVyZm9ybWFuY2UiOlsiUiJdfSwiaWF0IjoxNzU0NjM1MDk2LCJleHAiOjE3NTQ4MDc4OTZ9.LCXNpRmKAmGKi-6_jeWMjAuLJn1yyZDBbLiJPgkauzM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8002/api/v1/admin/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Player",
+			"item": [
+				{
+					"name": "Kyc",
+					"item": [
+						{
+							"name": "GetDocuments",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "accessToken=UEqFJeD7xg8G7GF-nh0VRbj-9zkHEz6w:1000",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseURL}}/api/v1/kyc/documents/my-documents",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"kyc",
+										"documents",
+										"my-documents"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Getstatus",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "accessToken=cNrpLI22zk0dgdgWslOi1eupUipwAPfY:1000"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8004/api/v1/kyc/status",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8004",
+									"path": [
+										"api",
+										"v1",
+										"kyc",
+										"status"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetDocumentlables",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "accessToken=HcSlLe_stTN7x0ClcoLirLLiiQvNyfHt:1000"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8004/api/v1/kyc/document-labels?kycLevel=K3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8004",
+									"path": [
+										"api",
+										"v1",
+										"kyc",
+										"document-labels"
+									],
+									"query": [
+										{
+											"key": "isRequired",
+											"value": "true",
+											"disabled": true
+										},
+										{
+											"key": "kycLevel",
+											"value": "K3"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UploadDoc",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "accessToken=HcSlLe_stTN7x0ClcoLirLLiiQvNyfHt:1000"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8004/api/v1/kyc/documents/upload",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8004",
+									"path": [
+										"api",
+										"v1",
+										"kyc",
+										"documents",
+										"upload"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetDocumentwithid",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "accessToken=BfJ6guJIsaDMsoVXfTcm2H9RYj-ojV6f:1000"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8004/api/v1/kyc/document?documentId=4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8004",
+									"path": [
+										"api",
+										"v1",
+										"kyc",
+										"document"
+									],
+									"query": [
+										{
+											"key": "documentId",
+											"value": "4"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "RequestVerification",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "accessToken=Lw5JT86K4Ba4f9OFZcBle9qvyrZik_Or:1000"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8004/api/v1/kyc/request-verification",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8004",
+									"path": [
+										"api",
+										"v1",
+										"kyc",
+										"request-verification"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Banner",
+					"item": [
+						{
+							"name": "GetBanners",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8004/api/v1/common/banners",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8004",
+									"path": [
+										"api",
+										"v1",
+										"common",
+										"banners"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Bonus",
+					"item": [
+						{
+							"name": "Getallbonus",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "AccessToken=UEqFJeD7xg8G7GF-nh0VRbj-9zkHEz6w:1000",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8004/api/v1/bonus",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8004",
+									"path": [
+										"api",
+										"v1",
+										"bonus"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Avail",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "accessToken=aotcOAdKh8kfxPTKYUArdNT9poJR1J-m:1000"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"bonusId\":12,\n    \"currencyId\":1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8004/api/v1/bonus/avail",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8004",
+									"path": [
+										"api",
+										"v1",
+										"bonus",
+										"avail"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AvailWelcome",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "accessToken=aotcOAdKh8kfxPTKYUArdNT9poJR1J-m:1000"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"bonusId\":6,\n    \"currencyId\":1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8004/api/v1/bonus/avail-joining-bonus",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8004",
+									"path": [
+										"api",
+										"v1",
+										"bonus",
+										"avail-joining-bonus"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AvailDaily",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "accessToken=aotcOAdKh8kfxPTKYUArdNT9poJR1J-m:1000"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "// {\n//     \"bonusId\":6,\n//     \"currencyId\":1\n// }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8004/api/v1/bonus/avail-daily-bonus",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8004",
+									"path": [
+										"api",
+										"v1",
+										"bonus",
+										"avail-daily-bonus"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Availbirthday",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "AccessToken=cNrpLI22zk0dgdgWslOi1eupUipwAPfY:1000",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8004/api/v1/bonus/avail-birthday-bonus",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8004",
+									"path": [
+										"api",
+										"v1",
+										"bonus",
+										"avail-birthday-bonus"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Promocode",
+					"item": [
+						{
+							"name": "GetPromocode",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "accessToken=YABUKvP8NvUXbf77pwJGWfnJ33Dl4TXh:1000"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8004/api/v1/user/promo-code",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8004",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"promo-code"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ApplyPromocode",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "accessToken=YABUKvP8NvUXbf77pwJGWfnJ33Dl4TXh:1000"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"packageId\": 1,   \n  \"promocode\": \"SUMM50\",\n  \"flag\": true             \n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8004/api/v1/user/apply-promocode",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8004",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"apply-promocode"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Purchase with Promocode",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "accessToken=YABUKvP8NvUXbf77pwJGWfnJ33Dl4TXh:1000"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"packageId\":\"5\",\n\"paymentProviderId\":3,\n\"promocode\":\"MK29072025\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8004/api/v1/store/package/purchase",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8004",
+									"path": [
+										"api",
+										"v1",
+										"store",
+										"package",
+										"purchase"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PaymentCards",
+					"item": [
+						{
+							"name": "GetPaymentCards",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "accessToken=iu6-2Hf-r68W60OybfICJ-KqQcNeVJ2Y:1000",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\n{\n    \"email\": \"appatel@phibet.com\",\n    \"password\": \"Admin@@123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8004/api/v1/user/payment-cards",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8004",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"payment-cards"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreateCreditCards",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "accessToken=iu6-2Hf-r68W60OybfICJ-KqQcNeVJ2Y:1000",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\n{\n    \"cardNumber\": \"444444444444\",\n    \"expiryMonth\": \"06\",\n    \"expiryYear\": \"2030\",\n    \"cardHolderName\": \"Admin\",\n    \"cardType\":\"AMEX\",\n    \"isCreditCard\":true,\n    \"moreDetails\":{\"moredetails\":\"moredetails\"}\n\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8004/api/v1/user/payment-cards",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8004",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"payment-cards"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "UserLogin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\n{\n    \"email\": \"appatel@phibet.com\",\n    \"password\": \"Admin@@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/v1/user/login",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UserProfile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "AccessToken=cNrpLI22zk0dgdgWslOi1eupUipwAPfY:1000",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\n{\n    \"email\": \"appatel@phibet.com\",\n    \"password\": \"Admin@@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/v1/user",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UserSignup",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"manish1@phibet.com\",\n    \"password\": \"Admin@@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/v1/user/signup",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Healthcheck",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8004/health-check",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8004",
+					"path": [
+						"health-check"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "http://localhost:8004",
+			"type": "default"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+import React from 'react';
+
+function ArrowIcon(props) {
+    return (
+        <svg 
+        width="22" 
+        height="22" 
+        viewBox="0 0 22 22" 
+        fill="none" 
+        xmlns="http://www.w3.org/2000/svg"
+        {...props}
+        >
+            <path d="M15.583 13.7499L10.9997 18.3333L6.41634 13.7499" stroke="#776C7C" strokeWidth="1.83333" />
+            <path d="M15.583 8.25008L10.9997 3.66675L6.41634 8.25008" stroke="#776C7C" strokeWidth="1.83333" />
+        </svg>
+    );
+}
+
+export default ArrowIcon;

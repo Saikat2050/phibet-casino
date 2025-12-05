@@ -1,0 +1,56 @@
+//
+// Widgets.scss
+//
+
+.mini-stats-wid {
+	.mini-stat-icon {
+		display: block;
+		@media (min-width: 991px) and (max-width: 1350px) {
+			display: none;
+		}
+		overflow: hidden;
+		position: relative;
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			width: 8px;
+			height: 54px;
+			background-color: rgba($white, 0.1);
+			left: 16px;
+			transform: rotate(32deg);
+			top: -5px;
+			transition: all 0.4s;
+		}
+
+		&::after {
+			left: -12px;
+			width: 12px;
+			transition: all 0.2s;
+		}
+	}
+
+	&:hover {
+		.mini-stat-icon {
+			&::after {
+				left: 60px;
+			}
+		}
+	}
+}
+
+.dash-widget {
+	background: linear-gradient(45deg, #1e1a4e, #2e2c78);
+	color: #fff !important;
+}
+
+.widget-info {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+}
+
+.widget-badge {
+	text-wrap: wrap;
+	text-align: left;
+}

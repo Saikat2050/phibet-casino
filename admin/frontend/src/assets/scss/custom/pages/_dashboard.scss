@@ -1,0 +1,239 @@
+// .apexcharts-canvas {
+//   text {
+//     fill: $text-muted !important;
+//   }
+// }
+
+.kpi-dashboard-tab {
+	height: 300px;
+}
+.demo-graph-table .react-table {
+	height: 370px;
+	overflow-y: scroll;
+}
+.dashboard-export-btn {
+	width: 235px;
+	margin-left: 10px;
+}
+.dashboard-range-picker {
+	width: 160px !important;
+}
+.w-80 {
+	width: 80px;
+	max-width: 80px;
+}
+
+.dash-date-range {
+	position: absolute;
+	margin-top: 5px;
+	z-index: 999;
+	box-shadow:
+		0px 4px 6px rgba(0, 0, 0, 0.2),
+		0px 1px 3px rgba(0, 0, 0, 0.1);
+
+	max-width: 890px;
+	overflow: auto;
+	width: 70vw;
+	// *div {
+	// 	background: black;
+	// 	color: #fff;
+	// }
+}
+
+.custom-checkbox {
+	width: 20px;
+	height: 20px;
+	margin-right: 8px;
+	border-radius: 16px;
+}
+
+.rdrStaticRange {
+	color: #000;
+}
+
+.rdrInputRangeInput {
+	background-color: #fff;
+}
+
+.dash-element-icon {
+	cursor: pointer;
+}
+.custom-switch-dash {
+	display: flex;
+	justify-content: start;
+	text-align: start;
+	vertical-align: middle;
+	flex-direction: row-reverse;
+}
+
+.styled-card {
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	padding: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease;
+
+	&:hover {
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+	}
+
+	.card-title {
+		font-size: 14px;
+		color: #7d7d7d;
+	}
+
+	.value-container {
+		display: flex;
+		align-items: center;
+
+		.card-value {
+			font-size: 22px;
+			font-weight: 600;
+		}
+
+		.text-danger {
+			color: #ff6347;
+		}
+
+		.text-success {
+			color: #28a745;
+		}
+	}
+
+	.apex-chart {
+		height: 50px;
+		margin-top: -10px;
+	}
+}
+
+.text-dashboard {
+	color: #c48e48;
+}
+
+.percentage-change {
+	padding: 9px 6px;
+	border-radius: 5px;
+	font-size: 10px;
+	margin-left: 6px;
+}
+
+@media (max-width: 1200px) {
+	.styled-card {
+		.card-value {
+			font-size: 18px;
+		}
+
+		.percentage-change {
+			font-size: 8px;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.styled-card {
+		.card-value {
+			font-size: 16px;
+		}
+
+		.percentage-change {
+			font-size: 8px;
+			padding: 5px;
+		}
+
+		.apex-chart {
+			height: 40px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.styled-card {
+		.card-value {
+			font-size: 14px;
+		}
+
+		.percentage-change {
+			font-size: 6px;
+			padding: 3px;
+		}
+
+		.apex-chart {
+			height: 35px;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.styled-card {
+		.card-value {
+			font-size: 12px;
+		}
+
+		.percentage-change {
+			font-size: 6px;
+			padding: 3px;
+		}
+
+		.apex-chart {
+			height: 30px;
+		}
+	}
+}
+
+.dashboard-wrapper {
+	[data-layout-mode='dark'] .card {
+		border: 1px solid rgba(255, 255, 255, 0.2);
+	}
+	.card {
+		border-radius: 10px;
+	}
+}
+
+// [data-layout-mode='dark'] .dash-date-range {
+// 	.rdrCalendarWrapper, .rdrDefinedRangesWrapper, .rdrStaticRanges button, .rdrDateDisplayItem {
+// 		background-color: #222;
+// 		color: #fff;
+// 	}
+
+// 	.rdrDateDisplayWrapper {
+// 		background-color: #333;
+// 	}
+
+// 	.rdrMonthAndYearPickers select {
+// 		background-color: #333;
+// 		color: #fff;
+// 	}
+
+// 	.rdrMonthAndYearPickers select option {
+// 		background-color: #444;
+// 		color: #fff;
+// 	}
+
+// 	.rdrDayNumber span {
+// 		color: #fff;
+// 	}
+
+// 	.rdrDayNumber span:hover {
+// 		background-color: #555;
+// 	}
+
+// 	.rdrDay.rdrDayPassive {
+// 		color: #777;
+// 	}
+
+// 	.rdrSelected {
+// 		background-color: #444;
+// 		color: #fff;
+// 	}
+
+// 	.rdrDayToday .rdrDayNumber span:after {
+// 		border-color: #fff;
+// 	}
+
+// 	.rdrDayDisabled {
+// 		background: #222;
+// 		span {
+// 			color: #777 !important;
+// 		}
+// 	}
+// }

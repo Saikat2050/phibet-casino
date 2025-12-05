@@ -1,0 +1,28 @@
+# Production build process for local development
+FROM node:20-alpine
+
+# Install system dependencies
+RUN apk update && apk add --no-cache python3 make g++
+
+WORKDIR /home/node/app
+
+# Set environment for build and runtime
+ENV NODE_ENV=production
+ENV NODE_OPTIONS=--max_old_space_size=4096
+ENV PORT=8080
+
+# Copy package files first
+COPY package*.json ./
+
+# Copy source code (including node_modules from host)
+COPY . .
+
+# Build the application
+RUN npm run build
+
+# Install only production dependencies for runtime
+RUN npm install --only=production --legacy-peer-deps
+
+EXPOSE 8080
+
+CMD ["npm", "start"]

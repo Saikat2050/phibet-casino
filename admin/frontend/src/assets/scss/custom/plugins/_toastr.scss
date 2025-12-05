@@ -1,0 +1,47 @@
+//
+// toastr.scss
+//
+
+/* =============
+   Notification
+============= */
+#toast-container {
+	> div {
+		box-shadow: $box-shadow;
+		opacity: 1;
+
+		&:hover {
+			box-shadow: $box-shadow;
+			opacity: 0.9;
+		}
+	}
+
+	&.toast-top-full-width,
+	&.toast-bottom-full-width {
+		> div {
+			min-width: 96%;
+			margin: 4px auto;
+		}
+	}
+}
+
+@each $color, $value in $theme-colors {
+	.toast-#{$color} {
+		border: 2px solid $value !important;
+		background-color: $value !important;
+	}
+}
+
+// for error
+
+.toast-error {
+	background-color: $danger;
+	border: 2px solid $danger;
+}
+
+.toastr-options {
+	padding: 24px;
+	background-color: var(--#{$prefix}tertiary-bg);
+	margin-bottom: 0;
+	border: 1px solid var(--#{$prefix}border-color);
+}

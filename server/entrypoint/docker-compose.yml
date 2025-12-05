@@ -1,0 +1,177 @@
+version: "3.5"
+
+networks:
+  phibet:
+    name: phibet
+
+services:
+  redis-database:
+    image: redis:5.0.7-alpine
+    command: redis-server
+    volumes:
+      - ./docker_volumes_data/redis-database:/data
+    ports:
+      - "8000:6379"
+    networks:
+      - phibet
+
+  database:
+    image: postgres:12.1
+    shm_size: '1gb' # Add this line to increase shared memory
+    volumes:
+      - ./docker_volumes_data/database:/var/lib/postgresql/data
+    ports:
+      - "8001:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    logging:
+      options:
+        max-size: "200k"
+        max-file: "10"
+    networks:
+      - phibet
+
+  admin-backend:
+    build:
+      context: ../../admin/backend
+      target: builder
+    stdin_open: true
+    tty: true
+    command: [ "npm", "run", "start:dev" ]
+    volumes:
+      - /home/node/app/node_modules/
+      - ../../admin/backend:/home/node/app/
+      - /home/ubuntu/.aws:/home/node/.aws:ro
+    ports:
+      - "8002:7080"
+    env_file: ../../admin/backend/.env
+    logging:
+      options:
+        max-size: "200k"
+        max-file: "10"
+    depends_on:
+      - database
+    networks:
+      - phibet
+
+  admin-frontend:
+    build:
+      context: ../../admin/frontend
+      target: builder
+    command: [ "npm", "run", "dev" ]
+    volumes:
+      - /home/node/app/node_modules/
+      - ../../admin/frontend:/home/node/app/
+    ports:
+      - "8003:8080"
+    env_file: ../../admin/frontend/.env
+    logging:
+      options:
+        max-size: "200k"
+        max-file: "10"
+    networks:
+      - phibet
+
+  # user-backend:
+  #   build:
+  #     context: ../player-end/backend
+  #     target: builder
+  #   stdin_open: true
+  #   tty: true
+  #   command: [ "npm", "run", "start:dev" ]
+  #   volumes:
+  #     - /home/node/app/node_modules/
+  #     - ../player-end/backend:/home/node/app/
+  #     - /home/ubuntu/.aws:/home/node/.aws:ro
+  #   ports:
+  #     - "8004:7077"
+  #   env_file: ../player-end/backend/.env
+  #   logging:
+  #     options:
+  #       max-size: "200k"
+  #       max-file: "10"
+  #   depends_on:
+  #     - database
+  #   networks:
+  #     - phibet
+
+  # user-frontend:
+  #   build:
+  #     context: ../player-end/frontend
+  #     target: builder
+  #   command: [ "npm", "run", "dev" ]
+  #   volumes:
+  #     - /home/node/app/node_modules/
+  #     - ../player-end/frontend:/home/node/app/
+  #   ports:
+  #     - "8005:8080"
+  #     - "6633:9229"
+  #   env_file: ../player-end/frontend/.env
+  #   depends_on:
+  #     - user-backend
+  #   logging:
+  #     options:
+  #       max-size: "200k"
+  #       max-file: "10"
+  #   networks:
+  #     - phibet
+    
+  # queue-worker-service:
+  #   build:
+  #     context: ../queue-worker-service
+  #     target: builder
+  #   command: [ "npm", "run", "start:dev" ]
+  #   volumes:
+  #     - /home/node/app/node_modules/
+  #     - ../queue-worker-service:/home/node/app/
+  #   ports:
+  #     - "8006:7050"
+  #   env_file: ../queue-worker-service/.env
+  #   logging:
+  #     options:
+  #       max-size: "200k"
+  #       max-file: "10"
+  #   depends_on:
+  #     - database
+  #   networks:
+  #     - phibet
+  
+  # queue-worker:
+  #   build:
+  #     context: ../queue-worker-service
+  #     target: builder
+  #   command: [ "npm", "run", "start:dev:workers" ]
+  #   volumes:
+  #     - /home/node/app/node_modules/
+  #     - ../queue-worker-service:/home/node/app/
+  #   ports:
+  #     - "8007:7050"
+  #   env_file: ../queue-worker-service/.env
+  #   logging:
+  #     options:
+  #       max-size: "200k"
+  #       max-file: "10"
+  #   depends_on:
+  #     - database
+  #     - redis-database
+  #   networks:
+  #     - phibet
+
+  # pg-admin:
+  #   image: dpage/pgadmin4
+  #   restart: always
+  #   environment:
+  #     PGADMIN_DEFAULT_EMAIL: admin@phibet.com
+  #     PGADMIN_DEFAULT_PASSWORD: BKJBLJD24135LK
+  #     PGADMIN_LISTEN_PORT: 80
+  #   ports:
+  #     - "8008:80"
+  #   volumes:
+  #     - ./docker_volumes_data/pgadmin-data:/var/lib/pgadmin
+  #   logging:
+  #     options:
+  #       max-size: "200k"
+  #       max-file: "10"
+  #   networks:
+  #     - phibet

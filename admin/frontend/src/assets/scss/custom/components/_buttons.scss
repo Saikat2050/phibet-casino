@@ -1,0 +1,167 @@
+//
+// _buttons.scss
+//
+
+button,
+a {
+	outline: none !important;
+}
+
+// Rounded Buttons
+.btn-rounded {
+	border-radius: 30px;
+}
+
+.btn {
+	&:focus {
+		box-shadow: $btn-focus-box-shadow;
+	}
+}
+
+// example 1
+
+.btn-group-example {
+	.btn {
+		position: relative;
+
+		&:first-child {
+			&::before {
+				display: none;
+			}
+		}
+
+		&:before {
+			content: 'OR';
+			position: absolute;
+			font-size: 10px;
+			width: 24px;
+			height: 24px;
+			line-height: 24px;
+			border-radius: 50%;
+			background-color: var(--#{$prefix}secondary-color);
+			color: var(--#{$prefix}secondary-bg);
+			border: 1px solid var(--#{$prefix}secondary-bg);
+			left: -12px;
+			top: 50%;
+			transform: translateY(-50%);
+			z-index: 1;
+		}
+	}
+}
+
+// Example 2
+
+.btn-label {
+	position: relative;
+	padding-left: 44px;
+	.label-icon {
+		position: absolute;
+		width: 32px;
+		height: 100%;
+		left: 0;
+		top: 0;
+		background-color: rgba($white, 0.1);
+		border-right: 1px solid rgba($white, 0.1);
+		font-size: 16px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&.btn-light {
+		.label-icon {
+			background-color: rgba($dark, 0.1);
+			border-right: 1px solid rgba($dark, 0.2);
+		}
+	}
+}
+
+.btn-group-vertical {
+	label {
+		margin-bottom: 0px;
+	}
+}
+
+//
+// Soft Buttons
+//
+
+@mixin button-variant-soft($bg) {
+	color: $bg;
+	background-color: rgba($bg, 0.1);
+	border-color: transparent;
+	transition: all 0.5s ease;
+	&:hover,
+	&:focus,
+	&:active {
+		color: $white;
+		background-color: $bg;
+		border-color: transparent;
+	}
+}
+
+@each $color, $value in $theme-colors {
+	.btn-soft-#{$color} {
+		@include button-variant-soft($value);
+	}
+}
+
+.like-btn {
+	&.active {
+		.bx-heart {
+			color: $danger;
+			&:before {
+				content: '\ec8f';
+			}
+		}
+	}
+}
+
+.font-size {
+	font-size: 1rem;
+}
+
+.icon-button-padding {
+	padding: 2px 8px;
+	font-size: 1.3rem;
+}
+
+.password-btn {
+	max-height: 36px;
+}
+
+.fancy-btn {
+	background: radial-gradient(
+		circle at center,
+		var(--bs-primary),
+		#c48e48,
+		#c48e48
+	);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+	transition: all 0.3s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+[data-bs-theme='dark'] .fancy-btn {
+	box-shadow: 0 4px 6px var(--bs-secondary-color);
+}
+
+.fancy-btn i {
+	margin-right: 10px;
+}
+
+.fancy-btn:hover {
+	background: radial-gradient(
+		circle at center,
+		#c48e48,
+		#c48e48,
+		var(--bs-primary)
+	);
+	transform: translateY(-3px);
+}
+
+.fancy-btn:focus,
+.fancy-btn:active {
+	outline: none;
+}

@@ -1,0 +1,57 @@
+//
+// projects.scss
+//
+
+// project list
+
+.project-list-table {
+	border-collapse: separate;
+	border-spacing: 0 12px;
+
+	tr {
+		background-color: var(--#{$prefix}secondary-bg);
+	}
+}
+
+@media screen and (max-width: 1640px) {
+	.reportList1 {
+		width: 50%;
+	}
+	.reportList2 {
+		width: 60%;
+	}
+	.reportList3,
+	.reportList4 {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 1365px) {
+	.reportList1 {
+		width: 65%;
+	}
+	.reportList2 {
+		width: 80%;
+	}
+	.reportList3,
+	.reportList4 {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1639px) {
+	// .reportList1, .reportList2, .reportList3,.reportList4{
+	//   font-size: 12px;
+	// }
+}
+
+@media (max-width: 768px) {
+	.col-reverse-sm {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
+
+.react-datepicker-popper {
+	z-index: 9999999;
+}
