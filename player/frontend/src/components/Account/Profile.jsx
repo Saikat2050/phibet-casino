@@ -245,7 +245,7 @@ function Profile() {
     setErrors({});
 
     if (!isTermsAccepted) {
-      toast.error("You must agree to the sweepstakes rules.");
+      toast.error("You must agree to the casino rules.");
       setLoading(false);
       return;
     }
@@ -732,7 +732,7 @@ function Profile() {
               <p className="text-sm  ">
                 I accept and agree to bound by the{" "}
                 <Link href="/VCSR1.0.pdf" className="text-white underline">
-                  Sweepstakes Rules.
+                  Casino Rules.
                 </Link>{" "}
               </p>
             </div>

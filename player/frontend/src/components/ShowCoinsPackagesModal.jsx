@@ -66,11 +66,11 @@ const ShowCoinPackageMoal = ({ close }) => {
       </h2>
       <div className="grid grid-cols-3 ml-1.5 mr-4 sm:mx-5">
         <div className="text-base max-lg:text-xs font-bold   bg-orangeShade-2 p-1 rounded-t-lg text-center capitalize  max-w-[162px] max-sm:w-customWidth max-sm:customMaxWidth max-sm:relative max-sm:right-1.5 w-full mx-auto flex items-center justify-center">
-          gold coins
+          USD
         </div>
-        <div className="text-base max-lg:text-xs   bg-white p-1 rounded-t-lg font-bold text-center capitalize max-w-[162px] max-sm:max-w-full w-full mx-auto flex items-center justify-center max-sm:max-w-full">
+        {/* <div className="text-base max-lg:text-xs   bg-white p-1 rounded-t-lg font-bold text-center capitalize max-w-[162px] max-sm:max-w-full w-full mx-auto flex items-center justify-center max-sm:max-w-full">
           sweep coins
-        </div>
+        </div> */}
         <p></p>
       </div>
       <div className="max-h-[260px] overflow-auto">
