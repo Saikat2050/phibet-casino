@@ -73,49 +73,49 @@ services:
     networks:
       - phibet
 
-  # user-backend:
-  #   build:
-  #     context: ../player-end/backend
-  #     target: builder
-  #   stdin_open: true
-  #   tty: true
-  #   command: [ "npm", "run", "start:dev" ]
-  #   volumes:
-  #     - /home/node/app/node_modules/
-  #     - ../player-end/backend:/home/node/app/
-  #     - /home/ubuntu/.aws:/home/node/.aws:ro
-  #   ports:
-  #     - "8004:7077"
-  #   env_file: ../player-end/backend/.env
-  #   logging:
-  #     options:
-  #       max-size: "200k"
-  #       max-file: "10"
-  #   depends_on:
-  #     - database
-  #   networks:
-  #     - phibet
+  user-backend:
+    build:
+      context: ../player-end/backend
+      target: builder
+    stdin_open: true
+    tty: true
+    command: [ "npm", "run", "start:dev" ]
+    volumes:
+      - /home/node/app/node_modules/
+      - ../player-end/backend:/home/node/app/
+      - /home/ubuntu/.aws:/home/node/.aws:ro
+    ports:
+      - "8004:7077"
+    env_file: ../player-end/backend/.env
+    logging:
+      options:
+        max-size: "200k"
+        max-file: "10"
+    depends_on:
+      - database
+    networks:
+      - phibet
 
-  # user-frontend:
-  #   build:
-  #     context: ../player-end/frontend
-  #     target: builder
-  #   command: [ "npm", "run", "dev" ]
-  #   volumes:
-  #     - /home/node/app/node_modules/
-  #     - ../player-end/frontend:/home/node/app/
-  #   ports:
-  #     - "8005:8080"
-  #     - "6633:9229"
-  #   env_file: ../player-end/frontend/.env
-  #   depends_on:
-  #     - user-backend
-  #   logging:
-  #     options:
-  #       max-size: "200k"
-  #       max-file: "10"
-  #   networks:
-  #     - phibet
+  user-frontend:
+    build:
+      context: ../player-end/frontend
+      target: builder
+    command: [ "npm", "run", "dev" ]
+    volumes:
+      - /home/node/app/node_modules/
+      - ../player-end/frontend:/home/node/app/
+    ports:
+      - "8005:8080"
+      - "6633:9229"
+    env_file: ../player-end/frontend/.env
+    depends_on:
+      - user-backend
+    logging:
+      options:
+        max-size: "200k"
+        max-file: "10"
+    networks:
+      - phibet
     
   # queue-worker-service:
   #   build:
