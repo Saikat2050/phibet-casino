@@ -125,18 +125,18 @@ const usePackagesListing = (filterValues = {}) => {
 				Cell: ({ cell }) => <CellValue value={cell.value} />,
 			},
 			{
-				Header: 'Gold Coin',
+				Header: 'USD',
 				accessor: 'gcCoin',
 				filterable: true,
 				Cell: ({ cell }) => <Amount value={cell.value} />,
 			},
-			{
-				Header: 'Sweep Coin',
-				accessor: 'scCoin',
-				disableFilters: true,
-				disableSortBy: true,
-				Cell: ({ cell }) => <CellValue value={cell.value} />,
-			},
+			// {
+			// 	Header: 'USD',
+			// 	accessor: 'scCoin',
+			// 	disableFilters: true,
+			// 	disableSortBy: true,
+			// 	Cell: ({ cell }) => <CellValue value={cell.value} />,
+			// },
 			{
 				Header: 'Visible in Store',
 				accessor: 'isVisibleInStore',
