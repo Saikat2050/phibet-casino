@@ -13,11 +13,10 @@ const CoinsPackage = async () => {
       </h2>
       <div className="grid grid-cols-3">
         <p className="text-base max-lg:text-xs font-bold text-white capitalize">
-          gold coins
-        </p>
-        <div className="text-base max-lg:text-xs   bg-white p-1 rounded-t-lg font-bold text-center capitalize max-w-[162px] w-full mx-auto">
+USD        </p>
+        {/* <div className="text-base max-lg:text-xs   bg-white p-1 rounded-t-lg font-bold text-center capitalize max-w-[162px] w-full mx-auto">
           sweep coins
-        </div>
+        </div> */}
         <p></p>
       </div>
       <div className="max-h-[260px] overflow-auto">

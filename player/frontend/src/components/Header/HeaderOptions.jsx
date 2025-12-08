@@ -809,19 +809,19 @@ useEffect(() => {
               onClick={toggleCoin}
               className={`relative flex items-center cursor-pointer h-[40px] xl:h-[44px] font-bold py-1 px-1 justify-center rounded-full z-10`}
             >
-              {selectedCoin == "GC" ? <GC /> : <GCGray />}
+              {/* {selectedCoin == "GC" ? <GC /> : <GCGray />} */}
               {hideBalance && (
                 <span className="ml-2 text-base lg:text-[20.71px] text-[#303545] font-bold">
-                  {formatCompactNumber(user?.userWallet?.gcCoin)}
+                 $ {formatCompactNumber(user?.userWallet?.gcCoin)}
                 </span>
               )}
               <span className="ml-auto text-base lg:text-[20.71px] pr-2 text-black font-bold">
-                GC
+                USD
               </span>
             </div>
 
             {/* SC Button */}
-            <div
+            {/* <div
               onClick={toggleCoin}
               className={`relative flex items-center cursor-pointer h-[40px] xl:h-[44px] font-bold py-1 px-1 justify-center rounded-full z-10`}
             >
@@ -840,7 +840,7 @@ useEffect(() => {
               <span className="ml-auto text-base lg:text-[20.71px] pr-2 text-black font-bold">
                 SC
               </span>
-            </div>
+            </div> */}
           </div>
 
           <div className="hidden sm:flex flex-row gap-2 lg:gap-4">

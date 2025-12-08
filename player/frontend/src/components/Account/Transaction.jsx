@@ -258,11 +258,11 @@ function Transaction() {
                   Date & Time
                 </th>
                 <th className="whitespace-nowrap px-[10px] py-[9px] font-normal text-[13px] capitalize   text-start">
-                  Gold Coin
+                 USD
                 </th>
-                <th className="whitespace-nowrap px-[10px] py-[9px] font-normal text-[13px] capitalize   text-start">
+                {/* <th className="whitespace-nowrap px-[10px] py-[9px] font-normal text-[13px] capitalize   text-start">
                   Sweep Coin
-                </th>
+                </th> */}
                 {/* {actionType.value == "deposit" && ( */}
                 <th className="whitespace-nowrap px-[10px] py-[9px] font-normal text-[13px] capitalize   text-start">
                   Amount
