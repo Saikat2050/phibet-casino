@@ -75,18 +75,18 @@ services:
 
   user-backend:
     build:
-      context: ../player-end/backend
+      context: ../../player/backend
       target: builder
     stdin_open: true
     tty: true
     command: [ "npm", "run", "start:dev" ]
     volumes:
       - /home/node/app/node_modules/
-      - ../player-end/backend:/home/node/app/
+      - ../../player/backend:/home/node/app/
       - /home/ubuntu/.aws:/home/node/.aws:ro
     ports:
       - "8004:7077"
-    env_file: ../player-end/backend/.env
+    env_file: ../../player/backend/.env
     logging:
       options:
         max-size: "200k"
@@ -98,16 +98,16 @@ services:
 
   user-frontend:
     build:
-      context: ../player-end/frontend
+      context: ../../player/frontend
       target: builder
     command: [ "npm", "run", "dev" ]
     volumes:
       - /home/node/app/node_modules/
-      - ../player-end/frontend:/home/node/app/
+      - ../../player/frontend:/home/node/app/
     ports:
       - "8005:8080"
       - "6633:9229"
-    env_file: ../player-end/frontend/.env
+    env_file: ../../player/frontend/.env
     depends_on:
       - user-backend
     logging:
@@ -119,15 +119,15 @@ services:
     
   # queue-worker-service:
   #   build:
-  #     context: ../queue-worker-service
+  #     context: ../../queue-worker-service
   #     target: builder
   #   command: [ "npm", "run", "start:dev" ]
   #   volumes:
   #     - /home/node/app/node_modules/
-  #     - ../queue-worker-service:/home/node/app/
+  #     - ../../queue-worker-service:/home/node/app/
   #   ports:
   #     - "8006:7050"
-  #   env_file: ../queue-worker-service/.env
+  #   env_file: ../../queue-worker-service/.env
   #   logging:
   #     options:
   #       max-size: "200k"
