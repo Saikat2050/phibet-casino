@@ -51,59 +51,31 @@ export const topPlayerOrder = [
 	},
 	{
 		value: 'scRewards',
-		label: 'SC Rewards',
+		label: 'Bonus Rewards',
 	},
 	{
 		value: 'scStakedAmount',
-		label: 'SC Wagered Amount',
+		label: 'Wagered Amount',
 	},
 	{
 		value: 'scBetCount',
-		label: 'SC Bet Count',
+		label: 'Bet Count',
 	},
 	{
 		value: 'scCasinoWins',
-		label: 'SC Casino Wins',
+		label: 'Casino Wins',
 	},
 	{
 		value: 'scCasinoBetRollback',
-		label: 'SC Casino Bet Rollback',
+		label: 'Casino Bet Rollback',
 	},
 	{
 		value: 'scCasinoWinRollback',
-		label: 'SC Casino Win Rollback',
+		label: 'Casino Win Rollback',
 	},
 	{
 		value: 'scPurchases',
-		label: 'SC Purchases',
-	},
-	{
-		value: 'gcRewards',
-		label: 'GC Rewards',
-	},
-	{
-		value: 'gcPurchases',
-		label: 'GC Purchases',
-	},
-	{
-		value: 'gcStakedAmount',
-		label: 'GC Wagered Amount',
-	},
-	{
-		value: 'gcBetCount',
-		label: 'GC Bet Count',
-	},
-	{
-		value: 'gcCasinoWins',
-		label: 'GC Casino Wins',
-	},
-	{
-		value: 'gcCasinoBetRollback',
-		label: 'GC Casino Bet Rollback',
-	},
-	{
-		value: 'gcCasinoWinRollback',
-		label: 'GC Casino Win Rollback',
+		label: 'Deposits',
 	},
 	{
 		value: 'redeemCompletedAmount',

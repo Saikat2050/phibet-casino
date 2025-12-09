@@ -121,12 +121,6 @@ const useLedgerListing = (userId, filterValues = {}) => {
 				Cell: ({ cell }) => <CellValue value={cell.value} />,
 			},
 			{
-				Header: 'Coins',
-				accessor: 'coins',
-				filterable: true,
-				Cell: ({ cell }) => <CellValue value={cell.value} />,
-			},
-			{
 				Header: 'Purpose',
 				accessor: 'purpose',
 				filterable: true,

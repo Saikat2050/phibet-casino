@@ -172,12 +172,12 @@ const useTransactionBankingListing = (filterValues = {}, userId = '') => {
 				filterable: true,
 				Cell: ({ cell }) => <ToWallet value={cell.value} />,
 			},
-			{
-				Header: 'Coins',
-				accessor: 'coins',
-				filterable: true,
-				Cell: ({ cell }) => <KeyValue value={cell.value} />,
-			},
+			// {
+			// 	Header: 'Coins',
+			// 	accessor: 'coins',
+			// 	filterable: true,
+			// 	Cell: ({ cell }) => <KeyValue value={cell.value} />,
+			// },
 			{
 				Header: 'Purpose',
 				accessor: 'purpose',

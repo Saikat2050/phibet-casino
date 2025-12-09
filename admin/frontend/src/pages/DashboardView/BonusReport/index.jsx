@@ -155,7 +155,7 @@ const BonusReport = () => {
 										</CSVLink>
 									</div>
 								</Col>
-								<TableContainer
+								{/* <TableContainer
 									isLoading={bonusReportLoading}
 									columns={columns || []}
 									data={bonusReportFormatted}
@@ -163,7 +163,7 @@ const BonusReport = () => {
 									tableClass={`table-bordered align-middle table-striped nowrap ${tableCustomClass}`}
 									isShowColSettings={false}
 									tbodyHeight={bonusReportLoading ? '230px' : ''}
-								/>
+								/> */}
 							</Row>
 							<Row>
 								<div>{getDashboardFilterText(selected, fromDate, toDate)}</div>
