@@ -2,6 +2,7 @@ version: "3.5"
 
 networks:
   phibet:
+    external: true
     name: phibet
 
 services:
@@ -17,7 +18,7 @@ services:
 
   database:
     image: postgres:12.1
-    shm_size: '1gb' # Add this line to increase shared memory
+    shm_size: '256mb' # Add this line to increase shared memory
     volumes:
       - ./docker_volumes_data/database:/var/lib/postgresql/data
     ports:
@@ -61,7 +62,6 @@ services:
       target: builder
     command: [ "npm", "run", "dev" ]
     volumes:
-      - /home/node/app/node_modules/
       - ../../admin/frontend:/home/node/app/
     ports:
       - "8003:8080"
@@ -102,7 +102,6 @@ services:
       target: builder
     command: [ "npm", "run", "dev" ]
     volumes:
-      - /home/node/app/node_modules/
       - ../../player/frontend:/home/node/app/
     ports:
       - "8005:8080"
