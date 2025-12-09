@@ -3,7 +3,7 @@
 import moment from 'moment';
 import React, { useMemo } from 'react';
 import ApexCharts from 'react-apexcharts';
-import { addCommasToNumber } from '../../../utils/helpers';
+// import { addCommasToNumber } from '../../../utils/helpers';
 import Spinners from '../../../components/Common/Spinner';
 
 const CarbonLineBarChart = ({
@@ -20,20 +20,8 @@ const CarbonLineBarChart = ({
 			dateSeries: chartData.dates.map((date) => moment(date).format('ll')),
 			series: [
 				{
-					name: 'GC Payout Count',
+					name: 'Payout Count',
 					data: chartData.payoutStats.gcCount,
-				},
-				{
-					name: 'GC Payout Coins',
-					data: chartData.payoutStats.gcAmount,
-				},
-				{
-					name: 'SC Payout Count',
-					data: chartData.payoutStats.scCount,
-				},
-				{
-					name: 'SC Payout Coins',
-					data: chartData.payoutStats.scAmount,
 				},
 			],
 		};
@@ -77,7 +65,7 @@ const CarbonLineBarChart = ({
 	return (
 		<div id="chart">
 			<div className="d-flex justify-content-start flex-wrap gap-3">
-				<div className="badge bg-info-subtle text-dark p-3 fs-4 rounded-4">
+				{/* <div className="badge bg-info-subtle text-dark p-3 fs-4 rounded-4">
 					<h6 className="mb-0 font-weight-bold">
 						<span style={{ color: '#57392b' }}>GC Coins:</span>{' '}
 						{addCommasToNumber(
@@ -110,7 +98,7 @@ const CarbonLineBarChart = ({
 							chartData.payoutStats.scCount.reduce((acc, val) => acc + val, 0)
 						)}
 					</h6>
-				</div>
+				</div> */}
 			</div>
 			{statsDataLoading ? (
 				<div style={{ height: '350px' }}>

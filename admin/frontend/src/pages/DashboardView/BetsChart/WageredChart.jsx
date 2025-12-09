@@ -20,20 +20,8 @@ const CarbonLineBarChart = ({
 			dateSeries: chartData.dates.map((date) => moment(date).format('ll')),
 			series: [
 				{
-					name: 'GC Wagered Count',
+					name: 'Wagered Count',
 					data: chartData.wageredStats.gcCount,
-				},
-				{
-					name: 'GC Wagered Coins',
-					data: chartData.wageredStats.gcAmount,
-				},
-				{
-					name: 'SC Wagered Count',
-					data: chartData.wageredStats.scCount,
-				},
-				{
-					name: 'SC Wagered Coins',
-					data: chartData.wageredStats.scAmount,
 				},
 			],
 		};
@@ -81,7 +69,7 @@ const CarbonLineBarChart = ({
 
 	return (
 		<div id="chart">
-			<div className="d-flex justify-content-start flex-wrap gap-3">
+			{/* <div className="d-flex justify-content-start flex-wrap gap-3">
 				<div className="badge bg-success-subtle text-dark p-3 fs-4 rounded-4">
 					<h6 className="mb-0 font-weight-bold">
 						<span style={{ color: '#07664b' }}>GC Coins:</span>{' '}
@@ -122,7 +110,7 @@ const CarbonLineBarChart = ({
 						)}
 					</h6>
 				</div>
-			</div>
+			</div> */}
 			{statsDataLoading ? (
 				<div style={{ height: '350px' }}>
 					<Spinners />

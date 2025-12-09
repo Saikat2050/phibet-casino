@@ -101,7 +101,7 @@ const DashboardView = ({ t }) => {
 								<CardBody>
 									<h4 className="card-title font-size-16 d-flex align-items-center">
 										<span className="mdi mdi-cart-outline fs-1 me-3 text-dashboard" />{' '}
-										Purchase{' '}
+										Deposit{' '}
 									</h4>
 									<PurchaseChart
 										statsDataLoading={statisticsV2Loading}
@@ -118,7 +118,7 @@ const DashboardView = ({ t }) => {
 								<CardBody>
 									<h4 className="card-title font-size-16 d-flex align-items-center">
 										<span className="mdi mdi-wallet-giftcard fs-1 me-3 text-dashboard" />{' '}
-										Redeem{' '}
+										Withdrawal{' '}
 									</h4>
 									<RedeemChart
 										statsDataLoading={statisticsV2Loading}
@@ -193,7 +193,7 @@ const DashboardView = ({ t }) => {
 								<CardBody className="logged-player">
 									<h4 className="card-title font-size-16 d-flex align-items-center">
 										<span className="mdi mdi-account-group fs-1 me-3 text-dashboard" />{' '}
-										Active SC, GC and New SC Players
+										Active and New Players
 									</h4>
 									<CoinActivePlayers
 										statsDataLoading={activeUsersLoading}

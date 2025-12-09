@@ -58,9 +58,9 @@ const LivePlayerReport = () => {
 
 		return [
 			{
-				title: 'SC Staked',
-				tooltip: 'SC Staked',
-				toolTipId: 'scStaked',
+				title: 'Staked',
+				tooltip: 'Staked',
+				toolTipId: 'Staked',
 				value: Number(
 					(
 						(todayData?.sc_total_bet_amount || 0) -
@@ -73,7 +73,7 @@ const LivePlayerReport = () => {
 				},
 				series: [
 					{
-						name: 'SC Staked',
+						name: 'Staked',
 						data: sortedPerformanceData?.map((item) =>
 							Number(
 								(
@@ -86,8 +86,8 @@ const LivePlayerReport = () => {
 				],
 			},
 			{
-				title: 'SC Wins',
-				tooltip: 'SC Wind',
+				title: 'Wins',
+				tooltip: 'Wind',
 				toolTipId: 'scWins',
 				value: Number(
 					(
@@ -101,7 +101,7 @@ const LivePlayerReport = () => {
 				},
 				series: [
 					{
-						name: 'SC Wins',
+						name: 'Wins',
 						data: sortedPerformanceData?.map((item) =>
 							Number(
 								(
@@ -114,9 +114,9 @@ const LivePlayerReport = () => {
 				],
 			},
 			{
-				title: 'GGR SC',
-				tooltip: 'GGR SC',
-				toolTipId: 'ggrSc',
+				title: 'GGR',
+				tooltip: 'GGR',
+				toolTipId: 'ggr',
 				value: Number(
 					(
 						(todayData?.sc_total_bet_amount || 0) -
@@ -131,7 +131,7 @@ const LivePlayerReport = () => {
 				},
 				series: [
 					{
-						name: 'GGR SC',
+						name: 'GGR',
 						data: sortedPerformanceData.map((item) =>
 							Number(
 								(
@@ -141,42 +141,6 @@ const LivePlayerReport = () => {
 										(item?.sc_casino_win_rollback || 0))
 								)?.toFixed(2)
 							)
-						),
-					},
-				],
-			},
-			{
-				title: 'SC Awarded',
-				tooltip: 'SC Awarded',
-				toolTipId: 'scAwarded',
-				value: Number((todayData?.sc_rewards || 0)?.toFixed(2)),
-				diff() {
-					const dataList = this.series?.[0]?.data || [];
-					return getPercentage(dataList.at(-1), dataList?.at(0));
-				},
-				series: [
-					{
-						name: 'SC Awarded',
-						data: sortedPerformanceData.map((item) =>
-							Number((item?.sc_rewards || 0)?.toFixed(2))
-						),
-					},
-				],
-			},
-			{
-				title: 'GC Awarded',
-				tooltip: 'GC Awarded',
-				toolTipId: 'gcAwarded',
-				value: Number((todayData?.gc_rewards || 0)?.toFixed(2)),
-				diff() {
-					const dataList = this.series?.[0]?.data || [];
-					return getPercentage(dataList.at(-1), dataList?.at(0));
-				},
-				series: [
-					{
-						name: 'GC Awarded',
-						data: sortedPerformanceData.map((item) =>
-							Number((item?.gc_rewards || 0)?.toFixed(2))
 						),
 					},
 				],
@@ -248,34 +212,10 @@ const LivePlayerReport = () => {
 				],
 			},
 			{
-				title: 'Total Redeemable SC',
-				tooltip: 'Total Redeemable SC',
+				title: 'Total Withdrawal',
+				tooltip: 'Total Withdrawal',
 				toolTipId: 'totalRedeemableSC',
 				value: Number((+todayWalletsData?.totalSCAmount || 0)?.toFixed(2)),
-				diff() {},
-				series: [],
-			},
-			{
-				title: 'Bonus SC',
-				tooltip: 'Bonus SC',
-				toolTipId: 'bonusSC',
-				value: Number((+todayWalletsData?.totalBSCAmount || 0)?.toFixed(2)),
-				diff() {},
-				series: [],
-			},
-			{
-				title: 'Purchase SC',
-				tooltip: 'Purchase SC',
-				toolTipId: 'purchaseSC',
-				value: Number((+todayWalletsData?.totalPSCAmount || 0)?.toFixed(2)),
-				diff() {},
-				series: [],
-			},
-			{
-				title: 'Redeemable SC',
-				tooltip: 'Redeemable SC',
-				toolTipId: 'redeemableSC',
-				value: Number((+todayWalletsData?.totalRSCAmount || 0)?.toFixed(2)),
 				diff() {},
 				series: [],
 			},

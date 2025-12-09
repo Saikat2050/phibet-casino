@@ -21,15 +21,11 @@ const CoinActivePlayers = ({
 		if (statsData?.dates?.length) {
 			const formattedData = [
 				{
-					name: 'Active SC Players',
+					name: 'Active Players',
 					data: statsData.activePlayerStats.activeSCPlayers,
 				},
 				{
-					name: 'Active GC Players',
-					data: statsData.activePlayerStats.activeGCPlayers,
-				},
-				{
-					name: 'Active New SC Players',
+					name: 'Active New Players',
 					data: statsData.activePlayerStats.activeNewSCPlayers,
 				},
 			];

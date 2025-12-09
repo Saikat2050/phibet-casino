@@ -17,27 +17,27 @@ const RevenueChart = ({ statsData, statsDataLoading }) => {
 	useEffect(() => {
 		const formateData = [
 			{
-				name: 'SC Revenue',
+				name: 'Revenue',
 				data: statsData.revenueStats.scRevenue,
 			},
 			{
-				name: 'SC Wagered',
+				name: 'Wagered',
 				data: statsData.revenueStats.scWagered,
 			},
 			{
-				name: 'SC Payout',
+				name: 'Payout',
 				data: statsData.revenueStats.scPayout,
 			},
 			{
-				name: 'GC Revenue',
+				name: 'Bonus Revenue',
 				data: statsData.revenueStats.gcRevenue,
 			},
 			{
-				name: 'GC Wagered',
+				name: 'Bonus Wagered',
 				data: statsData.revenueStats.gcWagered,
 			},
 			{
-				name: 'GC Payout',
+				name: 'Bonus Payout',
 				data: statsData.revenueStats.gcPayout,
 			},
 		];

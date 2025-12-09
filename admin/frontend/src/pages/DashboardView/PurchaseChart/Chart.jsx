@@ -20,17 +20,17 @@ const CarbonLineBarChart = ({
 			dateSeries: chartData.dates.map((date) => moment(date).format('ll')),
 			series: [
 				{
-					name: 'GC Purchase Coins',
+					name: 'Deposit',
 					data: chartData.purchaseStats.gcAmount,
 				},
 				{
-					name: 'SC Purchase Coins',
+					name: 'Withdrawal',
 					data: chartData.purchaseStats.scAmount,
 				},
-				{
-					name: 'Total Purchase Amount',
-					data: chartData.purchaseStats.totalPurchaseAmount,
-				},
+				// {
+				// 	name: 'Total Purchase Amount',
+				// 	data: chartData.purchaseStats.totalPurchaseAmount,
+				// },
 				// {
 				// 	name: 'Total Purchase Amount',
 				// 	data: chartData.purchaseStats.totalAmount,
@@ -88,7 +88,7 @@ const CarbonLineBarChart = ({
 			<div className="d-flex justify-content-start flex-wrap gap-3">
 				<div className="badge bg-success-subtle text-dark p-3 fs-4 rounded-4">
 					<h6 className="mb-0 font-weight-bold">
-						<span className="text-success">GC Purchase Coins:</span>{' '}
+						<span className="text-success">Deposit:</span>{' '}
 						{addCommasToNumber(
 							chartData.purchaseStats.gcAmount.reduce(
 								(acc, val) => acc + val,
@@ -100,7 +100,7 @@ const CarbonLineBarChart = ({
 				</div>
 				<div className="badge bg-info-subtle text-dark p-3 fs-4 rounded-4">
 					<h6 className="mb-0 font-weight-bold">
-						<span style={{ color: '#57392b' }}>SC Purchase Coins:</span>{' '}
+						<span style={{ color: '#57392b' }}>Withdrawal:</span>{' '}
 						{addCommasToNumber(
 							chartData.purchaseStats.scAmount.reduce(
 								(acc, val) => acc + val,
@@ -112,7 +112,7 @@ const CarbonLineBarChart = ({
 				</div>
 				<div className="badge bg-success-subtle text-dark p-3 fs-4 rounded-4">
 					<h6 className="mb-0 font-weight-bold">
-						<span className="text-success">Total Purchase Amount:</span>{' '}
+						<span className="text-success">Total Deposit Amount:</span>{' '}
 						{addCommasToNumber(
 							chartData.purchaseStats.totalPurchaseAmount
 								.reduce((acc, val) => acc + val, 0)
@@ -122,7 +122,7 @@ const CarbonLineBarChart = ({
 				</div>
 				<div className="badge bg-info-subtle text-dark p-3 fs-4 rounded-4">
 					<h6 className="mb-0 font-weight-bold">
-						<span style={{ color: '#9b734c' }}>Total Purchase Count:</span>{' '}
+						<span style={{ color: '#9b734c' }}>Total Deposit Count:</span>{' '}
 						{addCommasToNumber(
 							chartData.purchaseStats.scCount.reduce((acc, val) => acc + val, 0)
 						)}
