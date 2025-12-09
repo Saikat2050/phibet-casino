@@ -62,6 +62,7 @@ services:
       target: builder
     command: [ "npm", "run", "dev" ]
     volumes:
+      - /home/node/app/node_modules/
       - ../../admin/frontend:/home/node/app/
     ports:
       - "8003:8080"
@@ -102,6 +103,7 @@ services:
       target: builder
     command: [ "npm", "run", "dev" ]
     volumes:
+      - /home/node/app/node_modules/
       - ../../player/frontend:/home/node/app/
     ports:
       - "8005:8080"
