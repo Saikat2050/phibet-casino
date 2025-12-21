@@ -1,51 +1,48 @@
-## --------- for development ---------
-FROM node:20-alpine AS builder
+# =========================
+# Player Frontend – DEV
+# Next.js + Tailwind + pnpm
+# =========================
 
+FROM node:20-alpine
 
-RUN apk update
-RUN apk add --no-cache python3 make g++
+# ---- System deps (required for next / sharp / sass / native builds)
+RUN apk update && apk add --no-cache \
+  bash \
+  python3 \
+  make \
+  g++ \
+  libc6-compat
 
-
+# ---- App directory
 WORKDIR /home/node/app
 
+# ---- Enable pnpm via corepack (Node 20 native)
+RUN corepack enable && corepack prepare pnpm@latest --activate
 
-# set our node environment, either development or production
-# defaults to production, compose overrides this to development on build and run
+# ---- Environment
+ENV NODE_ENV=development
+ENV PORT=8080
+ENV NEXT_TELEMETRY_DISABLED=1
 
-ARG NODE_ENV=production
-# ARG NODE_ENV=development
-ENV NODE_ENV $NODE_ENV
-ENV NODE_OPTIONS --max_old_space_size=2096
+EXPOSE 8080
 
-ARG PORT=8080
-ENV PORT $PORT
-EXPOSE $PORT 9240 9241
+# ---- Copy only dependency files first (better layer caching)
+COPY package.json pnpm-lock.yaml* ./
 
+# ---- Install ALL deps (including dev deps → tailwind/postcss loaders)
+RUN pnpm install --frozen-lockfile
 
-# set DEBIAN_FRONTEND to noninteractive.
-ENV DEBIAN_FRONTEND noninteractive
-
-
-# install dependencies first, in a different location for easier app bind mounting for local development
-
-
-COPY ./package*.json ./
-RUN yarn global add pnpm
-
-RUN pnpm install
-
-
-# copy in our source code last, as it changes the most
+# ---- Copy full source AFTER deps
 COPY . .
 
+# ---- Fix permissions (important for Docker + volumes)
+RUN chown -R node:node /home/node/app
 
-RUN yarn build
+# ---- Run as non-root user
+USER node
 
+# ---- Clear Next cache just in case
+RUN rm -rf .next
 
-## --------- for production deployment ---------
-FROM nginx:stable AS production
-WORKDIR /usr/share/nginx/html
-EXPOSE 80
-COPY --from=builder /home/node/app/build /usr/share/nginx/html
-COPY --from=builder /home/node/app/nginx.conf /etc/nginx/conf.d/default.conf
-CMD ["/bin/bash", "-c", "nginx -g \"daemon off;\""]
+# ---- Start Next dev server
+CMD ["pnpm", "dev"]

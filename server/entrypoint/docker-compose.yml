@@ -100,21 +100,16 @@ services:
   user-frontend:
     build:
       context: ../../player/frontend
-      target: builder
-    command: [ "npm", "run", "dev" ]
-    volumes:
-      - /home/node/app/node_modules/
-      - ../../player/frontend:/home/node/app/
+    command: ["pnpm","dev"]
     ports:
       - "8005:8080"
-      - "6633:9229"
-    env_file: ../../player/frontend/.env
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ../../player/frontend:/home/node/app
+      - /home/node/app/node_modules   # ⬅️ CRITICAL
     depends_on:
       - user-backend
-    logging:
-      options:
-        max-size: "200k"
-        max-file: "10"
     networks:
       - phibet
     
