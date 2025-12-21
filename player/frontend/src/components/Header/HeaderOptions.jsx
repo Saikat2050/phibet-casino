@@ -12,9 +12,9 @@ import {
   submitProfileAction
 } from "@/actions";
 import Arrow from "@/assets/images/Arrow";
-import GC from "@/assets/images/coins/GC";
+import USD from "@/assets/images/coins/USD";
 import GCGray from "@/assets/images/coins/GCGray";
-import SC from "@/assets/images/coins/SC";
+// import USD from "@/assets/images/coins/USD";
 import SCGray from "@/assets/images/coins/SCGray";
 import UserImage from "@/assets/images/default-profile.svg";
 import Help from "@/assets/images/Help";
@@ -88,7 +88,7 @@ const HeaderOptions = () => {
     useEffect(() => {
       if (user?.isKycRequired && (user?.kycStatus != "K4" && user?.kycStatus != "K5")) {
   
-        setSelectedCoin("GC");
+        setSelectedCoin("USD");
       }
     }, [user])
 
@@ -110,7 +110,7 @@ const HeaderOptions = () => {
   // useEffect(() => {
   //   if (user?.isKycRequired) {
   //     if (user?.kycStatus !== "K4" && user?.kycStatus !== "K5") {
-  //       setSelectedCoin("GC");
+  //       setSelectedCoin("USD");
   //       setIsRotated(true);
   //     }
   //     else {
@@ -133,21 +133,21 @@ const HeaderOptions = () => {
     // If KYC is required, check if user has completed KYC (K4 or K5)
     if (user?.isKycRequired) {
       if (user?.kycStatus !== "K4" && user?.kycStatus !== "K5") {
-        setSelectedCoin("GC");
+        setSelectedCoin("USD");
         setIsRotated(true);
         openModal(<CompletedKycModal close={true} />);
         return;
       }
     }
 
-    setSelectedCoin(selectedCoin === "GC" ? "SC" : "GC");
+    setSelectedCoin("USD");
     setIsRotated(!isRotated);
   };
 
   // const handleLogout = async () => {
 
   //   // router.replace("/");
-  //   setSelectedCoin("GC");
+  //   setSelectedCoin("USD");
   //   await logoutUser();
   //   deleteAllClientCookies();
   //   logout();
@@ -360,10 +360,10 @@ const HeaderOptions = () => {
   //     isKycRequired: data.data.isKycRequired,
   //   });
 
-  //   // If KYC is required, force switch to GC
+  //   // If KYC is required, force switch to USD
   //   if (data.data.isKycRequired) {
   //     if (user?.kycStatus != "K4" && user?.kycStatus != "K5") {
-  //       setSelectedCoin("GC");
+  //       setSelectedCoin("USD");
   //       setIsRotated(true);
   //       openModal(<CompletedKycModal close={true} />);
   //     }
@@ -798,18 +798,18 @@ useEffect(() => {
           >
             {/* Animated Toggle Background */}
             <div
-              className={`absolute top-[5px] left-0 h-[40px] xl:h-[44px] w-1/2 rounded-full transition-transform duration-300 ease-in-out ${selectedCoin === "GC"
+              className={`absolute top-[5px] left-0 h-[40px] xl:h-[44px] w-1/2 rounded-full transition-transform duration-300 ease-in-out ${selectedCoin === "USD"
                 ? "bg-[#FFC048] shadow-custom-gc translate-x-0"
                 : "bg-[#33D9B2] shadow-custom-sc translate-x-full"
                 }`}
             ></div>
 
-            {/* GC Button */}
+            {/* USD Button */}
             <div
               onClick={toggleCoin}
               className={`relative flex items-center cursor-pointer h-[40px] xl:h-[44px] font-bold py-1 px-1 justify-center rounded-full z-10`}
             >
-              {/* {selectedCoin == "GC" ? <GC /> : <GCGray />} */}
+              {/* {selectedCoin == "USD" ? <USD /> : <GCGray />} */}
               {hideBalance && (
                 <span className="ml-2 text-base lg:text-[20.71px] text-[#303545] font-bold">
                  $ {formatCompactNumber(user?.userWallet?.gcCoin)}
@@ -820,12 +820,12 @@ useEffect(() => {
               </span>
             </div>
 
-            {/* SC Button */}
+            {/* USD Button */}
             {/* <div
               onClick={toggleCoin}
               className={`relative flex items-center cursor-pointer h-[40px] xl:h-[44px] font-bold py-1 px-1 justify-center rounded-full z-10`}
             >
-              {selectedCoin == "SC" ? <SC /> : <SCGray />}
+              {selectedCoin == "USD" ? <USD /> : <SCGray />}
               {hideBalance && (
                 <span className="ml-2 text-base md:text-sm lg:text-[20.71px] text-[#303545] font-bold">
                   {user?.userWallet?.totalScCoin
@@ -838,7 +838,7 @@ useEffect(() => {
                 </span>
               )}
               <span className="ml-auto text-base lg:text-[20.71px] pr-2 text-black font-bold">
-                SC
+                USD
               </span>
             </div> */}
           </div>
@@ -927,15 +927,15 @@ useEffect(() => {
             <div
               onClick={toggleCoin}
               className={`flex items-center cursor-pointer h-[40px] xl:h-[44px] font-bold py-1 px-1 justify-center rounded-full duration-300 ease-in-out ${hideBalance ? "w-[176px]" : ""
-                } ${selectedCoin == "GC"
+                } ${selectedCoin == "USD"
                   ? "bg-[#FFC048] shadow-custom-gc"
                   : "bg-[#33D9B2] shadow-custom-sc"
                 }`}
             >
-              {selectedCoin == "GC" ? <GC /> : <SC />}
+              {selectedCoin == "USD" ? <USD /> : <USD />}
               {hideBalance && (
                 <span className="ml-2 text-base md:text-sm text-[20.71px] text-[#303545] font-bold">
-                  {selectedCoin === "GC"
+                  {selectedCoin === "USD"
                     ? formatCompactNumber(user?.userWallet?.gcCoin)
                     : formatCompactNumber(
                       +user?.userWallet?.scCoin?.bsc +
@@ -945,11 +945,11 @@ useEffect(() => {
                 </span>
               )}
               <span className="ml-auto text-base text-[20.71px] pr-2 text-black font-bold">
-                {selectedCoin === "GC" ? "GC" : "SC"}
+                {selectedCoin === "USD" ? "USD" : "USD"}
               </span>
             </div>
             <Image
-              src={selectedCoin === "GC" ? reverseGC : reverse}
+              src={selectedCoin === "USD" ? reverseGC : reverse}
               width={24}
               height={24}
               className={`max-h-6 cursor-pointer transform transition-transform duration-300 ease-in-out ${isRotated ? "rotate-180" : ""

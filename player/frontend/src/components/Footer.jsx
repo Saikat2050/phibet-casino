@@ -30,7 +30,7 @@ export default async function Footer() {
         <div className="flex gap-8 2xl:gap-16 max-lg:flex-wrap">
           <div className="max-w-[31.625rem] max-xl:max-w-72 max-lg:max-w-full max-lg:text-center w-full">
             <h2 className="text-24 sm:text-30 2xl:text-40 font-black uppercase grow shrink-0">
-              Winzy <span className="text-transparent bg-primaryButtonGradient bg-clip-text">play</span>
+              Phi <span className="text-transparent bg-primaryButtonGradient bg-clip-text">Bet</span>
             </h2>
             <p className="max-w-2xl max-lg:mx-auto w-full text-white text-12 md:text-16 px-1.5 mt-4">
               It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.

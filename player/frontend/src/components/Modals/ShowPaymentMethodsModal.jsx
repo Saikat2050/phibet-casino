@@ -218,11 +218,11 @@ const ShowPaymentMethodsModal = ({ pkg }) => {
             `You will get ${discountPercentage}% off on the selected amount.`
           );
         } else if (discountedGC || discountedSc) {
-          // Case 2: Showing extra GC and SC coins
+          // Case 2: Showing extra USD and USD coins
           let message = "You're getting";
-          if (discountedGC) message += ` ${discountedGC} extra GC`;
+          if (discountedGC) message += ` ${discountedGC} extra USD`;
           if (discountedGC && discountedSc) message += " and";
-          if (discountedSc) message += ` ${discountedSc} extra SC`;
+          if (discountedSc) message += ` ${discountedSc} extra USD`;
           message += " coins!";
           setPromoMessage(message);
         }

@@ -50,7 +50,7 @@ const CompletedKycModal = ({ close }) => {
 
         <div className="text-center md:text-center text-white flex-col justify-center items-center max-w-[410px] p-2.5">
           <p className="text-base sm:text-xl font-bold mb-7">
-            In order to access and play with SC, you must first complete KYC.
+            In order to access and play with USD, you must first complete KYC.
           </p>
           <PrimaryButton className="my-4" onClick={handleGetStarted}>Get Started</PrimaryButton>
 

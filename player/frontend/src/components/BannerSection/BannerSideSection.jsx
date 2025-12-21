@@ -52,7 +52,7 @@ const HeroSlider = () => {
                 <div className="embla__slide embla-slide flex items-center justify-center bg-heroBgImg bg-no-repeat bg-right bg-cover" key={index}>
                   <div className="max-w-container-width w-full mx-auto px-4 grid grid-cols-2 gap-5 pt-10">
                     <div className='pt-10'>
-                      <p className='text-24 2xl:text-34 text-white pb-3 font-extralight'>WELCOME <span className='font-medium text-transparent bg-clip-text bg-heroTextGradient'>WinzyPlay</span></p>
+                      <p className='text-24 2xl:text-34 text-white pb-3 font-extralight'>WELCOME <span className='font-medium text-transparent bg-clip-text bg-heroTextGradient'>PhiBet</span></p>
                       <h2 className='text-white text-48 2xl:text-64 font-black'>MULTIPLY YOUR WINS</h2>
                       <p className='text-tertiary-300 text-48 2xl:text-64 font-black'>TRY YOUR LUCK</p>
                       <p className='text-24 2xl:text-28 text-secondary-600 font-normal'>+1 BONUS CARD</p>

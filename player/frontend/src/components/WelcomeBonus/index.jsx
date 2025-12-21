@@ -2,8 +2,8 @@ import {
   claimWelcomeBonusAction,
   getProfile
 } from "@/actions";
-import GC from "@/assets/images/coins/GC";
-import SC from "@/assets/images/coins/SC";
+import USD from "@/assets/images/coins/USD";
+// import USD from "@/assets/images/coins/USD";
 import Cross from "@/assets/images/Cross";
 import useUserStore from "@/store/useUserStore";
 import { useIP } from "@/utils/ipUtils";
@@ -117,14 +117,14 @@ const WelcomeBonus = ({
             <div className="flex items-center gap-7 mb-5">
               <div className="flex items-center gap-2.5">
                 {/* <Scoin /> */}
-                <SC height="30px" width="30px"/>
+                <USD height="30px" width="30px"/>
                 <span className="text-white text-2xl font-bold">
                   {scAmount}
                 </span>
               </div>
               <div className="flex items-center gap-2.5">
                 {/* <Gcoin /> */}
-                <GC height="30px" width="30px"/>
+                <USD height="30px" width="30px"/>
                 <span className="text-white text-2xl font-bold">
                   {gcAmount}
                 </span>

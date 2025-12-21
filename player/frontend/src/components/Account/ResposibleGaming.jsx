@@ -41,7 +41,7 @@ const ResposibleGaming = () => {
   const router = useRouter();
 
   const handleLogout = () => {
-    setSelectedCoin("GC")
+    setSelectedCoin("USD")
     logoutUser();
     logout();
     deleteAllClientCookies();

@@ -16,7 +16,7 @@ const useUserStore = create(
       // --- Other State ---
       userIp: null,
       setUserIp: (data) => set(() => ({ userIp: data })),
-      selectedCoin: "GC",
+      selectedCoin: "USD",
       setSelectedCoin: (data) => set(() => ({ selectedCoin: data })),
       welcomeBonusPurchase: null,
       setWelcomeBonusPurchase: (data) => set(() => ({ welcomeBonusPurchase: data })),
@@ -44,7 +44,7 @@ const useUserStore = create(
           amoeBonus: null,
           getWelcomePackage: null,
           isAuthenticated: false,
-          selectedCoin: "GC",
+          selectedCoin: "USD",
           welcomeBonusPurchase: null,
         });
       },
@@ -57,7 +57,7 @@ const useUserStore = create(
           amoeBonus: null,
           getWelcomePackage: null,
           isAuthenticated: false,
-          selectedCoin: "GC",
+          selectedCoin: "USD",
           welcomeBonusPurchase: null,
         });
         deleteBrowserCookie("accessToken");

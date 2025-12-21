@@ -1,6 +1,6 @@
 import React from "react";
 
-const SC = ({height ="40px", width="40px"}) => {
+const USD = ({height ="40px", width="40px"}) => {
   return (
     <svg x="0px" y="0px"
     viewBox="0 0 40 40" height={height} width={width}>
@@ -23,4 +23,4 @@ const SC = ({height ="40px", width="40px"}) => {
   );
 };
 
-export default SC;
+export default USD;

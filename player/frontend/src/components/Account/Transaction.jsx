@@ -22,8 +22,8 @@ const DropdownIndicator = (props) => {
 
 const options = [
   { value: "all", label: "All" },
-  // { value: "gcCoin", label: "GC Coin" },
-  // { value: "scCoin", label: "SC Coin" },
+  // { value: "gcCoin", label: "USD Coin" },
+  // { value: "scCoin", label: "USD Coin" },
   // { value: "admin", label: "Admin Bonus" },
   { value: "bonus", label: "Awarded Gifts" },
   { value: "deposit", label: "Purchase" },
@@ -70,9 +70,9 @@ function Transaction() {
     //   : actionType?.value,
     coinType: "all",
     // actionType?.value === "gcCoin"
-    //   ? "GC"
+    //   ? "USD"
     //   : actionType?.value === "scCoin"
-    //   ? "SC"
+    //   ? "USD"
     //   : "all",
   };
   const fetchTransactionData = async (params) => {
@@ -111,9 +111,9 @@ function Transaction() {
         //   : actionType?.value,
         coinType: "all",
         // actionType?.value === "gcCoin"
-        //   ? "GC"
+        //   ? "USD"
         //   : actionType?.value === "scCoin"
-        //   ? "SC"
+        //   ? "USD"
         //   : "all",
       };
       fetchTransactionData(params);

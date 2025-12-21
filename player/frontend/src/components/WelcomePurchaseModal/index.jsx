@@ -146,11 +146,11 @@ const WelcomePurchaseModal = () => {
           <p className="text-white text-lg font-bold my-4">
             Buy{" "}
             <span className="text-yellow-400">
-              "{selectedPackage?.gcCoin} GC"
+              "{selectedPackage?.gcCoin} USD"
             </span>{" "}
             + FREE{" "}
             <span className="text-white00">
-              "{selectedPackage?.scCoin} SC"
+              "{selectedPackage?.scCoin} USD"
             </span>{" "}
             for{" "}
             <span className="text-yellow-400">

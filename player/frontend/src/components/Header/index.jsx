@@ -13,11 +13,11 @@ const Header = () => {
   return (
     <header className=" bg-background h-header-height flex items-center justify-between px-6 2xl:px-11 fixed top-0 w-full gap-2 2xl:gap-4 z-[22]">
       <div className="text-30 2xl:text-40 font-black uppercase grow shrink-0">
-        Winzy <span className="text-transparent bg-primaryButtonGradient bg-clip-text">play</span>
+        Phi <span className="text-transparent bg-primaryButtonGradient bg-clip-text">Bet</span>
       </div>
       <div className="flex items-center justify-center gap-4 grow max-md:hidden">
         <a href="#" className="h-10 2xl:h-[3.75rem] px-2 flex items-center justify-center rounded-lg text-14 2xl:text-16 text-tertiary-300 bg-tab-bg border border-solid border-primary-border capitalize">Tournament</a>
-        <a href="#" className="h-10 2xl:h-[3.75rem] px-2 flex items-center justify-center rounded-lg text-14 2xl:text-16 text-tertiary-300 bg-tab-bg border border-solid border-primary-border capitalize">bonue</a>
+        <a href="#" className="h-10 2xl:h-[3.75rem] px-2 flex items-center justify-center rounded-lg text-14 2xl:text-16 text-tertiary-300 bg-tab-bg border border-solid border-primary-border capitalize">Bonus</a>
         <div className="flex items-center pl-2 2xl:pl-5 max-xl:hidden">
           <div className="wallet-box-mask flex items-center min-w-[7.6875rem] max-2xl:h-10">
             <div className="text-16 2xl:text-20 font-bold text-white wallet-text-shadow pl-5 pr-10">
@@ -26,7 +26,7 @@ const Header = () => {
           </div>
           <div className="-ml-1 relative p-0.5 size-9 2xl:size-[3.125rem] rounded-px_32 flex items-center overflow-hidden justify-center shrink-0 text-16 2xl:text-20 font-bold text-white uppercase shadow-coinShadow">
             <span className="absolute bg-borderGradient z-[1] w-full h-full rounded-px_30"></span>
-            <span className="bg-primaryButtonGradient relative z-[2] flex items-center justify-center rounded-px_28 w-full h-full">sc</span>
+            <span className="bg-primaryButtonGradient relative z-[2] flex items-center justify-center rounded-px_28 w-full h-full">USD</span>
           </div>
         </div>
 

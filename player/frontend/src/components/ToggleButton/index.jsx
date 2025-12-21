@@ -10,29 +10,29 @@ function ToggleBtn() {
     const [coinAmount, setCoinAmount] = useState(158); // Example value, you can update this dynamically
 
     const handleToggle = () => {
-        const newCoin = selectedCoin === 'SC' ? 'GC' : 'SC';
+        const newCoin = selectedCoin === 'USD' ? 'USD' : 'USD';
         setSelectedCoin(newCoin);
-        setCoinAmount(newCoin === 'SC' ? 158 : 250); // Example numbers, adjust as needed
+        setCoinAmount(newCoin === 'USD' ? 158 : 250); // Example numbers, adjust as needed
     };
 
     return (
         <>
-            <div className={`relative flex items-center gap-2.5 max-md:gap-1.5 text-base max-md:text-sm h-[34px] font-bold text-blackOpacity ${selectedCoin === 'GC' ? ' ' : ''} rounded-full px-5 max-md:px-2 py-1 min-w-[179px] max-md:min-w-[120px] w-full`}>
+            <div className={`relative flex items-center gap-2.5 max-md:gap-1.5 text-base max-md:text-sm h-[34px] font-bold text-blackOpacity ${selectedCoin === 'USD' ? ' ' : ''} rounded-full px-5 max-md:px-2 py-1 min-w-[179px] max-md:min-w-[120px] w-full`}>
                 <span
-                    className={`absolute top-1 flex items-center justify-between uppercase text-xl max-md:text-base leading-tight font-bold transition-all duration-300 ${selectedCoin === 'SC'
+                    className={`absolute top-1 flex items-center justify-between uppercase text-xl max-md:text-base leading-tight font-bold transition-all duration-300 ${selectedCoin === 'USD'
                         ? 'translate-y-0 opacity-100'
                         : '-translate-y-full opacity-0'
                         }`}
                 >
-                    SC
+                    USD
                 </span>
                 <span
-                    className={`absolute top-1 flex items-center justify-between uppercase text-xl max-md:text-base leading-tight font-bold transition-all duration-300 ${selectedCoin === 'GC'
+                    className={`absolute top-1 flex items-center justify-between uppercase text-xl max-md:text-base leading-tight font-bold transition-all duration-300 ${selectedCoin === 'USD'
                         ? 'translate-y-0 opacity-100'
                         : 'translate-y-full opacity-0'
                         }`}
                 >
-                    GC
+                    USD
                 </span>
                 <span className="ml-2 transition-all duration-300">{coinAmount}</span>
             </div>
@@ -45,7 +45,7 @@ function ToggleBtn() {
                         type="checkbox"
                         id="AcceptConditions"
                         className="peer sr-only [&:checked_+_span_svg[data-checked-icon]]:block [&:checked_+_span_svg[data-unchecked-icon]]:hidden"
-                        checked={selectedCoin === 'GC'}
+                        checked={selectedCoin === 'USD'}
                         onChange={handleToggle}
                     />
 

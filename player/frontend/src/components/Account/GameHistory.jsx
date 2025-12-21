@@ -21,8 +21,8 @@ const DropdownIndicator = (props) => {
 };
 
 const options = [
-  { value: "GC", label: "GC Coin" },
-  { value: "SC", label: "SC Coin" },
+  { value: "USD", label: "USD Coin" },
+  { value: "USD", label: "USD Coin" },
 ];
 
 function GameHistory() {
@@ -38,8 +38,8 @@ function GameHistory() {
   const [startDate, setStartDate] = useState(firstDayOfMonth);
   const [endDate, setEndDate] = useState(currentDate);
   const [selectedCoin, setSelectedCoin] = useState({
-    value: "GC",
-    label: "GC Coin",
+    value: "USD",
+    label: "USD Coin",
   });
 
   const [dateError, setDateError] = useState("");

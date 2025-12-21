@@ -61,7 +61,7 @@ function ProfileSidebar({ className = "" }) {
     await logoutUser();
     // router.replace("/");
     deleteAllClientCookies();
-    setSelectedCoin("GC");
+    setSelectedCoin("USD");
     logout();
     router.replace("/");
     router.refresh()
