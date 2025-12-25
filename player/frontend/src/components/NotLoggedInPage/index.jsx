@@ -18,7 +18,7 @@ const NotLoggedInPage =  () => {
       <AllGames />
       <RewardSection />
       <AllGames className="pt-0"/>
-      <GameProviderSlider />
+      {/* <GameProviderSlider /> */}
     </div>
   );
 };
