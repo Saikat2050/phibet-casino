@@ -167,13 +167,13 @@ module.exports = {
 
       backgroundImage: {
         // Gradient Color
-        primaryButtonGradient: 'linear-gradient(180deg, #F54F0A 0%, #E90F08 100%)',
-        borderGradient: 'linear-gradient(180deg, #EA1108 0%, #F54E0A 100%)',
-        tabGradient: 'linear-gradient(360deg, rgba(245, 79, 10, 0.7) -117.21%, rgba(245, 79, 10, 0) 100%)',
-        dividerLineGradient: 'linear-gradient(90deg, rgba(245, 79, 10, 0) 10.91%, #F54F0A 50.08%, rgba(245, 79, 10, 0) 89.24%)',
+        primaryButtonGradient: 'linear-gradient(180deg, #D4AF37 0%, #F4C430 100%)',
+        borderGradient: 'linear-gradient(180deg, #F4C430 0%, #D4AF37 100%)',
+        tabGradient: 'linear-gradient(360deg, rgba(212, 175, 55, 0.7) -117.21%, rgba(212, 175, 55, 0) 100%)',
+        dividerLineGradient: 'linear-gradient(90deg, rgba(212, 175, 55, 0) 10.91%, #D4AF37 50.08%, rgba(212, 175, 55, 0) 89.24%)',
         dividerBgGradient: 'radial-gradient(109.47% 75.17% at 50.87% 3.93%, #4B3C3E 0%, rgba(75, 60, 62, 0) 22.75%)',
         rewardStripGradient: 'linear-gradient(90deg, #C5A17D 0%, #C18B55 100%)',
-        heroTextGradient: 'linear-gradient(93.23deg, #F44A0A 53.4%, #E91008 72.26%)',
+        heroTextGradient: 'linear-gradient(93.23deg, #D4AF37 53.4%, #F4C430 72.26%)',
         heroImgOverly: 'linear-gradient(180deg, rgba(28, 13, 10, 0) 13.04%, #160C0A 89.13%)',
         iconBgGradient: 'radial-gradient(50% 50% at 50% 50%, #48393B 0%, rgba(72, 57, 59, 0) 100%)',
         inputBordergradient:'linear-gradient(87.99deg, #EBDC03 -4.33%, #FF9321 21.23%, #FF9321 23.32%, #F24C50 47.31%, #8B21B7 100%)',
@@ -193,9 +193,9 @@ module.exports = {
       },
 
       boxShadow: {
-        "primaryBtnShadow": "0px 0px 12.69px 0px hsla(21, 100%, 52%, 0.5)",
-        "slideShadow": "0px 0px 20.1px 0px #F54F0A99",
-        'coinShadow': '0px 0px 12.69px 0px #FF5F0980',
+        "primaryBtnShadow": "0px 0px 12.69px 0px hsla(45, 75%, 45%, 0.5)",
+        "slideShadow": "0px 0px 20.1px 0px #D4AF3799",
+        'coinShadow': '0px 0px 12.69px 0px #D4AF3780',
         'inputShadow': '0px 0px 10px 0px hsla(201, 85%, 7%, 1) inset',
       },
 

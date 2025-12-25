@@ -22,8 +22,8 @@
     /* #FFFFFF */
     --lh-primary-border: hsla(352, 11%, 26%, 1);
     /* #4B3C3E */
-    --lh-secondary-border: hsla(18, 92%, 50%, 1);
-    /* #F54F0A */
+    --lh-secondary-border: hsl(45, 75%, 45%);
+    /* #D4AF37 - golden */
     --lh-tabs-bg: hsla(9, 29%, 9%, 1);
     /* #1D1210 */
     --lh-tab-text-color: hsla(30, 38%, 63%, 1);
@@ -82,14 +82,14 @@
 
 
     /* Secondary Color */
-    --lh-secondary-200: hsla(2, 93%, 47%, 1);
-    /* #E90F08 */
-    --lh-secondary-400: hsla(9, 100%, 50%, 0.5);
-    /* #FF270080 */
-    --lh-secondary-500: hsla(18, 92%, 50%, 1);
-    /* #F54F0A */
-    --lh-secondary-600: hsla(15, 92%, 50%, 1);
-    /* #F3450A */
+    --lh-secondary-200: hsl(45, 80%, 55%);
+    /* #F4C430 - bright golden */
+    --lh-secondary-400: hsl(45, 75%, 50%);
+    /* #E6B800 - golden */
+    --lh-secondary-500: hsl(45, 75%, 45%);
+    /* #D4AF37 - golden */
+    --lh-secondary-600: hsl(45, 70%, 40%);
+    /* #B8860B - dark golden */
 
     /* Tertiary Color */
     --lh-tertiary-100: hsla(51, 21%, 76%, 1);

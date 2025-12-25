@@ -32,6 +32,10 @@ export const metadata = {
     googleBot: { index: true, follow: true },
     appleBot: { index: true, follow: true },
   },
+  // Add this for the favicon
+  icons: {
+    icon: '/favicon.ico',  // Path to your favicon file in the public folder
+  },
 };
 
 export const viewport = {

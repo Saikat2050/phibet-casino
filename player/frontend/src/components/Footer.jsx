@@ -152,19 +152,19 @@ export default async function Footer() {
               <ul className="mt-6 space-y-2.5">
                 <li>
                   <a href="#" className="text-14 text-tertiary-300 font-medium">
-                    Support : <span className="text-white">support@tmf.com</span>
+                    Support : <span className="text-white">support@phibet.com</span>
                   </a>
                 </li>
 
                 <li>
                   <a href="#" className="text-14 text-tertiary-300 font-medium">
-                    Partners : <span className="text-white">partners@tmf.com</span>
+                    Partners : <span className="text-white">partners@phibet.com</span>
                   </a>
                 </li>
 
                 <li>
                   <a href="#" className="text-14 text-tertiary-300 font-medium">
-                    Legal : <span className="text-white">legal@tmf.com</span>
+                    Legal : <span className="text-white">legal@phibet.com</span>
                   </a>
                 </li>
               </ul>
